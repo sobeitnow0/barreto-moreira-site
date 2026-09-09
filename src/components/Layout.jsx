@@ -6,7 +6,7 @@ import { InstagramIcon } from './Icons';
 const Logo = ({ onClick }) => (
   <NavLink to="/" onClick={onClick} className="flex items-center group py-1.5">
     <img 
-      src="/logo-transparent.png" 
+      src={`${import.meta.env.BASE_URL}logo-transparent.png`} 
       alt="Barreto Moreira Advocacia Estratégica" 
       className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
     />
@@ -95,7 +95,7 @@ export default function Layout() {
           <div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-[#0E1726]/95 backdrop-blur-2xl z-50 flex flex-col justify-between p-6 sm:p-8 text-white animate-fadeIn">
             <div className="flex flex-col gap-5 pt-2">
               <img 
-                src="/logo-white.png" 
+                src={`${import.meta.env.BASE_URL}logo-white.png`} 
                 alt="Barreto Moreira Advocacia Estratégica" 
                 className="h-10 sm:h-12 w-auto object-contain self-start opacity-95"
               />
@@ -170,7 +170,7 @@ export default function Layout() {
             <div className="md:col-span-5 flex flex-col gap-5">
               <NavLink to="/" className="inline-block">
                 <img 
-                  src="/logo-white.png" 
+                  src={`${import.meta.env.BASE_URL}logo-white.png`} 
                   alt="Barreto Moreira Advocacia Estratégica" 
                   className="h-11 sm:h-13 md:h-14 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
                 />

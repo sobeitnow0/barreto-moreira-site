@@ -109,7 +109,7 @@ export default function Escritorio() {
                     {/* Foto exclusiva do Amilcar com fallback para monograma */}
                     <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
                       <img 
-                        src="/amilcar.jpg" 
+                        src={`${import.meta.env.BASE_URL}amilcar.jpg`} 
                         alt="Amilcar Barreto de Barros Moreira"
                         className="w-full h-full object-cover"
                         onError={(e) => {
@@ -177,7 +177,7 @@ export default function Escritorio() {
                   {/* Foto exclusiva do Alan com fallback para monograma */}
                   <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
                     <img 
-                      src="/alan.jpg" 
+                      src={`${import.meta.env.BASE_URL}alan.jpg`} 
                       alt="Alan Miranda"
                       className="w-full h-full object-cover"
                       onError={(e) => {
