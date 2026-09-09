@@ -4,11 +4,11 @@ import { Menu, X, ArrowUpRight, Mail } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
 const Logo = ({ onClick }) => (
-  <NavLink to="/" onClick={onClick} className="flex items-center group py-1">
+  <NavLink to="/" onClick={onClick} className="flex items-center group py-1.5">
     <img 
       src="/logo-transparent.png" 
       alt="Barreto Moreira Advocacia Estratégica" 
-      className="h-9 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+      className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
     />
   </NavLink>
 );
@@ -43,7 +43,7 @@ export default function Layout() {
     <div className="min-h-screen bg-[#F8FAFC] font-sans text-[#162235] flex flex-col selection:bg-[#162235] selection:text-white">
       {/* Header Fixo Minimalista com Glassmorphism */}
       <header className="sticky top-0 z-50 bg-[#F8FAFC]/90 backdrop-blur-md border-b border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[5.5rem] sm:min-h-[6rem] py-3 flex items-center justify-between">
           <Logo onClick={() => setMobileMenuOpen(false)} />
 
           {/* Desktop Navigation */}
@@ -97,7 +97,7 @@ export default function Layout() {
               <img 
                 src="/logo-white.png" 
                 alt="Barreto Moreira Advocacia Estratégica" 
-                className="h-7 w-auto object-contain self-start opacity-90"
+                className="h-10 sm:h-12 w-auto object-contain self-start opacity-95"
               />
               <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold">
                 Navegação
@@ -172,7 +172,7 @@ export default function Layout() {
                 <img 
                   src="/logo-white.png" 
                   alt="Barreto Moreira Advocacia Estratégica" 
-                  className="h-8 sm:h-9 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
+                  className="h-11 sm:h-13 md:h-14 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
                 />
               </NavLink>
               <p className="text-white/70 text-sm leading-relaxed max-w-sm font-light">
