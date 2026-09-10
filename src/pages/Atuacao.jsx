@@ -52,11 +52,11 @@ export default function Atuacao() {
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
-      <section className="pt-12 sm:pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-3">
+      <section className="pt-16 sm:pt-24 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-4">
           <span>01 // ESCOPO DE ATUAÇÃO</span>
         </div>
-        <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-5 border-b border-[#E2E8F0] pb-6 mb-8">
+        <div className="border-b border-[#E2E8F0] pb-8 mb-8">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
             ÁREAS DE <span className="text-[#64748B]">PRÁTICA</span>
           </h1>
@@ -66,8 +66,8 @@ export default function Atuacao() {
         </p>
       </section>
 
-      {/* Grid de Áreas com Cards Imersivos estilo Milano */}
-      <section className="pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      {/* Grid de Áreas com Cards Imersivos */}
+      <section className="pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {areas.map((item, idx) => (
             <div
@@ -111,7 +111,7 @@ export default function Atuacao() {
       <Marquee />
 
       {/* Seções Especiais: Atuação em Rede, Buscador DJEN e Abrangência */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full space-y-8">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full space-y-6">
         
         {/* Bloco 1: Atuação em Rede */}
         <div className="bg-[#0E1726] text-white p-8 sm:p-12 rounded-3xl border border-white/10 shadow-xl flex flex-col md:flex-row gap-8 items-start">

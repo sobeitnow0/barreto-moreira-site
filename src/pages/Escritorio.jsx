@@ -15,11 +15,11 @@ export default function Escritorio() {
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
-      <section className="pt-12 sm:pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-3">
+      <section className="pt-16 sm:pt-24 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-4">
           <span>02 // INSTITUCIONAL & FUNDADORES</span>
         </div>
-        <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-5 border-b border-[#E2E8F0] pb-6 mb-8">
+        <div className="border-b border-[#E2E8F0] pb-8 mb-8">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
             O ESCRITÓRIO <span className="text-[#64748B]">ESTRATÉGICO</span>
           </h1>
@@ -33,13 +33,13 @@ export default function Escritorio() {
       <Marquee />
 
       {/* Seção Pilares */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-16">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-14">
           <div className="lg:col-span-5">
             <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold block mb-3">
               Posicionamento
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-normal text-[#162235] mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-normal text-[#162235] mb-5 leading-tight">
               A Defesa Criteriosa Não Admite Automatismos
             </h2>
             <p className="text-[#334155] text-sm sm:text-base leading-relaxed mb-4">
@@ -86,7 +86,7 @@ export default function Escritorio() {
         </div>
 
         {/* Perfis dos Fundadores */}
-        <div className="pt-16 border-t border-[#E2E8F0]">
+        <div className="pt-14 border-t border-[#E2E8F0]">
           <div className="mb-12">
             <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold block mb-2">
               Liderança

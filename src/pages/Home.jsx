@@ -66,10 +66,10 @@ export default function Home() {
       
       {/* 1. HERO SECTION */}
       <ScrollReveal>
-      <section className="pt-16 sm:pt-24 pb-20 sm:pb-32 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <section className="pt-20 sm:pt-28 pb-20 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Lado Esquerdo: Tipografia Stacked em Caixa Alta (Exata estética Milano) */}
+          {/* Lado Esquerdo */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 mb-8 rounded-full bg-white border border-[#E2E8F0] shadow-sm">
               <span className="w-2 h-2 rounded-full bg-brand-gold"></span>
@@ -78,23 +78,21 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Palavras empilhadas monumentais */}
-            <div className="flex flex-col tracking-tight font-extrabold uppercase text-[#162235] leading-[0.95] text-5xl sm:text-6xl md:text-[5rem] mb-8">
+            <div className="flex flex-col tracking-tight font-extrabold uppercase text-[#162235] leading-[0.92] text-5xl sm:text-6xl md:text-[5rem] mb-10">
               <span>ADVOCACIA</span>
               <span>ESTRATÉGICA</span>
               <span className="text-brand-gold">SOB MEDIDA &</span>
               <span>ALTO PADRÃO</span>
             </div>
 
-            <p className="text-lg sm:text-xl text-[#475569] leading-relaxed max-w-2xl mb-12 font-light">
+            <p className="text-lg sm:text-xl text-[#475569] leading-relaxed max-w-xl mb-10 font-light">
               Atuação artesanal e rigor técnico para pessoas e empresas que exigem precisão cirúrgica na defesa de seus direitos. Menos volume, mais profundidade.
             </p>
 
-            {/* Ações com botões com setas */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto mb-10">
               <Link
                 to="/contato"
-                className="px-10 py-4.5 rounded-xl bg-[#162235] text-white font-semibold text-sm tracking-widest uppercase hover:bg-brand-hover transition-all flex items-center justify-center gap-3 shadow-xl shadow-[#162235]/20 group"
+                className="px-8 py-4 rounded-xl bg-[#162235] text-white font-semibold text-sm tracking-widest uppercase hover:bg-brand-hover transition-all flex items-center justify-center gap-3 shadow-xl shadow-[#162235]/20 group"
               >
                 <span>Solicitar Avaliação do Caso</span>
                 <ArrowRight size={18} className="text-brand-gold transition-transform group-hover:translate-x-1" />
@@ -102,32 +100,30 @@ export default function Home() {
 
               <Link
                 to="/escritorio"
-                className="px-10 py-4.5 rounded-xl bg-white text-[#162235] border border-[#E2E8F0] font-semibold text-sm tracking-widest uppercase hover:bg-black/[0.02] transition-all flex items-center justify-center"
+                className="px-8 py-4 rounded-xl bg-white text-[#162235] border border-[#E2E8F0] font-semibold text-sm tracking-widest uppercase hover:bg-black/[0.02] transition-all flex items-center justify-center"
               >
                 O Escritório
               </Link>
             </div>
 
-            <div className="mt-12 flex items-center gap-4 text-xs font-semibold text-[#64748B] uppercase tracking-[0.2em]">
+            <div className="flex items-center gap-4 text-xs font-semibold text-[#64748B] uppercase tracking-[0.2em]">
               <span>OAB/SP 349457</span>
               <span className="text-brand-gold">•</span>
               <span>Proteção Patrimonial & Empresarial</span>
             </div>
           </div>
 
-          {/* Lado Direito: Imagem Editorial com Enquadramento de Luxo e Glassmorphism */}
+          {/* Lado Direito: Imagem */}
           <div className="lg:col-span-5 relative mt-8 lg:mt-0">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E2E8F0] max-h-[640px] w-full">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E2E8F0] max-h-[600px] w-full">
               <img 
                 src={heroImage}
                 alt="Petição e Análise Jurídica"
                 className="w-full h-full object-contain transition-transform duration-1000 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0E1726]/50 via-transparent to-transparent"></div>
-              
-              {/* Premium Glassmorphism Card */}
-              <div className="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-white/20 backdrop-blur-2xl border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.1)]">
-                <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-white block mb-2">
+              <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-white/20 backdrop-blur-2xl border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.1)]">
+                <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-white block mb-1.5">
                   Gestão Dedicada
                 </span>
                 <p className="text-sm font-medium text-white leading-relaxed">
@@ -143,7 +139,7 @@ export default function Home() {
 
       {/* 2. CATEGORY CARDS */}
       <ScrollReveal>
-      <section className="py-20 sm:py-28 bg-white border-y border-[#E2E8F0]">
+      <section className="py-20 sm:py-24 bg-white border-y border-[#E2E8F0]">
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-12">
             <div className="flex items-center gap-4">
@@ -204,15 +200,15 @@ export default function Home() {
 
       {/* 3. SECTION SPLIT TITLE */}
       <ScrollReveal>
-      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto w-full">
+      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         {/* Indicador de Seção */}
         <div className="flex items-center gap-3 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-6">
           <span>02 // PILARES DE ATUAÇÃO</span>
         </div>
 
         {/* Título unificado e harmônico */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-16 gap-6">
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-extrabold uppercase tracking-tight text-[#162235] leading-none">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-14 gap-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#162235] leading-none">
             DIRETRIZES <span className="text-[#64748B] block sm:inline">DO ESCRITÓRIO</span>
           </h2>
           <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#64748B] font-semibold pb-2">
@@ -220,7 +216,7 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14 items-center">
           <div className="lg:col-span-8">
             <p className="text-lg sm:text-2xl text-[#334155] leading-relaxed font-light">
               O <strong>Barreto Moreira</strong> opera sob um modelo intencionalmente boutique, estruturado para rejeitar o volume em favor da precisão. Asseguramos atenção integral, pesquisa dogmática minuciosa e interlocução direta com os sócios fundadores.
@@ -267,7 +263,7 @@ export default function Home() {
 
       {/* 4. BLACK SECTION CTA */}
       <ScrollReveal>
-      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden bg-[#0E1726]">
+      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden bg-[#0E1726]">
         {/* Imagem de Fundo com Parallax */}
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center opacity-[0.12]"
@@ -279,7 +275,7 @@ export default function Home() {
         {/* Glow sutil */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand-gold/10 rounded-full blur-[160px] pointer-events-none z-0"></div>
 
-        <div className="max-w-[90rem] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Lado Esquerdo: Selo Circular OAB/SP 349457 estilo Milano Stamp com Glassmorphism */}
           <div className="lg:col-span-4 flex justify-center lg:justify-start">

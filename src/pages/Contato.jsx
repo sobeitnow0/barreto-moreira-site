@@ -15,11 +15,11 @@ export default function Contato() {
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
-      <section className="pt-12 sm:pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-3">
+      <section className="pt-16 sm:pt-24 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-4">
           <span>05 // CANAL OFICIAL</span>
         </div>
-        <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-5 border-b border-[#E2E8F0] pb-6 mb-8">
+        <div className="border-b border-[#E2E8F0] pb-8 mb-8">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
             SOLICITE SUA <span className="text-[#64748B]">AVALIAÇÃO</span>
           </h1>
@@ -29,8 +29,8 @@ export default function Contato() {
         </p>
       </section>
 
-      {/* Card Central de Contato (Milano Noir Style) */}
-      <section className="pb-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+      {/* Card Central de Contato */}
+      <section className="pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
         <div className="bg-[#0E1726] text-white rounded-3xl p-8 sm:p-14 border border-white/10 shadow-2xl relative overflow-hidden">
           
           <div className="relative z-10 flex flex-col items-center text-center">
@@ -119,7 +119,7 @@ export default function Contato() {
         </div>
       </section>
       {/* FAQ — Perguntas Frequentes */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
         <div className="flex items-center gap-3 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-6">
           <span>Perguntas Frequentes</span>
         </div>
