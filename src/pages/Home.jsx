@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, CheckCircle2, Shield, Scale, Clock, Sparkles } from 'lucide-react';
 import Marquee from '../components/Marquee';
+import InstagramCarousel from '../components/InstagramCarousel';
 
 export default function Home() {
   const categories = [
@@ -72,7 +73,7 @@ export default function Home() {
             </div>
 
             {/* Palavras empilhadas monumentais */}
-            <div className="flex flex-col tracking-tight font-extrabold uppercase text-[#162235] leading-[0.95] text-4xl sm:text-6xl md:text-7xl mb-6">
+            <div className="flex flex-col tracking-normal font-extrabold uppercase text-[#162235] leading-[0.95] text-4xl sm:text-6xl md:text-7xl mb-6">
               <span>ADVOCACIA</span>
               <span>ESTRATÉGICA</span>
               <span className="text-brand-gold">SOB MEDIDA &</span>
@@ -102,7 +103,7 @@ export default function Home() {
             </div>
 
             <div className="mt-8 flex items-center gap-4 text-xs font-semibold text-[#64748B] uppercase tracking-wider">
-              <span>OAB/SP 34957</span>
+              <span>OAB/SP 349457</span>
               <span>•</span>
               <span>Soluções Jurídicas Sob Medida</span>
             </div>
@@ -177,7 +178,7 @@ export default function Home() {
 
                 {/* Texto embaixo */}
                 <div className="relative z-10">
-                  <h3 className="text-base font-bold uppercase tracking-tight text-white mb-1">
+                  <h3 className="text-base font-bold uppercase tracking-normal text-white mb-1">
                     {cat.name}
                   </h3>
                   <p className="text-[11px] text-white/70 line-clamp-2">
@@ -199,7 +200,7 @@ export default function Home() {
 
         {/* Título unificado e harmônico */}
         <div className="flex flex-col sm:flex-row sm:items-baseline justify-between border-b border-[#E2E8F0] pb-6 mb-10 gap-4">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#162235]">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
             DIRETRIZES <span className="text-[#64748B]">DO ESCRITÓRIO</span>
           </h2>
           <span className="text-xs font-mono uppercase tracking-widest text-[#64748B] font-semibold">
@@ -235,7 +236,7 @@ export default function Home() {
                 <span className="text-2xl font-black text-brand-gold block mb-4">
                   {feat.num}.
                 </span>
-                <h3 className="text-lg font-bold uppercase tracking-tight text-[#162235] mb-3">
+                <h3 className="text-lg font-bold uppercase tracking-normal text-[#162235] mb-3">
                   {feat.title}
                 </h3>
                 <p className="text-sm text-[#334155] leading-relaxed">
@@ -258,7 +259,7 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Lado Esquerdo: Selo Circular OAB/SP 34957 estilo Milano Stamp */}
+          {/* Lado Esquerdo: Selo Circular OAB/SP 349457 estilo Milano Stamp */}
           <div className="lg:col-span-4 flex justify-center lg:justify-start">
             <div className="relative w-44 h-44 sm:w-52 sm:h-52 rounded-full border border-brand-gold/40 flex items-center justify-center p-3 animate-spin-slow">
               <div className="w-full h-full rounded-full border border-dashed border-brand-gold/60 flex flex-col items-center justify-center text-center p-4">
@@ -266,7 +267,7 @@ export default function Home() {
                   OAB/SP
                 </span>
                 <span className="text-2xl font-black tracking-wider text-white my-0.5">
-                  34957
+                  349457
                 </span>
                 <span className="text-[9px] uppercase font-bold tracking-[0.2em] text-white/70">
                   ESTRATÉGICA
@@ -280,7 +281,7 @@ export default function Home() {
             <span className="text-xs uppercase font-bold tracking-[0.3em] text-brand-gold mb-3">
               Atendimento Criterioso & Reservado
             </span>
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold uppercase tracking-tight text-white mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold uppercase tracking-normal text-white mb-6 leading-tight">
               Pronto para tratar sua causa com a profundidade que ela exige?
             </h2>
             <p className="text-white/75 text-sm sm:text-base leading-relaxed max-w-2xl mb-8 font-light">
@@ -307,7 +308,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. INFINITE LOOP BANNER (TICKER) */}
+      {/* 5. INSTAGRAM CAROUSEL */}
+      <InstagramCarousel />
+
+      {/* 6. INFINITE LOOP BANNER (TICKER) */}
       <Marquee />
 
     </div>

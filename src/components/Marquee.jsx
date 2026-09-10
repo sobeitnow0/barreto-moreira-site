@@ -4,7 +4,7 @@ export default function Marquee() {
   const items = [
     "BARRETO MOREIRA",
     "ADVOCACIA ESTRATÉGICA",
-    "OAB/SP 34957",
+    "OAB/SP 349457",
     "ESTRATÉGIAS JURÍDICAS SOB MEDIDA",
     "DIREITO DIGITAL & PLATAFORMAS",
     "DIREITO AUTORAL & PROPRIEDADE INTELECTUAL",

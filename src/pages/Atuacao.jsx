@@ -31,8 +31,8 @@ export default function Atuacao() {
     },
     {
       num: "05",
-      title: "Contratos Estratégicos Sob Medida",
-      desc: "Modelagem contratual sob medida para blindagem de patrimônio, acordos comerciais, estruturação de parcerias e instrumentos negociais complexos.",
+      title: "Contratos Estratégicos & Pareceres",
+      desc: "Modelagem contratual sob medida para blindagem de patrimônio, acordos comerciais, estruturação de parcerias, instrumentos negociais complexos e elaboração de pareceres jurídicos.",
       img: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -50,11 +50,11 @@ export default function Atuacao() {
         <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-3">
           <span>01 // ESCOPO DE ATUAÇÃO</span>
         </div>
-        <div className="flex flex-col sm:flex-row sm:items-baseline justify-between border-b border-[#E2E8F0] pb-6 mb-8">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#162235]">
+        <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-5 border-b border-[#E2E8F0] pb-6 mb-8">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
             ÁREAS DE
           </h1>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#64748B]">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#64748B]">
             PRÁTICA
           </h1>
         </div>
@@ -85,7 +85,7 @@ export default function Atuacao() {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-lg font-bold uppercase tracking-tight text-[#162235] mb-2.5">
+                  <h3 className="text-lg font-bold uppercase tracking-normal text-[#162235] mb-2.5">
                     {item.title}
                   </h3>
                   <p className="text-sm text-[#334155] leading-relaxed">
@@ -118,7 +118,7 @@ export default function Atuacao() {
             <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold block mb-2">
               Ecossistema Jurídico Estratégico
             </span>
-            <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-tight mb-4">
+            <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-normal mb-4">
               Atuação em Rede para Matérias Multidisciplinares
             </h3>
             <p className="text-white/75 leading-relaxed text-sm sm:text-base font-normal mb-6">
@@ -198,7 +198,7 @@ export default function Atuacao() {
             <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold block mb-2">
               Tecnologia Própria
             </span>
-            <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-tight text-[#162235] mb-4">
+            <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-normal text-[#162235] mb-4">
               Buscador DJEN: Inteligência Aplicada à Prática Jurídica
             </h3>
             <p className="text-[#334155] leading-relaxed text-sm sm:text-base mb-6">

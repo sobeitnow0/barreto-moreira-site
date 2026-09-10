@@ -20,11 +20,11 @@ export default function Escritorio() {
         <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-3">
           <span>02 // INSTITUCIONAL & FUNDADORES</span>
         </div>
-        <div className="flex flex-col sm:flex-row sm:items-baseline justify-between border-b border-[#E2E8F0] pb-6 mb-8">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#162235]">
+        <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-5 border-b border-[#E2E8F0] pb-6 mb-8">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
             O ESCRITÓRIO
           </h1>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#64748B]">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#64748B]">
             ESTRATÉGICO
           </h1>
         </div>
@@ -43,7 +43,7 @@ export default function Escritorio() {
             <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold block mb-3">
               Posicionamento
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#162235] mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-normal text-[#162235] mb-6 leading-tight">
               A Defesa Criteriosa Não Admite Automatismos
             </h2>
             <p className="text-[#334155] text-sm sm:text-base leading-relaxed mb-4">
@@ -95,7 +95,7 @@ export default function Escritorio() {
             <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold block mb-2">
               Liderança
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#162235]">
+            <h2 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-normal text-[#162235]">
               Os Fundadores
             </h2>
           </div>
@@ -108,28 +108,17 @@ export default function Escritorio() {
                   <div className="flex items-center gap-4">
                     {/* Foto exclusiva do Amilcar com fallback para monograma */}
                     <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
-                      <img 
-                        src={`${import.meta.env.BASE_URL}amilcar.jpg`} 
-                        alt="Amilcar Barreto de Barros Moreira"
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none';
-                          if (e.currentTarget.nextElementSibling) {
-                            e.currentTarget.nextElementSibling.style.display = 'flex';
-                          }
-                        }}
-                      />
                       <div className="w-full h-full flex flex-col items-center justify-center font-black text-xl text-[#162235] bg-gradient-to-br from-[#F8FAFC] to-[#E2E8F0]">
                         <span className="text-brand-gold text-lg">BM</span>
                       </div>
                     </div>
 
                     <div>
-                      <h3 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-[#162235]">
+                      <h3 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-normal text-[#162235]">
                         Amilcar Barreto de Barros Moreira
                       </h3>
                       <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold block mt-1">
-                        Advogado Fundador • OAB/SP 34957
+                        Advogado Fundador • OAB/SP 349457
                       </span>
                     </div>
                   </div>
@@ -176,28 +165,17 @@ export default function Escritorio() {
                 <div className="flex items-center gap-4 mb-6">
                   {/* Foto exclusiva do Alan com fallback para monograma */}
                   <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
-                    <img 
-                      src={`${import.meta.env.BASE_URL}alan.jpg`} 
-                      alt="Alan Miranda"
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                        if (e.currentTarget.nextElementSibling) {
-                          e.currentTarget.nextElementSibling.style.display = 'flex';
-                        }
-                      }}
-                    />
                     <div className="w-full h-full flex flex-col items-center justify-center font-black text-xl text-[#162235] bg-gradient-to-br from-[#F8FAFC] to-[#E2E8F0]">
                       <span className="text-brand-gold text-lg">AM</span>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-[#162235]">
+                    <h3 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-normal text-[#162235]">
                       Alan Miranda
                     </h3>
                     <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold block mt-1">
-                      Bacharel Fundador • Gestão & Inteligência
+                      Bacharel • Gestão & Inteligência
                     </span>
                   </div>
                 </div>

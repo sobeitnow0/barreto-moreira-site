@@ -17,13 +17,13 @@ export default function Contato() {
       {/* Header Editorial */}
       <section className="pt-12 sm:pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-3">
-          <span>03 // CANAL OFICIAL</span>
+          <span>05 // CANAL OFICIAL</span>
         </div>
-        <div className="flex flex-col sm:flex-row sm:items-baseline justify-between border-b border-[#E2E8F0] pb-6 mb-8">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#162235]">
+        <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-5 border-b border-[#E2E8F0] pb-6 mb-8">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
             INICIE SEU
           </h1>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#64748B]">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#64748B]">
             ATENDIMENTO
           </h1>
         </div>
@@ -44,11 +44,11 @@ export default function Contato() {
             <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-2">
               Agendamento & Consulta Inicial
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold uppercase mb-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold uppercase mb-4 tracking-normal">
               Fale Diretamente Conosco
             </h2>
             <p className="text-white/70 text-sm sm:text-base leading-relaxed max-w-lg mb-10">
-              Envie uma síntese da sua necessidade jurídica ou solicite o agendamento de uma reunião reservada (presencial ou por videoconferência).
+              Envie uma síntese da sua necessidade jurídica ou solicite o agendamento de uma reunião reservada (totalmente online por videoconferência).
             </p>
 
             {/* Ações de E-mail */}
@@ -109,7 +109,7 @@ export default function Contato() {
                     Formato de Atendimento
                   </span>
                   <span className="text-sm text-white font-semibold">
-                    Presencial & Digital por Videoconferência
+                    100% Digital & Videoconferência
                   </span>
                 </div>
               </div>

@@ -4,11 +4,11 @@ import { Menu, X, ArrowUpRight, Mail } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
 const Logo = ({ onClick }) => (
-  <NavLink to="/" onClick={onClick} className="flex items-center group py-1.5">
+  <NavLink to="/" onClick={onClick} className="flex items-center group py-1.5 shrink-0">
     <img 
       src={`${import.meta.env.BASE_URL}logo-transparent.png`} 
       alt="Barreto Moreira Advocacia Estratégica" 
-      className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+      className="h-14 sm:h-16 lg:h-[4.5rem] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
     />
   </NavLink>
 );
@@ -36,24 +36,25 @@ export default function Layout() {
     { num: "01", name: "Início", path: "/" },
     { num: "02", name: "O Escritório", path: "/escritorio" },
     { num: "03", name: "Áreas de Atuação", path: "/atuacao" },
-    { num: "04", name: "Contato", path: "/contato" },
+    { num: "04", name: "Atualizações", path: "/atualizacoes" },
+    { num: "05", name: "Contato", path: "/contato" },
   ];
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] font-sans text-[#162235] flex flex-col selection:bg-[#162235] selection:text-white">
       {/* Header Fixo Minimalista com Glassmorphism */}
       <header className="sticky top-0 z-50 bg-[#F8FAFC]/90 backdrop-blur-md border-b border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[5.5rem] sm:min-h-[6rem] py-3 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[5.5rem] lg:min-h-[6rem] py-3 flex items-center justify-between gap-6">
           <Logo onClick={() => setMobileMenuOpen(false)} />
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1.5 lg:gap-2">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
             {navLinks.map((item) => (
               <NavLink
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
+                  `px-2.5 xl:px-3.5 py-2 rounded-lg text-[11px] xl:text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                     isActive
                       ? 'text-[#162235] bg-white shadow-sm border border-[#E2E8F0]'
                       : 'text-[#64748B] hover:text-[#162235] hover:bg-black/[0.02]'
@@ -71,7 +72,7 @@ export default function Layout() {
               href="https://www.buscadordjen.com.br"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase bg-[#162235] text-white hover:bg-brand-hover transition-all shadow-sm group"
+              className="inline-flex items-center gap-1.5 px-3 xl:px-4 py-2 rounded-full text-[11px] xl:text-xs font-bold tracking-wider uppercase bg-[#162235] text-white hover:bg-brand-hover transition-all shadow-sm group whitespace-nowrap shrink-0"
             >
               <span>Buscador DJEN</span>
               <ArrowUpRight size={13} className="text-brand-gold transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -79,7 +80,7 @@ export default function Layout() {
           </nav>
 
           {/* Mobile Hamburger Button */}
-          <div className="flex md:hidden items-center">
+          <div className="flex lg:hidden items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2.5 rounded-xl text-[#162235] hover:bg-black/5 transition-colors focus:outline-none"
@@ -109,7 +110,7 @@ export default function Layout() {
                   to={item.path}
                   onClick={() => setMobileMenuOpen(false)}
                   className={({ isActive }) =>
-                    `flex items-baseline gap-4 py-3 border-b border-white/10 text-xl font-extrabold uppercase tracking-tight transition-all ${
+                    `flex items-baseline gap-4 py-3 border-b border-white/10 text-xl font-extrabold uppercase tracking-normal transition-all ${
                       isActive ? 'text-brand-gold pl-2' : 'text-white/80 hover:text-white'
                     }`
                   }
@@ -138,7 +139,7 @@ export default function Layout() {
             {/* Mobile Footer Info */}
             <div className="pt-6 border-t border-white/10 flex flex-col gap-3 text-xs text-white/60">
               <div className="flex justify-between items-center">
-                <span className="font-bold">OAB/SP 34957</span>
+                <span className="font-bold">OAB/SP 349457</span>
                 <a 
                   href="https://www.instagram.com/amilcarmoreira.juridico/" 
                   target="_blank" 
@@ -179,7 +180,7 @@ export default function Layout() {
                 Estrutura dedicada a soluções jurídicas sob medida para causas complexas, com rigor técnico e proximidade real.
               </p>
               <div className="flex items-center gap-3 text-xs text-brand-gold font-mono tracking-wider font-semibold">
-                <span>OAB/SP 34957</span>
+                <span>OAB/SP 349457</span>
                 <span className="w-1 h-1 rounded-full bg-brand-gold/60"></span>
                 <span>ATUAÇÃO SOB MEDIDA</span>
               </div>
