@@ -42,7 +42,17 @@ export default {
       boxShadow: {
         'milano': '0 20px 40px -15px rgba(22, 34, 53, 0.1)',
         'card': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-      }
+      },
+      animation: {
+        'fadeIn': 'fadeIn 0.4s ease-out forwards',
+        'spin-slow': 'spin 30s linear infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(8px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],

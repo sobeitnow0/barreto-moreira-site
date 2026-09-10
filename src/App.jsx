@@ -6,6 +6,7 @@ import Escritorio from './pages/Escritorio';
 import Atuacao from './pages/Atuacao';
 import Atualizacoes from './pages/Atualizacoes';
 import Contato from './pages/Contato';
+import NotFound from './pages/NotFound';
 
 // Scroll-to-top + Título dinâmico por página
 const pageTitles = {
@@ -24,7 +25,7 @@ function RouteHandler() {
     window.scrollTo({ top: 0, behavior: 'instant' });
 
     // Dynamic page title
-    document.title = pageTitles[pathname] || 'Barreto Moreira | Advocacia Estratégica';
+    document.title = pageTitles[pathname] || 'Página Não Encontrada | Barreto Moreira';
   }, [pathname]);
 
   return null;
@@ -41,6 +42,7 @@ function App() {
           <Route path="atuacao" element={<Atuacao />} />
           <Route path="atualizacoes" element={<Atualizacoes />} />
           <Route path="contato" element={<Contato />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>
