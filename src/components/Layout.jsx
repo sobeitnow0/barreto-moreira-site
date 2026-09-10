@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Menu, X, ArrowUpRight, Mail } from 'lucide-react';
 import { InstagramIcon } from './Icons';
+import LGPDBanner from './LGPDBanner';
 
 const Logo = ({ onClick }) => (
   <NavLink to="/" onClick={onClick} className="flex items-center group py-1.5 shrink-0">
@@ -177,7 +178,7 @@ export default function Layout() {
                 />
               </NavLink>
               <p className="text-white/70 text-sm leading-relaxed max-w-sm font-light">
-                Estrutura dedicada a soluções jurídicas sob medida para causas complexas, com rigor técnico e proximidade real.
+                Atuação jurídica artesanal para demandas de alta complexidade, com rigor técnico e interlocução direta com os sócios.
               </p>
               <div className="flex items-center gap-3 text-xs text-brand-gold font-mono tracking-wider font-semibold">
                 <span>OAB/SP 349457</span>
@@ -239,7 +240,7 @@ export default function Layout() {
               </div>
               <div className="mt-2 p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white/70 leading-relaxed">
                 <span className="text-brand-gold font-bold block mb-1">Atendimento Especializado:</span>
-                Consultas jurídicas estratégicas com atendimento presencial e digital por videoconferência.
+                Avaliação jurídica estratégica com atendimento digital por videoconferência.
               </div>
             </div>
           </div>
@@ -253,6 +254,9 @@ export default function Layout() {
           </div>
         </div>
       </footer>
+
+      {/* LGPD Banner */}
+      <LGPDBanner />
     </div>
   );
 }

@@ -21,10 +21,10 @@ export default function Contato() {
         </div>
         <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-5 border-b border-[#E2E8F0] pb-6 mb-8">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
-            INICIE SEU
+            SOLICITE SUA
           </h1>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#64748B]">
-            ATENDIMENTO
+            AVALIAÇÃO
           </h1>
         </div>
         <p className="text-base sm:text-lg text-[#334155] max-w-2xl leading-relaxed">
@@ -42,13 +42,13 @@ export default function Contato() {
             </div>
 
             <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-2">
-              Agendamento & Consulta Inicial
+              Avaliação Preliminar do Caso
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold uppercase mb-4 tracking-normal">
               Fale Diretamente Conosco
             </h2>
             <p className="text-white/70 text-sm sm:text-base leading-relaxed max-w-lg mb-10">
-              Envie uma síntese da sua necessidade jurídica ou solicite o agendamento de uma reunião reservada (totalmente online por videoconferência).
+              Envie uma síntese da sua demanda jurídica para análise preliminar. Todos os atendimentos são realizados por videoconferência, com discrição e atenção integral dos fundadores.
             </p>
 
             {/* Ações de E-mail */}
@@ -116,9 +116,60 @@ export default function Contato() {
             </div>
 
             <p className="mt-8 text-xs text-white/40 italic">
-              * O retorno da análise prévia ocorre de forma criteriosa no prazo de até 24h úteis.
+              * O retorno da avaliação preliminar ocorre de forma criteriosa em até 2 dias úteis.
             </p>
           </div>
+        </div>
+      </section>
+      {/* FAQ — Perguntas Frequentes */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+        <div className="flex items-center gap-3 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-6">
+          <span>Perguntas Frequentes</span>
+        </div>
+        <h2 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#162235] mb-12">
+          COMO <span className="text-[#64748B]">FUNCIONA</span>
+        </h2>
+
+        <div className="space-y-4">
+          {[
+            {
+              q: "Como funciona a avaliação preliminar do caso?",
+              a: "Ao nos contatar por e-mail, enviamos um breve questionário para compreender o cenário fático e jurídico da demanda. Após análise interna dos fundadores, retornamos em até 2 dias úteis com o diagnóstico e a proposta de atuação."
+            },
+            {
+              q: "Qual é o formato de atendimento?",
+              a: "Todos os atendimentos são realizados por videoconferência, o que permite atender clientes em todo o território nacional com a mesma qualidade e proximidade de uma reunião presencial."
+            },
+            {
+              q: "O escritório atua em quais áreas?",
+              a: "Nossas especialidades centrais são: Direito Digital & Plataformas, Propriedade Intelectual & Marcas, Direito Autoral, Direito do Consumidor (Consumidor e Fornecedor), Contratos Estratégicos e Direito Animal. Para matérias complementares, operamos em rede com bancas parceiras sob nossa coordenação."
+            },
+            {
+              q: "Vocês atendem empresas e pessoas físicas?",
+              a: "Sim. Atuamos tanto para pessoas físicas quanto para pessoas jurídicas, sempre com o mesmo padrão de profundidade analítica e atenção dedicada dos sócios fundadores."
+            },
+            {
+              q: "Como são definidos os honorários?",
+              a: "Os honorários são apresentados de forma transparente após a avaliação preliminar do caso, podendo ser fixos, por êxito ou mistos, conforme a natureza e complexidade da demanda, sempre em conformidade com a tabela da OAB/SP."
+            },
+          ].map((faq, idx) => (
+            <details
+              key={idx}
+              className="group bg-white border border-[#E2E8F0] rounded-2xl shadow-sm hover:shadow-md transition-all overflow-hidden"
+            >
+              <summary className="flex items-center justify-between gap-4 p-6 cursor-pointer list-none select-none">
+                <span className="text-sm sm:text-base font-bold text-[#162235] leading-snug">
+                  {faq.q}
+                </span>
+                <span className="w-8 h-8 rounded-full bg-[#F8FAFC] border border-[#E2E8F0] flex items-center justify-center shrink-0 text-brand-gold transition-transform group-open:rotate-45">
+                  <span className="text-lg font-bold leading-none">+</span>
+                </span>
+              </summary>
+              <div className="px-6 pb-6 pt-0 text-sm text-[#475569] leading-relaxed border-t border-[#E2E8F0] mt-0 pt-4">
+                {faq.a}
+              </div>
+            </details>
+          ))}
         </div>
       </section>
 

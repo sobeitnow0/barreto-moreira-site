@@ -19,7 +19,7 @@ export default function Atualizacoes() {
           </h1>
         </div>
         <p className="text-base sm:text-lg text-[#334155] max-w-3xl leading-relaxed">
-          Fique por dentro das nossas atualizações mais recentes. Compartilhamos insights, decisões jurisprudenciais e os bastidores do escritório no nosso Instagram.
+          Acompanhe nossas publicações mais recentes. Compartilhamos análises jurídicas, decisões relevantes dos Tribunais e conteúdos sobre as áreas de atuação no nosso Instagram.
         </p>
       </section>
 

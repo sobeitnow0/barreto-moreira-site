@@ -5,7 +5,6 @@ import Marquee from '../components/Marquee';
 
 export default function Escritorio() {
   const credentials = [
-    "Harvard Law School (CopyrightX)",
     "Pós-Graduação em Direito Digital",
     "Especialista em Propriedade Intelectual (WIPO)",
     "Pós em Direito Animal e Consumidor",
@@ -29,7 +28,7 @@ export default function Escritorio() {
           </h1>
         </div>
         <p className="text-base sm:text-lg text-[#334155] max-w-3xl leading-relaxed">
-          Nossa estrutura foi desenhada para romper com o modelo de advocacia industrial. Acreditamos no aprofundamento técnico, na relação direta entre clientes e sócios e em soluções exclusivas.
+          Nossa estrutura foi concebida para romper com o modelo de advocacia industrial. Acreditamos no aprofundamento técnico, na relação direta entre clientes e sócios e em soluções exclusivas.
         </p>
       </section>
 
@@ -47,7 +46,7 @@ export default function Escritorio() {
               A Defesa Criteriosa Não Admite Automatismos
             </h2>
             <p className="text-[#334155] text-sm sm:text-base leading-relaxed mb-4">
-              O direito contemporâneo exige leitura profunda de conjuntura, criatividade jurídica e firmeza técnica perante os Tribunais.
+              O direito contemporâneo exige leitura profunda de cenário, criatividade jurídica e firmeza técnica perante os Tribunais.
             </p>
             <p className="text-[#334155] text-sm sm:text-base leading-relaxed">
               Limitamos intencionalmente o volume de casos para garantir a presença constante dos sócios em todas as fases da demanda.
@@ -138,7 +137,7 @@ export default function Escritorio() {
                   Formação sólida em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>. Pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Animal / Defesa do Consumidor</strong> e <strong>Cinema e Vídeo (Belas Artes)</strong>.
                 </p>
                 <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8">
-                  Especializações por <strong>Harvard Law School (CopyrightX)</strong>, Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>) e OAB/SP. Ex-Diretor Jurídico no grupo LGF Comércio Eletrônico (Grão de Gente). Faixa Marrom (1º Grau) de Jiu-Jitsu.
+                  Especializações pela Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>) e OAB/SP. Ex-Diretor Jurídico no grupo LGF Comércio Eletrônico (Grão de Gente). Faixa Marrom (1º Grau) de Jiu-Jitsu.
                 </p>
 
                 <div className="pt-6 border-t border-[#E2E8F0]">

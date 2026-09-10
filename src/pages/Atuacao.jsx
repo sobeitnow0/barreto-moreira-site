@@ -9,37 +9,43 @@ export default function Atuacao() {
       num: "01",
       title: "Direito Digital & Plataformas",
       desc: "Responsabilidade civil nas plataformas digitais e redes sociais, remoção de conteúdos lesivos e ilícitos, e medidas de urgência para a reativação de contas indevidamente suspensas ou banidas.",
-      img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+      img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+      tag: "Proteção Digital"
     },
     {
       num: "02",
       title: "Propriedade Intelectual & Marcas",
       desc: "Proteção estratégica e contencioso de marcas e patentes perante o INPI, segredos industriais, repressão à concorrência desleal e combate à contrafação.",
-      img: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80"
+      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+      tag: "Registro & Defesa"
     },
     {
       num: "03",
       title: "Direito Autoral & Criações",
-      desc: "Amparado pela especialização CopyrightX (Harvard Law School): tutela dos direitos morais e patrimoniais de criadores, obras audiovisuais, artísticas e softwares, licenciamento e indenizações por uso indevido.",
-      img: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80"
+      desc: "Tutela dos direitos morais e patrimoniais de criadores, obras audiovisuais, artísticas e softwares, licenciamento e indenizações por uso indevido.",
+      img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80",
+      tag: "Proteção de Obras"
     },
     {
       num: "04",
       title: "Direito do Consumidor (Consumidor & Fornecedor)",
       desc: "Atuação bivalente: defesa técnica intransigente dos direitos do consumidor (lato sensu), e assessoria preventiva e contenciosa corporativa para o fornecedor (lato sensu) na adequação ao CDC e mitigação de passivos.",
-      img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+      img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+      tag: "Consumidor & Fornecedor"
     },
     {
       num: "05",
       title: "Contratos Estratégicos & Pareceres",
       desc: "Modelagem contratual sob medida para blindagem de patrimônio, acordos comerciais, estruturação de parcerias, instrumentos negociais complexos e elaboração de pareceres jurídicos.",
-      img: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
+      img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+      tag: "Engenharia Contratual"
     },
     {
       num: "06",
       title: "Direito Animal & Tutela Especial",
       desc: "Atuação pioneira e engajada na defesa e tutela dos direitos e bem-estar animal em instâncias judiciais e administrativas.",
-      img: "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=800&q=80"
+      img: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80",
+      tag: "Tutela Especial"
     }
   ];
 
@@ -95,7 +101,7 @@ export default function Atuacao() {
               </div>
 
               <div className="px-6 pb-6 pt-2 flex items-center justify-between border-t border-[#E2E8F0]/60 text-xs font-semibold text-[#162235]">
-                <span>Especialidade Barreto Moreira</span>
+                <span>{item.tag}</span>
                 <CheckCircle2 size={15} className="text-brand-gold" />
               </div>
             </div>
