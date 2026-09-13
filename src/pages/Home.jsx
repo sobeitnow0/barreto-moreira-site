@@ -241,13 +241,13 @@ export default function Home() {
       </ScrollReveal>
 
       {/* 3. SECTION SPLIT TITLE */}
-     <ScrollReveal>
+    <ScrollReveal>
       <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-6">
+        <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-4">
           <span>02 // Pilares de atuação</span>
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-8 gap-6">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
             Diretrizes <span className="text-[#64748B]"></span>
           </h2>
@@ -256,21 +256,23 @@ export default function Home() {
           </span>
         </div>
 
-        {/* Texto descritivo e botão alinhados logo abaixo com espaçamento reduzido */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-10 items-center">
-          <div className="lg:col-span-8">
-            <p className="text-base sm:text-xl text-[#334155] leading-relaxed font-light">
-              O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
-            </p>
-          </div>
-          <div className="lg:col-span-4 flex lg:justify-end">
-            <Link
-              to="/escritorio"
-              className="px-8 py-4 rounded-xl bg-[#162235] text-white font-semibold text-xs hover:bg-brand-hover transition-all inline-flex items-center gap-3 shadow-lg"
-            >
-              <span>Conhecer estrutura</span>
-              <ArrowRight size={16} className="text-brand-gold" />
-            </Link>
+        {/* A linha divisória agora fica aqui, separando o título do texto de forma equilibrada */}
+        <div className="border-t border-[#E2E8F0] pt-8 mb-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div className="lg:col-span-8">
+              <p className="text-base sm:text-xl text-[#334155] leading-relaxed font-light">
+                O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
+              </p>
+            </div>
+            <div className="lg:col-span-4 flex lg:justify-end">
+              <Link
+                to="/escritorio"
+                className="px-8 py-4 rounded-xl bg-[#162235] text-white font-semibold text-xs hover:bg-brand-hover transition-all inline-flex items-center gap-3 shadow-lg"
+              >
+                <span>Conhecer estrutura</span>
+                <ArrowRight size={16} className="text-brand-gold" />
+              </Link>
+            </div>
           </div>
         </div>
 
