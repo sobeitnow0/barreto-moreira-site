@@ -78,14 +78,14 @@ export default function Home() {
               </span>
             </div>
 
-            <div className="flex flex-col tracking-tight font-extrabold uppercase text-[#162235] leading-[0.92] text-5xl sm:text-6xl md:text-[5rem] mb-10">
+            <div className="flex flex-col tracking-tight font-extrabold uppercase text-[#162235] leading-[0.92] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] mb-10">
               <span>ADVOCACIA</span>
               <span>ESTRATÉGICA</span>
-              <span className="text-brand-gold">SOB MEDIDA &</span>
+              <span className="text-brand-gold">SOB MEDIDA &amp;</span>
               <span>ALTO PADRÃO</span>
             </div>
 
-            <p className="text-lg sm:text-xl text-[#475569] leading-relaxed max-w-xl mb-10 font-light">
+            <p className="text-base sm:text-xl text-[#475569] leading-relaxed max-w-xl mb-10 font-light">
               Atuação artesanal e rigor técnico para pessoas e empresas que exigem precisão cirúrgica na defesa de seus direitos. Menos volume, mais profundidade.
             </p>
 
@@ -109,27 +109,18 @@ export default function Home() {
             <div className="flex items-center gap-4 text-xs font-semibold text-[#64748B] uppercase tracking-[0.2em]">
               <span>OAB/SP 349457</span>
               <span className="text-brand-gold">•</span>
-              <span>Proteção Patrimonial & Empresarial</span>
+              <span>Proteção Patrimonial &amp; Empresarial</span>
             </div>
           </div>
 
           {/* Lado Direito: Imagem */}
           <div className="lg:col-span-5 relative mt-8 lg:mt-0">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E2E8F0] max-h-[600px] w-full">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E2E8F0] max-h-[600px] w-full bg-white">
               <img 
                 src={heroImage}
                 alt="Petição e Análise Jurídica"
                 className="w-full h-full object-contain transition-transform duration-1000 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0E1726]/50 via-transparent to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-white/20 backdrop-blur-2xl border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.1)]">
-                <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-white block mb-1.5">
-                  Gestão Dedicada
-                </span>
-                <p className="text-sm font-medium text-white leading-relaxed">
-                  Interlocução direta e exclusiva com os sócios fundadores nas demandas mais sensíveis do seu negócio.
-                </p>
-              </div>
             </div>
           </div>
 
@@ -208,11 +199,11 @@ export default function Home() {
 
         {/* Título unificado e harmônico */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-14 gap-6">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-[#162235] leading-none">
-            DIRETRIZES <span className="text-[#64748B] block sm:inline">DO ESCRITÓRIO</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-[#162235] leading-tight">
+            DIRETRIZES <span className="text-[#64748B]">DO ESCRITÓRIO</span>
           </h2>
           <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#64748B] font-semibold pb-2">
-            [ Rigor Técnico & Governança ]
+            [ Rigor Técnico &amp; Governança ]
           </span>
         </div>
 
@@ -299,7 +290,7 @@ export default function Home() {
             <span className="text-xs uppercase font-bold tracking-[0.4em] text-brand-gold mb-4">
               Atendimento Criterioso & Reservado
             </span>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-white mb-8 leading-[1.1]">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white mb-8 leading-tight">
               Pronto para tratar sua causa com a profundidade que ela exige?
             </h2>
             <p className="text-white/75 text-base sm:text-lg leading-loose max-w-3xl mb-10 font-light">

@@ -11,7 +11,7 @@ export default function Atualizacoes() {
           <span>04 // ATUALIZAÇÕES E NOVIDADES</span>
         </div>
         <div className="border-b border-[#E2E8F0] pb-8 mb-8">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
             ACOMPANHE AS <span className="text-[#64748B]">NOVIDADES</span>
           </h1>
         </div>
