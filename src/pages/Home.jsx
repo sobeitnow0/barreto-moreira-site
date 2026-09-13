@@ -156,8 +156,7 @@ export default function Home() {
             <div className="flex items-center gap-4 text-xs font-semibold text-[#64748B]">
               <span>OAB/SP 349457</span>
               <span className="text-brand-gold">•</span>
-              <span>Proteção patrimonial &amp; empresarial</span>
-            </div>
+              </div>
           </div>
 
           {/* Lado Direito: Imagem */}
@@ -243,7 +242,7 @@ export default function Home() {
           <span>02 // Pilares de atuação</span>
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-14 gap-6">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-8 gap-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
             Diretrizes <span className="text-[#64748B]">do escritório</span>
           </h2>
