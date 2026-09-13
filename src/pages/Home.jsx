@@ -40,7 +40,7 @@ export default function Home() {
     {
       num: "04",
       name: "Direito do Consumidor",
-      sub: "Defesa de consumidores e de fornecedores em demandas complexas",
+      sub: "Defesa de consumidores e de fornecedores em litígios de consumo complexos",
       img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -54,13 +54,18 @@ export default function Home() {
       name: "Direito Animal",
       sub: "Ações de guarda, erro médico-veterinário e responsabilidade civil por maus-tratos",
       img: "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      num: "07",
+      name: "Ação Contra Plano de Saúde",
+      sub: "Negativa de cobertura, reajuste abusivo e descredenciamento de rede",
+      img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
     }
   ];
 
-  
- // ⚠️ Troque para `true` quando os depoimentos reais estiverem prontos.
+  // ⚠️ Troque para `true` quando os depoimentos reais estiverem prontos.
   const SHOW_TESTIMONIALS = false;
-  
+
   // ⚠️ PLACEHOLDER — substitua por depoimentos reais de clientes antes de publicar.
   // Peça autorização por escrito do cliente antes de usar nome/foto real.
   const testimonials = [
@@ -93,8 +98,8 @@ export default function Home() {
     },
     {
       num: "02",
-      title: "Pesquisa Jurisprudencial Aprofundada",
-      desc: "Teses sólidas exigem tempo de estudo. Investimos na pesquisa documental e jurisprudencial necessária para sustentar cada argumento com base consistente perante os tribunais.",
+      title: "Pesquisa Doutrinária Aprofundada",
+      desc: "Teses sólidas exigem tempo de estudo. Investimos na pesquisa documental e doutrinária necessária para sustentar cada argumento com base consistente perante os tribunais.",
       tag: "Rigor Técnico"
     },
     {
@@ -124,7 +129,7 @@ export default function Home() {
 
             <h1 className="flex flex-col tracking-tight font-bold text-[#162235] leading-[1.1] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4.2rem] mb-8">
               <span>Rigor técnico e defesa</span>
-              <span className="text-brand-gold">estratégica.</span>
+              <span className="text-brand-gold">estratégica patrimonial.</span>
             </h1>
 
             <p className="text-base sm:text-xl text-[#475569] leading-relaxed max-w-xl mb-10 font-light">
@@ -190,7 +195,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {categories.map((cat, idx) => (
               <Link
                 key={idx}
@@ -291,6 +296,7 @@ export default function Home() {
       </ScrollReveal>
 
       {/* 3.5 DEPOIMENTOS — conteúdo placeholder, substituir antes de publicar */}
+      {SHOW_TESTIMONIALS && (
       <ScrollReveal>
       <section className="py-20 sm:py-24 bg-white border-y border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -338,6 +344,7 @@ export default function Home() {
         </div>
       </section>
       </ScrollReveal>
+      )}
 
       {/* 4. BLACK SECTION CTA */}
       <ScrollReveal>
