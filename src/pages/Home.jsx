@@ -227,13 +227,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <Link
-              to="/contato"
-              className="px-6 py-3 rounded-xl bg-[#162235] text-white font-semibold text-xs hover:bg-brand-hover transition-all shrink-0 flex items-center gap-2"
-            >
-              <span>Consulte seu caso</span>
-              <ArrowRight size={14} className="text-brand-gold" />
-            </Link>
+            
           </div>
 
         </div>
@@ -251,10 +245,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
             Diretrizes <span className="text-[#64748B]"></span>
           </h2>
-          <span className="text-xs font-mono text-[#64748B] font-semibold pb-2">
-            [ Rigor técnico &amp; governança ]
-          </span>
-        </div>
+                  </div>
 
         {/* A linha divisória agora fica aqui, separando o título do texto de forma equilibrada */}
         <div className="border-t border-[#E2E8F0] pt-8 mb-10">
@@ -265,12 +256,7 @@ export default function Home() {
               </p>
             </div>
             <div className="lg:col-span-4 flex lg:justify-end">
-              <Link
-                to="/escritorio"
-                className="px-8 py-4 rounded-xl bg-[#162235] text-white font-semibold text-xs hover:bg-brand-hover transition-all inline-flex items-center gap-3 shadow-lg"
-              >
-                <span>Conhecer estrutura</span>
-                <ArrowRight size={16} className="text-brand-gold" />
+              ght size={16} className="text-brand-gold" />
               </Link>
             </div>
           </div>
