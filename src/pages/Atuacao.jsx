@@ -10,7 +10,7 @@ export default function Atuacao() {
     if (meta) {
       meta.setAttribute(
         'content',
-        'Direito Digital, Propriedade Intelectual, Direito Autoral, Direito do Consumidor, Contratos Estratégicos e Direito Animal. Conheça as áreas de atuação do Barreto Moreira. OAB/SP 349457.'
+        'Direito Digital, Propriedade Intelectual, Direito Autoral, Direito do Consumidor e ações contra planos de saúde, Contratos Estratégicos e Direito Animal. Conheça as áreas de atuação do Barreto Moreira. OAB/SP 349457.'
       );
     }
   }, []);
@@ -45,7 +45,7 @@ export default function Atuacao() {
       icon: Scale,
       title: "Direito do Consumidor de Alta Complexidade",
       subtitle: "Estratégias preventivas para fornecedores e ações indenizatórias de impacto",
-      desc: "Defesa de fornecedores e prestadores de serviços em litígios complexos, estruturação de termos de uso e conformidade com o CDC. Atuação precisa também em demandas individuais de grande relevância fática e patrimonial.",
+      desc: "Atuamos tanto na defesa de consumidores — incluindo ações contra planos de saúde por negativa de cobertura, reajuste abusivo ou descredenciamento de rede — quanto na representação de empresas e fornecedores em litígios de consumo e na estruturação de contratos e termos de uso em conformidade com o CDC. Conhecer a estratégia dos dois lados da relação de consumo é o que torna essa atuação mais precisa.",
       tags: ["Contratos de consumo", "Defesa para fornecedores", "Ações indenizatórias"]
     },
     {
