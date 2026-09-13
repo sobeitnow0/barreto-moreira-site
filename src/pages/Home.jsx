@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Quote, Star } from 'lucide-react';
+import { ArrowRight, Quote, Star, Users } from 'lucide-react';
 import Marquee from '../components/Marquee';
 import InstagramCarousel from '../components/InstagramCarousel';
 import { ScrollReveal } from '../components/ScrollReveal';
@@ -66,8 +66,6 @@ export default function Home() {
   // ⚠️ Troque para `true` quando os depoimentos reais estiverem prontos.
   const SHOW_TESTIMONIALS = false;
 
-  // ⚠️ PLACEHOLDER — substitua por depoimentos reais de clientes antes de publicar.
-  // Peça autorização por escrito do cliente antes de usar nome/foto real.
   const testimonials = [
     {
       quote: "[Exemplo — substitua pelo depoimento real do cliente sobre o resultado obtido e a experiência com o escritório.]",
@@ -138,9 +136,7 @@ export default function Home() {
                 <span>Solicitar avaliação do caso</span>
                 <ArrowRight size={18} className="text-brand-gold transition-transform group-hover:translate-x-1" />
               </Link>
-
-             </div>
-           
+            </div>
           </div>
 
           {/* Lado Direito: Imagem */}
@@ -215,6 +211,31 @@ export default function Home() {
               </Link>
             ))}
           </div>
+
+          {/* Caixa Informativa de Parcerias / Outras Demandas */}
+          <div className="mt-12 p-8 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center shrink-0 mt-1">
+                <Users size={24} />
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-[#162235] mb-1">
+                  Demandas Adicionais e Atuação em Parceria
+                </h4>
+                <p className="text-sm text-[#475569] font-light max-w-3xl leading-relaxed">
+                  Além das especialidades centrais, aceitamos e conduzimos demandas em outras áreas do direito (como criminal, trabalhista e previdenciário) por meio de parcerias estratégicas qualificadas, assegurando o mesmo padrão rigoroso de acompanhamento e supervisão técnica do escritório.
+                </p>
+              </div>
+            </div>
+            <Link
+              to="/contato"
+              className="px-6 py-3 rounded-xl bg-[#162235] text-white font-semibold text-xs hover:bg-brand-hover transition-all shrink-0 flex items-center gap-2"
+            >
+              <span>Consulte seu caso</span>
+              <ArrowRight size={14} className="text-brand-gold" />
+            </Link>
+          </div>
+
         </div>
       </section>
       </ScrollReveal>
@@ -279,7 +300,7 @@ export default function Home() {
       </section>
       </ScrollReveal>
 
-      {/* 3.5 DEPOIMENTOS — conteúdo placeholder, substituir antes de publicar */}
+      {/* 3.5 DEPOIMENTOS */}
       {SHOW_TESTIMONIALS && (
       <ScrollReveal>
       <section className="py-10 sm:py-14 bg-white border-y border-[#E2E8F0]">
