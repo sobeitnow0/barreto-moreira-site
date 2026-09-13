@@ -151,7 +151,7 @@ export default function Contato() {
             },
             {
               q: "O escritório atua em quais áreas?",
-              a: "Nossa atuação concentrada abrange: Direito Digital e Remoção de Conteúdos, Propriedade Intelectual e Proteção de Marcas no INPI, Direitos Autorais, Contratos Sob Medida, Direito do Consumidor — incluindo ações contra planos de saúde, tanto para consumidores quanto para empresas e fornecedores — e Direito Animal. Em demandas multidisciplinares, coordenamos bancas parceiras especializadas sob nossa gestão técnica."
+              a: "Nossa atuação concentrada abrange: Direito Digital e Remoção de Conteúdos, Propriedade Intelectual e Proteção de Marcas no INPI, Direitos Autorais, Contratos Sob Medida, Direito do Consumidor, Ação Contra Plano de Saúde e Direito Animal. Em Direito do Consumidor e Ação Contra Plano de Saúde, atuamos tanto para consumidores/beneficiários quanto para empresas/operadoras. Em demandas multidisciplinares, coordenamos bancas parceiras especializadas sob nossa gestão técnica."
             },
             {
               q: "Vocês atendem empresas e pessoas físicas?",
