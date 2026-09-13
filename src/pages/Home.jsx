@@ -6,8 +6,8 @@ import InstagramCarousel from '../components/InstagramCarousel';
 import { ScrollReveal } from '../components/ScrollReveal';
 import heroImage from '../assets/hero-image.webp';
 
-function Home() {
-  // Dados estruturados configurados com suas informações reais
+export default function Home() {
+  // Dados estruturados configurados com suas informações reais (Para o Google)
   const schemaMarkup = {
     "@context": "https://schema.org",
     "@type": "LegalService",
@@ -26,23 +26,6 @@ function Home() {
     ]
   };
 
-  return (
-    <div>
-      {/* Script invisível injetando o Schema para o Google */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
-      />
-      
-      {/* Todo o visual do seu site continua normal abaixo */}
-      
-      <h1>Bem-vindo ao Barreto Moreira</h1>
-      {/* ... restante do código original da sua Home ... */}
-    </div>
-  );
-}
-
-export default function Home() {
   useEffect(() => {
     document.title = 'Barreto Moreira | Advocacia Estratégica';
     const meta = document.querySelector('meta[name="description"]');
@@ -140,6 +123,12 @@ export default function Home() {
 
   return (
     <div className="flex-1 flex flex-col w-full overflow-hidden bg-[#F8FAFC]">
+      
+      {/* Script invisível injetando o Schema para o Google */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+      />
       
       {/* 1. HERO SECTION */}
       <ScrollReveal>
