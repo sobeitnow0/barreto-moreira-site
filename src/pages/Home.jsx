@@ -145,13 +145,7 @@ export default function Home() {
                 <ArrowRight size={18} className="text-brand-gold transition-transform group-hover:translate-x-1" />
               </Link>
 
-              <Link
-                to="/escritorio"
-                className="px-8 py-4 rounded-xl bg-white text-[#162235] border border-[#E2E8F0] font-semibold text-sm hover:bg-black/[0.02] transition-all flex items-center justify-center"
-              >
-                O escritório
-              </Link>
-            </div>
+             </div>
            
           </div>
 
