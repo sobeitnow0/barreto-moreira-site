@@ -254,7 +254,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14 items-center">
           <div className="lg:col-span-8">
             <p className="text-lg sm:text-2xl text-[#334155] leading-relaxed font-light">
-              O <strong>Barreto Moreira</strong> opera como uma banca boutique por escolha, não por tamanho. Aceitamos um número controlado de causas para garantir atenção integral, pesquisa aprofundada e contato direto com os sócios fundadores em cada etapa.
+              O <strong>Barreto Moreira</strong> opera como um escritório de atuação seletiva por escolha, não por tamanho. Aceitamos um número controlado de causas para garantir atenção integral, pesquisa aprofundada e contato direto com os sócios fundadores em cada etapa.
             </p>
           </div>
           <div className="lg:col-span-4 flex lg:justify-end">
