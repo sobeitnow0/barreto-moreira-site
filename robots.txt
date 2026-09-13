@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sobeitnow0.github.io/barreto-moreira-site/sitemap.xml
