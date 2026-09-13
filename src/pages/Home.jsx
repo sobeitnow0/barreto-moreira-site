@@ -241,16 +241,7 @@ export default function Home() {
       <span>02 // Pilares de atuação</span>
     </div>
 
-    {/* Título + linha divisória (UMA só) */}
-    <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-5 gap-6">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
-        Diretrizes
-      </h2>
-      <span className="text-xs font-mono text-[#64748B] font-semibold pb-2">
-        [ Rigor técnico &amp; governança ]
-      </span>
-    </div>
-
+ 
     {/* Texto + botão logo abaixo, sem outra border-t */}
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 mt-6 mb-10 items-center">
       <div className="lg:col-span-8">
@@ -258,15 +249,7 @@ export default function Home() {
           O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
         </p>
       </div>
-      <div className="lg:col-span-4 flex lg:justify-end">
-        <Link
-          to="/escritorio"
-          className="px-6 py-3.5 rounded-xl bg-[#162235] text-white font-semibold text-xs hover:bg-brand-hover transition-all inline-flex items-center gap-3 shadow-lg whitespace-nowrap"
-        >
-          <span>Conhecer estrutura</span>
-          <ArrowRight size={16} className="text-brand-gold" />
-        </Link>
-      </div>
+    
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
