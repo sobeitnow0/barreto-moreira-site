@@ -57,6 +57,10 @@ export default function Home() {
     }
   ];
 
+  
+ // ⚠️ Troque para `true` quando os depoimentos reais estiverem prontos.
+  const SHOW_TESTIMONIALS = false;
+  
   // ⚠️ PLACEHOLDER — substitua por depoimentos reais de clientes antes de publicar.
   // Peça autorização por escrito do cliente antes de usar nome/foto real.
   const testimonials = [
