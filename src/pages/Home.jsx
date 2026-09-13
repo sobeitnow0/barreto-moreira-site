@@ -40,7 +40,7 @@ export default function Home() {
     {
       num: "04",
       name: "Direito do Consumidor",
-      sub: "Defesa preventiva para fornecedores e ações indenizatórias de alta complexidade",
+      sub: "Defesa de consumidores e de fornecedores em demandas complexas",
       img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -93,8 +93,8 @@ export default function Home() {
     },
     {
       num: "02",
-      title: "Pesquisa Doutrinária Aprofundada",
-      desc: "Teses sólidas exigem tempo de estudo. Investimos na pesquisa documental e doutrinária necessária para sustentar cada argumento com base consistente perante os tribunais.",
+      title: "Pesquisa Jurisprudencial Aprofundada",
+      desc: "Teses sólidas exigem tempo de estudo. Investimos na pesquisa documental e jurisprudencial necessária para sustentar cada argumento com base consistente perante os tribunais.",
       tag: "Rigor Técnico"
     },
     {
