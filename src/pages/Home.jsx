@@ -102,12 +102,6 @@ export default function Home() {
       desc: "Teses sólidas exigem tempo de estudo. Investimos na pesquisa documental, jurisprudencial e doutrinária necessária para sustentar cada argumento com base consistente perante os tribunais.",
       tag: "Rigor Técnico"
     },
-    {
-      num: "03",
-      title: "Atendimento Direto pelos Sócios",
-      desc: "Sem intermediários e sem filas de atendimento. O cliente fala diretamente com o advogado responsável pela tese e pela condução do processo, do início ao fim.",
-      tag: "Governança & Transparência"
-    }
   ];
 
   return (
@@ -244,7 +238,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14 items-center">
           <div className="lg:col-span-8">
             <p className="text-lg sm:text-2xl text-[#334155] leading-relaxed font-light">
-              O <strong>Barreto Moreira</strong> opera como um escritório de atuação seletiva por escolha, não por tamanho. Aceitamos um número controlado de causas para garantir atenção integral, pesquisa aprofundada e contato direto com os sócios fundadores em cada etapa.
+              O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral, pesquisa aprofundada.
             </p>
           </div>
           <div className="lg:col-span-4 flex lg:justify-end">
