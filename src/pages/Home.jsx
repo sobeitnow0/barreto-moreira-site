@@ -236,58 +236,65 @@ export default function Home() {
 
       {/* 3. SECTION SPLIT TITLE */}
     <ScrollReveal>
-      <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-4">
-          <span>02 // Pilares de atuação</span>
-        </div>
+  <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-4">
+      <span>02 // Pilares de atuação</span>
+    </div>
 
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-5 mb-4 gap-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
-            Diretrizes <span className="text-[#64748B]"></span>
-          </h2>
-                  </div>
+    {/* Título + linha divisória (UMA só) */}
+    <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-5 gap-6">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
+        Diretrizes
+      </h2>
+      <span className="text-xs font-mono text-[#64748B] font-semibold pb-2">
+        [ Rigor técnico &amp; governança ]
+      </span>
+    </div>
 
-        {/* A linha divisória agora fica aqui, separando o título do texto de forma equilibrada */}
-        <div className="border-t border-[#E2E8F0] pt-8 mb-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mb-8 items-center">
-            <div className="lg:col-span-8">
-              <p className="text-base sm:text-xl text-[#334155] leading-relaxed font-light">
-                O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
-              </p>
-            </div>
-            <div className="lg:col-span-4 flex lg:justify-end">
-              ght size={16} className="text-brand-gold" />
-              </Link>
-            </div>
+    {/* Texto + botão logo abaixo, sem outra border-t */}
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 mt-6 mb-10 items-center">
+      <div className="lg:col-span-8">
+        <p className="text-base sm:text-lg text-[#334155] leading-relaxed font-light max-w-3xl">
+          O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
+        </p>
+      </div>
+      <div className="lg:col-span-4 flex lg:justify-end">
+        <Link
+          to="/escritorio"
+          className="px-6 py-3.5 rounded-xl bg-[#162235] text-white font-semibold text-xs hover:bg-brand-hover transition-all inline-flex items-center gap-3 shadow-lg whitespace-nowrap"
+        >
+          <span>Conhecer estrutura</span>
+          <ArrowRight size={16} className="text-brand-gold" />
+        </Link>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
+      {features.map((feat, idx) => (
+        <div
+          key={idx}
+          className="p-10 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between group"
+        >
+          <div>
+            <span className="text-3xl font-black text-brand-gold block mb-6 transition-transform group-hover:-translate-y-1">
+              {feat.num}.
+            </span>
+            <h3 className="text-xl font-bold text-[#162235] mb-4">
+              {feat.title}
+            </h3>
+            <p className="text-base text-[#475569] leading-relaxed font-light">
+              {feat.desc}
+            </p>
+          </div>
+          <div className="mt-12 pt-6 border-t border-[#E2E8F0] flex items-center justify-between text-xs font-bold text-[#162235]">
+            <span>{feat.tag}</span>
+            <span className="w-2 h-2 rounded-full bg-brand-gold"></span>
           </div>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
-          {features.map((feat, idx) => (
-            <div
-              key={idx}
-              className="p-10 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between group"
-            >
-              <div>
-                <span className="text-3xl font-black text-brand-gold block mb-6 transition-transform group-hover:-translate-y-1">
-                  {feat.num}.
-                </span>
-                <h3 className="text-xl font-bold text-[#162235] mb-4">
-                  {feat.title}
-                </h3>
-                <p className="text-base text-[#475569] leading-relaxed font-light">
-                  {feat.desc}
-                </p>
-              </div>
-              <div className="mt-12 pt-6 border-t border-[#E2E8F0] flex items-center justify-between text-xs font-bold text-[#162235]">
-                <span>{feat.tag}</span>
-                <span className="w-2 h-2 rounded-full bg-brand-gold"></span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-      </ScrollReveal>
+      ))}
+    </div>
+  </section>
+</ScrollReveal>
 
       {/* 3.5 DEPOIMENTOS */}
       {SHOW_TESTIMONIALS && (
