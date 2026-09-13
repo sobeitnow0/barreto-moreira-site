@@ -241,7 +241,7 @@ export default function Home() {
       </ScrollReveal>
 
       {/* 3. SECTION SPLIT TITLE */}
-      <ScrollReveal>
+     <ScrollReveal>
       <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-6">
           <span>02 // Pilares de atuação</span>
@@ -256,10 +256,11 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14 items-center">
+        {/* Texto descritivo e botão alinhados logo abaixo com espaçamento reduzido */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-10 items-center">
           <div className="lg:col-span-8">
-            <p className="text-lg sm:text-2xl text-[#334155] leading-relaxed font-light">
-              O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral, pesquisa aprofundada.
+            <p className="text-base sm:text-xl text-[#334155] leading-relaxed font-light">
+              O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
             </p>
           </div>
           <div className="lg:col-span-4 flex lg:justify-end">
