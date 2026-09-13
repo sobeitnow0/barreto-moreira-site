@@ -115,7 +115,7 @@ export default function Home() {
       
       {/* 1. HERO SECTION */}
       <ScrollReveal>
-      <section className="pt-14 sm:pt-20 pb-14 sm:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="pt-10 sm:pt-14 pb-10 sm:pb-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Lado Esquerdo */}
@@ -177,18 +177,19 @@ export default function Home() {
 
       {/* 2. CATEGORY CARDS */}
       <ScrollReveal>
-      <section className="py-14 sm:py-20 bg-white border-y border-[#E2E8F0]">
+      <section className="py-10 sm:py-14 bg-white border-y border-[#E2E8F0]">
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-12">
-            <div className="flex items-center gap-4">
-              <span className="text-xs font-bold text-brand-gold">
-                01 // Especialidades
-              </span>
-              <span className="w-12 h-[1px] bg-[#E2E8F0]"></span>
-            </div>
+          <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-6">
+            <span>01 // Especialidades</span>
+          </div>
+
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-10 gap-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
+              Áreas de <span className="text-[#64748B]">especialidade</span>
+            </h2>
             <Link
               to="/atuacao"
-              className="text-xs font-bold text-[#162235] hover:text-brand-gold flex items-center gap-2 transition-colors"
+              className="text-xs font-bold text-[#162235] hover:text-brand-gold flex items-center gap-2 transition-colors shrink-0"
             >
               <span>Ver portfólio de atuação</span>
               <ArrowRight size={14} />
@@ -237,7 +238,7 @@ export default function Home() {
 
       {/* 3. SECTION SPLIT TITLE */}
       <ScrollReveal>
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-6">
           <span>02 // Pilares de atuação</span>
         </div>
@@ -298,7 +299,7 @@ export default function Home() {
       {/* 3.5 DEPOIMENTOS — conteúdo placeholder, substituir antes de publicar */}
       {SHOW_TESTIMONIALS && (
       <ScrollReveal>
-      <section className="py-14 sm:py-20 bg-white border-y border-[#E2E8F0]">
+      <section className="py-10 sm:py-14 bg-white border-y border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-12">
             <span className="text-xs font-bold text-brand-gold">
@@ -348,7 +349,7 @@ export default function Home() {
 
       {/* 4. BLACK SECTION CTA */}
       <ScrollReveal>
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden bg-[#0E1726]">
+      <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden bg-[#0E1726]">
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center opacity-[0.12]"
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=1920&q=80')` }}
