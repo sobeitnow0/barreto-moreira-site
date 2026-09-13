@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { InstagramIcon } from '../components/Icons';
 import Marquee from '../components/Marquee';
 
 export default function Escritorio() {
+  useEffect(() => {
+    document.title = 'O Escritório | Barreto Moreira Advocacia';
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) {
+      meta.setAttribute(
+        'content',
+        'Conheça o Barreto Moreira: banca boutique fundada por Amilcar Barreto de Barros Moreira e Alan Miranda, com atuação direta dos sócios em cada causa. OAB/SP 349457.'
+      );
+    }
+  }, []);
+
   const credentials = [
     "Pós-Graduação em Direito Digital",
     "Especialista em Propriedade Intelectual (WIPO)",
-    "Pós em Direito Animal e Consumidor",
+    "Pós-Graduação em Direito Animal",
+    "Pós-Graduaçao em Direito do Consumidor",
+    "Litígio Internacional & Direito Energético (Univ. Heidelberg / ESDC)",
+    "Direitos Autorais, Patentes & Bases Legais (FGV)",
     "Ex-Diretor Jurídico de E-commerce (Grão de Gente)",
+    "Desenvolvedor do Buscador DJEn (Plataforma & Extensão)",
     "Faixa Marrom de Jiu-Jitsu (1º Grau)"
   ];
 
@@ -15,16 +30,16 @@ export default function Escritorio() {
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
       <section className="pt-16 sm:pt-24 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-4">
-          <span>02 // INSTITUCIONAL & FUNDADORES</span>
+        <div className="flex items-center gap-2 text-xs font-bold text-brand-gold mb-4">
+          <span>02 // Institucional &amp; fundadores</span>
         </div>
         <div className="border-b border-[#E2E8F0] pb-8 mb-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
-            O ESCRITÓRIO <span className="text-[#64748B]">ESTRATÉGICO</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#162235]">
+            O escritório <span className="text-[#64748B]">estratégico</span>
           </h1>
         </div>
-        <p className="text-base sm:text-lg text-[#334155] max-w-3xl leading-relaxed">
-          Nossa estrutura foi concebida para romper com o modelo de advocacia industrial. Acreditamos no aprofundamento técnico, na relação direta entre clientes e sócios e em soluções exclusivas.
+        <p className="text-base sm:text-lg text-[#334155] max-w-3xl leading-relaxed font-light">
+          Somos uma banca estruturada para demandas complexas, com um número controlado de casos ativos. Isso nos permite atuação consultiva preventiva e condução direta pelos sócios em cada etapa da causa.
         </p>
       </section>
 
@@ -35,50 +50,50 @@ export default function Escritorio() {
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-14">
           <div className="lg:col-span-5">
-            <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold block mb-3">
+            <span className="text-xs font-bold text-brand-gold block mb-3">
               Posicionamento
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-normal text-[#162235] mb-5 leading-tight">
-              A Defesa Criteriosa Não Admite Automatismos
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#162235] mb-5 leading-tight">
+              A arquitetura jurídica de alto impacto exige método e profundidade
             </h2>
-            <p className="text-[#334155] text-sm sm:text-base leading-relaxed mb-4">
-              O direito contemporâneo exige leitura profunda de cenário, criatividade jurídica e firmeza técnica perante os Tribunais.
+            <p className="text-[#334155] text-sm sm:text-base leading-relaxed mb-4 font-light">
+              Desafios regulatórios, digitais e patrimoniais exigem investigação fática rigorosa, acompanhamento jurisprudencial contínuo e construção de teses sólidas perante as instâncias julgadoras.
             </p>
-            <p className="text-[#334155] text-sm sm:text-base leading-relaxed">
-              Limitamos intencionalmente o volume de casos para garantir a presença constante dos sócios em todas as fases da demanda.
+            <p className="text-[#334155] text-sm sm:text-base leading-relaxed font-light">
+              Mantemos controle intencional do fluxo de causas aceitas para assegurar dedicação exclusiva e imersão total dos fundadores nos objetivos estratégicos de cada cliente.
             </p>
           </div>
 
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="p-7 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm">
               <span className="text-xl font-black text-brand-gold mb-2 block">01.</span>
-              <h3 className="text-base font-bold uppercase text-[#162235] mb-2">Sem Terceirizações Ocultas</h3>
-              <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-                A estratégia da sua causa é construída e executada diretamente por quem você contratou.
+              <h3 className="text-base font-bold text-[#162235] mb-2">Condução direta pelos sócios</h3>
+              <p className="text-xs sm:text-sm text-[#334155] leading-relaxed font-light">
+                Do diagnóstico inicial ao sustentáculo oral, a gestão técnica é assumida diretamente pelos sócios encarregados, garantindo responsabilidade integral e sigilo.
               </p>
             </div>
 
             <div className="p-7 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm">
               <span className="text-xl font-black text-brand-gold mb-2 block">02.</span>
-              <h3 className="text-base font-bold uppercase text-[#162235] mb-2">Visão Multidisciplinar</h3>
-              <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-                Combinação entre o rigor do direito tradicional, inovação digital e experiência no mercado corporativo.
+              <h3 className="text-base font-bold text-[#162235] mb-2">Abordagem multidisciplinar</h3>
+              <p className="text-xs sm:text-sm text-[#334155] leading-relaxed font-light">
+                Conectamos a precisão do Direito Tradicional às dinâmicas do ambiente digital e à visão executiva de operações corporativas de grande porte.
               </p>
             </div>
 
             <div className="p-7 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm">
               <span className="text-xl font-black text-brand-gold mb-2 block">03.</span>
-              <h3 className="text-base font-bold uppercase text-[#162235] mb-2">Rigor Documental</h3>
-              <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-                Peças jurídicas e contratos lapidados com absoluta precisão doutrinária e argumentação persuasiva.
+              <h3 className="text-base font-bold text-[#162235] mb-2">Fundamentação doutrinária consistente</h3>
+              <p className="text-xs sm:text-sm text-[#334155] leading-relaxed font-light">
+                Peças processuais e instrumentos contratuais construídos com base doutrinária sólida e argumentação voltada à segurança jurídica do cliente.
               </p>
             </div>
 
             <div className="p-7 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm">
               <span className="text-xl font-black text-brand-gold mb-2 block">04.</span>
-              <h3 className="text-base font-bold uppercase text-[#162235] mb-2">Inovação & Tecnologia Própria</h3>
-              <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-                Desenvolvimento contínuo de inteligência de dados para antecipação e precisão técnica em cada demanda.
+              <h3 className="text-base font-bold text-[#162235] mb-2">Inteligência analítica aplicável</h3>
+              <p className="text-xs sm:text-sm text-[#334155] leading-relaxed font-light">
+                Uso de algoritmos e mineração de dados jurídicos para mapeamento de entendimentos dos tribunais e aumento da probabilidade de êxito nas demandas.
               </p>
             </div>
           </div>
@@ -87,11 +102,11 @@ export default function Escritorio() {
         {/* Perfis dos Fundadores */}
         <div className="pt-14 border-t border-[#E2E8F0]">
           <div className="mb-12">
-            <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold block mb-2">
+            <span className="text-xs font-bold text-brand-gold block mb-2">
               Liderança
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-normal text-[#162235]">
-              Os Fundadores
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#162235]">
+              Os fundadores
             </h2>
           </div>
 
@@ -101,7 +116,6 @@ export default function Escritorio() {
               <div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-6">
                   <div className="flex items-center gap-4">
-                    {/* Foto exclusiva do Amilcar com fallback para monograma */}
                     <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
                       <div className="w-full h-full flex flex-col items-center justify-center font-black text-xl text-[#162235] bg-gradient-to-br from-[#F8FAFC] to-[#E2E8F0]">
                         <span className="text-brand-gold text-lg">BM</span>
@@ -109,11 +123,11 @@ export default function Escritorio() {
                     </div>
 
                     <div>
-                      <h3 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-normal text-[#162235]">
+                      <h3 className="text-2xl sm:text-3xl font-extrabold text-[#162235]">
                         Amilcar Barreto de Barros Moreira
                       </h3>
-                      <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold block mt-1">
-                        Advogado Fundador • OAB/SP 349457
+                      <span className="text-xs font-bold text-brand-gold block mt-1">
+                        Advogado fundador • OAB/SP 349457
                       </span>
                     </div>
                   </div>
@@ -129,16 +143,19 @@ export default function Escritorio() {
                   </a>
                 </div>
 
-                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4">
-                  Formação sólida em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>. Pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Animal / Defesa do Consumidor</strong> e <strong>Cinema e Vídeo (Belas Artes)</strong>.
+                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4 font-light">
+                  Graduado em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>. Especialista pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Animal / Defesa do Consumidor</strong> e <strong>Cinema e Vídeo (Belas Artes)</strong>.
                 </p>
-                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8">
-                  Especializações pela Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>) e OAB/SP. Ex-Diretor Jurídico no grupo LGF Comércio Eletrônico (Grão de Gente). Faixa Marrom (1º Grau) de Jiu-Jitsu.
+                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4 font-light">
+                  Possui extensão em <strong>Litígio Internacional e Direito Energético</strong> (Universität Heidelberg / UniSantos / ESDC) e qualificações pela <strong>Fundação Getulio Vargas (FGV)</strong> em Direitos Autorais, Patentes e Bases Legais, além de certificação pela Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>).
+                </p>
+                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8 font-light">
+                  Sua trajetória inclui atuação no contencioso e consultivo cível/trabalhista em bancas advocatícias (Clara E. T. Monforte Advogados), além da Direção Jurídica do grupo LGF Comércio Eletrônico (Grão de Gente), onde liderou a governança de contratos e operações digitais de grande escala. Faixa marrom (1º grau) de jiu-jitsu.
                 </p>
 
                 <div className="pt-6 border-t border-[#E2E8F0]">
-                  <span className="text-xs uppercase font-bold tracking-wider text-[#64748B] block mb-3">
-                    Credenciais Selecionadas:
+                  <span className="text-xs font-bold text-[#64748B] block mb-3">
+                    Credenciais e extensões selecionadas:
                   </span>
                   <div className="flex flex-wrap gap-2">
                     {credentials.map((cred, idx) => (
@@ -158,7 +175,6 @@ export default function Escritorio() {
             <div className="lg:col-span-5 bg-white p-8 sm:p-10 rounded-3xl border border-[#E2E8F0] shadow-sm flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-4 mb-6">
-                  {/* Foto exclusiva do Alan com fallback para monograma */}
                   <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
                     <div className="w-full h-full flex flex-col items-center justify-center font-black text-xl text-[#162235] bg-gradient-to-br from-[#F8FAFC] to-[#E2E8F0]">
                       <span className="text-brand-gold text-lg">AM</span>
@@ -166,25 +182,25 @@ export default function Escritorio() {
                   </div>
 
                   <div>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-normal text-[#162235]">
+                    <h3 className="text-2xl sm:text-3xl font-extrabold text-[#162235]">
                       Alan Miranda
                     </h3>
-                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold block mt-1">
-                      Bacharel • Gestão & Inteligência
+                    <span className="text-xs font-bold text-brand-gold block mt-1">
+                      Bacharel • Gestão &amp; inteligência
                     </span>
                   </div>
                 </div>
 
-                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4">
-                  Co-fundador responsável pela infraestrutura de inteligência de dados, pesquisa jurisprudencial avançada e otimização dos fluxos operacionais do escritório.
+                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4 font-light">
+                  Co-fundador à frente da pesquisa jurisprudencial da banca. Mapeia decisões de tribunais e entendimentos de magistrados relevantes para cada tese em construção, organizando esse levantamento em bases de consulta rápida para os sócios.
                 </p>
-                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8">
-                  Sua atuação assegura que toda a pesquisa analítica e o suporte fático-jurídico sejam entregues com rapidez e consistência, liberando a equipe para dedicação integral a cada tese.
+                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8 font-light">
+                  Esse trabalho permite identificar, antes do protocolo de uma ação, quais teses têm maior probabilidade de êxito em cada vara ou tribunal, orientando a estratégia processual desde o primeiro contato com o caso.
                 </p>
 
-                <div className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-[#334155] leading-relaxed">
-                  <span className="font-bold text-[#162235] block mb-1">Inovação e Pesquisa:</span>
-                  Co-responsável pelo desenvolvimento da plataforma proprietária <strong>Buscador DJEN</strong>.
+                <div className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-[#334155] leading-relaxed font-light">
+                  <span className="font-bold text-[#162235] block mb-1">Pesquisa jurisprudencial aplicada:</span>
+                  Acompanhamento contínuo de decisões recentes e organização de precedentes por tema, tribunal e relator, para fundamentar as teses com o entendimento mais atual da jurisprudência.
                 </div>
               </div>
             </div>

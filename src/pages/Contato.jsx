@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, ArrowRight, Shield, Check, Copy } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
 import Marquee from '../components/Marquee';
 
 export default function Contato() {
   const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    document.title = 'Contato | Barreto Moreira Advocacia';
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) {
+      meta.setAttribute(
+        'content',
+        'Solicite uma avaliação preliminar do seu caso. Atendimento por videoconferência com participação direta dos sócios. Retorno em até 2 dias úteis.'
+      );
+    }
+  }, []);
 
   const copyEmail = () => {
     navigator.clipboard.writeText('contato@barretomoreira.com.br');
@@ -16,16 +27,16 @@ export default function Contato() {
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
       <section className="pt-16 sm:pt-24 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-4">
-          <span>05 // CANAL OFICIAL</span>
+        <div className="flex items-center gap-2 text-xs font-bold text-brand-gold mb-4">
+          <span>05 // Canal oficial</span>
         </div>
         <div className="border-b border-[#E2E8F0] pb-8 mb-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-normal text-[#162235]">
-            SOLICITE SUA <span className="text-[#64748B]">AVALIAÇÃO</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#162235]">
+            Solicite sua <span className="text-[#64748B]">avaliação</span>
           </h1>
         </div>
-        <p className="text-base sm:text-lg text-[#334155] max-w-2xl leading-relaxed">
-          Prezando pela análise aprofundada de cada demanda, nossos contatos ocorrem com discrição, método e atenção integral dos fundadores.
+        <p className="text-base sm:text-lg text-[#334155] max-w-2xl leading-relaxed font-light">
+          Cada consulta preliminar é submetida a um diagnóstico fático e jurídico prévio. Dedicamos análise individual a cada demanda antes de formalizarmos nossa proposta de atuação.
         </p>
       </section>
 
@@ -38,39 +49,39 @@ export default function Contato() {
               <Mail size={28} />
             </div>
 
-            <span className="text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-2">
-              Avaliação Preliminar do Caso
+            <span className="text-xs font-bold text-brand-gold mb-2">
+              Avaliação preliminar do caso
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold uppercase mb-4 tracking-normal">
-              Fale Diretamente Conosco
+            <h2 className="text-2xl sm:text-4xl font-extrabold mb-4">
+              Fale diretamente conosco
             </h2>
-            <p className="text-white/70 text-sm sm:text-base leading-relaxed max-w-lg mb-10">
-              Envie uma síntese da sua demanda jurídica para análise preliminar. Todos os atendimentos são realizados por videoconferência, com discrição e atenção integral dos fundadores.
+            <p className="text-white/70 text-sm sm:text-base leading-relaxed max-w-lg mb-10 font-light">
+              Envie os elementos centrais do seu caso para uma avaliação de viabilidade. As reuniões ocorrem por videoconferência, com a participação direta dos sócios fundadores e sigilo absoluto sobre as informações compartilhadas.
             </p>
 
             {/* Ações de E-mail */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
               <a
                 href="mailto:contato@barretomoreira.com.br"
-                className="px-8 py-4 rounded-xl bg-white text-[#0E1726] font-bold text-xs uppercase tracking-wider hover:bg-brand-goldLight transition-all flex items-center justify-center gap-2.5 shadow-lg group"
+                className="px-8 py-4 rounded-xl bg-white text-[#0E1726] font-bold text-xs hover:bg-brand-goldLight transition-all flex items-center justify-center gap-2.5 shadow-lg group"
               >
-                <span>Enviar Mensagem</span>
+                <span>Enviar mensagem</span>
                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
               </a>
 
               <button
                 onClick={copyEmail}
-                className="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white border border-white/20 transition-all text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2"
+                className="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white border border-white/20 transition-all text-xs font-bold flex items-center justify-center gap-2"
               >
                 {copied ? (
                   <>
                     <Check size={16} className="text-brand-gold" />
-                    <span className="text-brand-gold">E-mail Copiado!</span>
+                    <span className="text-brand-gold">E-mail copiado!</span>
                   </>
                 ) : (
                   <>
                     <Copy size={16} />
-                    <span>Copiar E-mail</span>
+                    <span>Copiar e-mail</span>
                   </>
                 )}
               </button>
@@ -88,8 +99,8 @@ export default function Contato() {
                   <InstagramIcon size={20} />
                 </div>
                 <div>
-                  <span className="text-[11px] font-bold uppercase text-brand-gold block">
-                    Instagram Oficial
+                  <span className="text-[11px] font-bold text-brand-gold block">
+                    Instagram oficial
                   </span>
                   <span className="text-sm text-white font-semibold group-hover:text-brand-gold transition-colors">
                     @amilcarmoreira.juridico
@@ -102,36 +113,37 @@ export default function Contato() {
                   <Shield size={20} />
                 </div>
                 <div>
-                  <span className="text-[11px] font-bold uppercase text-brand-gold block">
-                    Formato de Atendimento
+                  <span className="text-[11px] font-bold text-brand-gold block">
+                    Formato de atendimento
                   </span>
                   <span className="text-sm text-white font-semibold">
-                    100% Digital & Videoconferência
+                    100% digital &amp; videoconferência
                   </span>
                 </div>
               </div>
             </div>
 
-            <p className="mt-8 text-xs text-white/40 italic">
+            <p className="mt-8 text-xs text-white/40 italic font-light">
               * O retorno da avaliação preliminar ocorre de forma criteriosa em até 2 dias úteis.
             </p>
           </div>
         </div>
       </section>
+
       {/* FAQ — Perguntas Frequentes */}
       <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
-        <div className="flex items-center gap-3 text-xs uppercase font-bold tracking-[0.25em] text-brand-gold mb-6">
-          <span>Perguntas Frequentes</span>
+        <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-6">
+          <span>Perguntas frequentes</span>
         </div>
-        <h2 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#162235] mb-12">
-          COMO <span className="text-[#64748B]">FUNCIONA</span>
+        <h2 className="text-2xl sm:text-4xl font-extrabold text-[#162235] mb-12">
+          Como <span className="text-[#64748B]">funciona</span>
         </h2>
 
         <div className="space-y-4">
           {[
             {
               q: "Como funciona a avaliação preliminar do caso?",
-              a: "Ao nos contatar por e-mail, enviamos um breve questionário para compreender o cenário fático e jurídico da demanda. Após análise interna dos fundadores, retornamos em até 2 dias úteis com o diagnóstico e a proposta de atuação."
+              a: "Após o primeiro contato por e-mail, encaminhamos uma triagem direcionada para mapeamento dos fatos e documentos. Os sócios analisam a jurisprudência aplicável e retornam em até 2 dias úteis com um parecer inicial de viabilidade e a estrutura da proposta."
             },
             {
               q: "Qual é o formato de atendimento?",
@@ -139,7 +151,7 @@ export default function Contato() {
             },
             {
               q: "O escritório atua em quais áreas?",
-              a: "Nossas especialidades centrais são: Direito Digital & Plataformas, Propriedade Intelectual & Marcas, Direito Autoral, Direito do Consumidor (Consumidor e Fornecedor), Contratos Estratégicos e Direito Animal. Para matérias complementares, operamos em rede com bancas parceiras sob nossa coordenação."
+              a: "Nossa atuação concentrada abrange: Direito Digital e Remoção de Conteúdos, Propriedade Intelectual e Proteção de Marcas no INPI, Direitos Autorais, Contratos Sob Medida, Relações de Consumo Complexas e Direito Animal. Em demandas multidisciplinares, coordenamos bancas parceiras especializadas sob nossa gestão técnica."
             },
             {
               q: "Vocês atendem empresas e pessoas físicas?",
@@ -147,7 +159,7 @@ export default function Contato() {
             },
             {
               q: "Como são definidos os honorários?",
-              a: "Os honorários são apresentados de forma transparente após a avaliação preliminar do caso, podendo ser fixos, por êxito ou mistos, conforme a natureza e complexidade da demanda, sempre em conformidade com a tabela da OAB/SP."
+              a: "Os honorários são dimensionados com total transparência após o estudo de complexidade da causa. Estruturamos propostas em formatos fixos, por êxito ou mistos, considerando o volume probatório e o escopo de atuação necessária - sempre em conformidade com a tabela da OAB/SP."
             },
           ].map((faq, idx) => (
             <details
@@ -162,7 +174,7 @@ export default function Contato() {
                   <span className="text-lg font-bold leading-none">+</span>
                 </span>
               </summary>
-              <div className="px-6 pb-6 pt-0 text-sm text-[#475569] leading-relaxed border-t border-[#E2E8F0] mt-0 pt-4">
+              <div className="px-6 pb-6 pt-4 text-sm text-[#475569] leading-relaxed border-t border-[#E2E8F0] font-light">
                 {faq.a}
               </div>
             </details>
