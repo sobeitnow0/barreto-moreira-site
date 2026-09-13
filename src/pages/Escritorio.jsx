@@ -9,7 +9,7 @@ export default function Escritorio() {
     if (meta) {
       meta.setAttribute(
         'content',
-        'Conheça o Barreto Moreira: banca boutique fundada por Amilcar Barreto de Barros Moreira e Alan Miranda, com atuação direta dos sócios em cada causa. OAB/SP 349457.'
+        'Conheça o Barreto Moreira: banca fundada por Amilcar Barreto de Barros Moreira, com atuação direta dos sócios em cada causa. OAB/SP 349457.'
       );
     }
   }, []);
@@ -31,7 +31,7 @@ export default function Escritorio() {
       {/* Header Editorial */}
       <section className="pt-16 sm:pt-16 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2 text-xs font-bold text-brand-gold mb-4">
-          <span>02 // Institucional &amp; fundadores</span>
+          <span>02 // Institucional &amp; fundador</span>
         </div>
         <div className="border-b border-[#E2E8F0] pb-8 mb-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#162235]">
