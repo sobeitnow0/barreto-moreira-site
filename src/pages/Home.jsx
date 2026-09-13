@@ -6,6 +6,42 @@ import InstagramCarousel from '../components/InstagramCarousel';
 import { ScrollReveal } from '../components/ScrollReveal';
 import heroImage from '../assets/hero-image.webp';
 
+function Home() {
+  // Dados estruturados configurados com suas informações reais
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Barreto Moreira",
+    "url": "https://barretomoreira.com.br/",
+    "email": "contato@barretomoreira.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santos",
+      "addressRegion": "SP",
+      "postalCode": "11015-145",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/barretomoreira_adv"
+    ]
+  };
+
+  return (
+    <div>
+      {/* Script invisível injetando o Schema para o Google */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+      />
+      
+      {/* Todo o visual do seu site continua normal abaixo */}
+      
+      <h1>Bem-vindo ao Barreto Moreira</h1>
+      {/* ... restante do código original da sua Home ... */}
+    </div>
+  );
+}
+
 export default function Home() {
   useEffect(() => {
     document.title = 'Barreto Moreira | Advocacia Estratégica';
