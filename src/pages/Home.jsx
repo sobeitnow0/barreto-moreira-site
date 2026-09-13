@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Marquee from '../components/Marquee';
 import InstagramCarousel from '../components/InstagramCarousel';
 import { ScrollReveal } from '../components/ScrollReveal';

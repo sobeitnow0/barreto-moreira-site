@@ -17,10 +17,14 @@ const Logo = ({ onClick }) => (
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const [prevPath, setPrevPath] = useState(location.pathname);
 
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [location.pathname]);
+  if (prevPath !== location.pathname) {
+    setPrevPath(location.pathname);
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+  }
 
   useEffect(() => {
     if (mobileMenuOpen) {

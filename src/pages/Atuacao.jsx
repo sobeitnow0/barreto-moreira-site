@@ -1,6 +1,5 @@
 import React from 'react';
-import { Network, Database, ArrowUpRight, CheckCircle2, ArrowRight, Building2, ExternalLink } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Network, Database, ArrowUpRight, CheckCircle2, Building2, ExternalLink } from 'lucide-react';
 import Marquee from '../components/Marquee';
 
 export default function Atuacao() {

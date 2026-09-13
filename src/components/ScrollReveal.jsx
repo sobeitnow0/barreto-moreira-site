@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState, useMemo } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 /**
  * Hook para scroll reveal (fade-in ao entrar na viewport).
  * Retorna [ref, isVisible].
  */
-export function useScrollReveal({ threshold = 0.1, rootMargin = '0px 0px -40px 0px' } = {}) {
+function useScrollReveal({ threshold = 0.1, rootMargin = '0px 0px -40px 0px' } = {}) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 

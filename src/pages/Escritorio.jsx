@@ -1,5 +1,4 @@
 import React from 'react';
-import { Award, Shield, Compass, BookOpen, ExternalLink } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
 import Marquee from '../components/Marquee';
 
