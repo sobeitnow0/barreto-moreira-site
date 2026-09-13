@@ -26,7 +26,7 @@ export default function Contato() {
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
-      <section className="pt-16 sm:pt-24 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="pt-16 sm:pt-16 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2 text-xs font-bold text-brand-gold mb-4">
           <span>05 // Canal oficial</span>
         </div>
@@ -41,7 +41,7 @@ export default function Contato() {
       </section>
 
       {/* Card Central de Contato */}
-      <section className="pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+      <section className="pb-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
         <div className="bg-[#0E1726] text-white rounded-3xl p-8 sm:p-14 border border-white/10 shadow-2xl relative overflow-hidden">
           
           <div className="relative z-10 flex flex-col items-center text-center">
@@ -131,7 +131,7 @@ export default function Contato() {
       </section>
 
       {/* FAQ — Perguntas Frequentes */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
         <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-6">
           <span>Perguntas frequentes</span>
         </div>
