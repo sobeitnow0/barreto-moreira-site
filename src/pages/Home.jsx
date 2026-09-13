@@ -98,8 +98,8 @@ export default function Home() {
     },
     {
       num: "02",
-      title: "Pesquisa Doutrinária Aprofundada",
-      desc: "Teses sólidas exigem tempo de estudo. Investimos na pesquisa documental e doutrinária necessária para sustentar cada argumento com base consistente perante os tribunais.",
+      title: "Pesquisa Temática Aprofundada",
+      desc: "Teses sólidas exigem tempo de estudo. Investimos na pesquisa documental, jurisprudencial e doutrinária necessária para sustentar cada argumento com base consistente perante os tribunais.",
       tag: "Rigor Técnico"
     },
     {
@@ -152,11 +152,7 @@ export default function Home() {
                 O escritório
               </Link>
             </div>
-
-            <div className="flex items-center gap-4 text-xs font-semibold text-[#64748B]">
-              <span>OAB/SP 349457</span>
-              <span className="text-brand-gold">•</span>
-              </div>
+           
           </div>
 
           {/* Lado Direito: Imagem */}
@@ -244,7 +240,7 @@ export default function Home() {
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-8 gap-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
-            Diretrizes <span className="text-[#64748B]">do escritório</span>
+            Diretrizes <span className="text-[#64748B]"></span>
           </h2>
           <span className="text-xs font-mono text-[#64748B] font-semibold pb-2">
             [ Rigor técnico &amp; governança ]
