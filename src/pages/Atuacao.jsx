@@ -77,7 +77,7 @@ export default function Atuacao() {
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
-      <section className="pt-16 sm:pt-24 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="pt-12 sm:pt-16 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2 text-xs font-bold text-brand-gold mb-4">
           <span>01 // Portfólio de atuação</span>
         </div>
@@ -95,7 +95,7 @@ export default function Atuacao() {
       <Marquee />
 
       {/* Lista de Áreas de Atuação */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="space-y-8">
           {practiceAreas.map((area, idx) => {
             const IconComponent = area.icon;
@@ -158,7 +158,7 @@ export default function Atuacao() {
       </section>
 
       {/* CTA de Encerramento */}
-      <section className="py-16 sm:py-20 bg-[#0E1726] text-white">
+      <section className="py-12 sm:py-16 bg-[#0E1726] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
           <span className="text-xs font-bold text-brand-gold mb-3">
             Análise criteriosa
