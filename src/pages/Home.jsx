@@ -23,7 +23,7 @@ export default function Home() {
       num: "01",
       name: "Direito Digital",
       sub: "Remoção de conteúdo, perfis falsos e responsabilidade civil de provedores",
-      img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+      img: "https://unsplash.com/pt-br/fotografias/uma-pessoa-segurando-um-smartphone-com-midia-social-na-tela-0cpyFsSUiSc"
     },
     {
       num: "02",
@@ -47,7 +47,7 @@ export default function Home() {
       num: "05",
       name: "Contratos Sob Medida",
       sub: "Elaboração, mitigação de riscos operacionais e engenharia contratual",
-      img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80"
+      img: "https://unsplash.com/pt-br/fotografias/uma-mao-segurando-uma-caneta-fTRZAC-uri4"
     },
     {
       num: "06",
@@ -59,7 +59,7 @@ export default function Home() {
       num: "07",
       name: "Ação Contra Plano de Saúde",
       sub: "Negativa de cobertura, reajuste abusivo e descredenciamento de rede",
-      img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+      img: "https://unsplash.com/pt-br/fotografias/estetoscopio-preto-iIDiRMITYik"
     }
   ];
 
