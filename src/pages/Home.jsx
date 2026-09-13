@@ -124,7 +124,7 @@ export default function Home() {
 
             <h1 className="flex flex-col tracking-tight font-bold text-[#162235] leading-[1.1] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4.2rem] mb-8">
               <span>Rigor técnico e defesa</span>
-              <span className="text-brand-gold">estratégica patrimonial.</span>
+              <span className="text-brand-gold">estratégica.</span>
             </h1>
 
             <p className="text-base sm:text-xl text-[#475569] leading-relaxed max-w-xl mb-10 font-light">
