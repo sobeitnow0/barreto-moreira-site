@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ShieldCheck, Scale, FileText, Cpu, Award, PawPrint } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Scale, FileText, Cpu, Award, PawPrint, HeartPulse } from 'lucide-react';
 import Marquee from '../components/Marquee';
 
 export default function Atuacao() {
@@ -10,7 +10,7 @@ export default function Atuacao() {
     if (meta) {
       meta.setAttribute(
         'content',
-        'Direito Digital, Propriedade Intelectual, Direito Autoral, Direito do Consumidor e ações contra planos de saúde, Contratos Estratégicos e Direito Animal. Conheça as áreas de atuação do Barreto Moreira. OAB/SP 349457.'
+        'Direito Digital, Propriedade Intelectual, Direito Autoral, Direito do Consumidor, Ação Contra Plano de Saúde, Contratos Estratégicos e Direito Animal. Conheça as áreas de atuação do Barreto Moreira. OAB/SP 349457.'
       );
     }
   }, []);
@@ -43,10 +43,10 @@ export default function Atuacao() {
     {
       num: "04",
       icon: Scale,
-      title: "Direito do Consumidor de Alta Complexidade",
-      subtitle: "Estratégias preventivas para fornecedores e ações indenizatórias de impacto",
-      desc: "Atuamos tanto na defesa de consumidores — incluindo ações contra planos de saúde por negativa de cobertura, reajuste abusivo ou descredenciamento de rede — quanto na representação de empresas e fornecedores em litígios de consumo e na estruturação de contratos e termos de uso em conformidade com o CDC. Conhecer a estratégia dos dois lados da relação de consumo é o que torna essa atuação mais precisa.",
-      tags: ["Contratos de consumo", "Defesa para fornecedores", "Ações indenizatórias"]
+      title: "Direito do Consumidor",
+      subtitle: "Atuação bivalente: representamos consumidores e também empresas e fornecedores",
+      desc: "Atuamos tanto na defesa de consumidores quanto na representação de empresas e fornecedores em litígios de consumo, elaboração de termos de uso e conformidade com o CDC. Conhecer a estratégia dos dois lados da relação de consumo é o que torna essa atuação mais precisa.",
+      tags: ["Defesa de consumidores", "Defesa de fornecedores", "Conformidade com o CDC"]
     },
     {
       num: "05",
@@ -63,6 +63,14 @@ export default function Atuacao() {
       subtitle: "Tutela jurídica especializada em litígios envolvendo animais de estimação",
       desc: "Atuação técnica em ações de guarda de animais, indenizações por erro médico-veterinário e responsabilização por maus-tratos, com base na jurisprudência mais recente sobre o tema.",
       tags: ["Guarda de animais", "Erro médico-veterinário", "Responsabilidade civil"]
+    },
+    {
+      num: "07",
+      icon: HeartPulse,
+      title: "Ação Contra Plano de Saúde",
+      subtitle: "Atuação bivalente: representamos beneficiários e também operadoras de saúde",
+      desc: "Atuamos em ações por negativa de cobertura, reajuste abusivo, descredenciamento de rede e demais litígios envolvendo planos de saúde — tanto na defesa de beneficiários quanto na representação de operadoras. Essa atuação nos dois lados da relação permite antecipar a estratégia processual da parte contrária.",
+      tags: ["Negativa de cobertura", "Reajuste abusivo", "Defesa de operadoras"]
     }
   ];
 
@@ -79,7 +87,7 @@ export default function Atuacao() {
           </h1>
         </div>
         <p className="text-base sm:text-lg text-[#334155] max-w-3xl leading-relaxed font-light">
-          Atuamos em seis frentes de especialização. Em cada uma, investigamos os fatos do caso a fundo antes de propor qualquer caminho jurídico — não aplicamos soluções padronizadas.
+          Atuamos em sete frentes de especialização. Em cada uma, investigamos os fatos do caso a fundo antes de propor qualquer caminho jurídico — não aplicamos soluções padronizadas.
         </p>
       </section>
 
