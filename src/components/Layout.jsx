@@ -96,15 +96,28 @@ export default function Layout() {
           </div>
         </div>
 
-        {/* Mobile Menu Drawer (Touch-friendly & Clean) */}
+        {/* Mobile Menu Drawer (Ajustado para Tela Cheia sem sobreposição) */}
         {mobileMenuOpen && (
-          <div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-[#0E1726]/95 backdrop-blur-2xl z-50 flex flex-col justify-between p-6 sm:p-8 text-white animate-fadeIn">
-            <div className="flex flex-col gap-5 pt-2">
+          <div className="lg:hidden fixed inset-0 z-[999] bg-[#0E1726] flex flex-col justify-between p-6 sm:p-8 text-white overflow-y-auto animate-fadeIn">
+            
+            {/* Header interno do menu mobile */}
+            <div className="flex items-center justify-between pb-4 border-b border-white/10">
               <img 
                 src={`${import.meta.env.BASE_URL}logo-white.png`} 
                 alt="Barreto Moreira Advocacia Estratégica" 
-                className="h-10 sm:h-12 w-auto object-contain self-start opacity-95"
+                className="h-10 sm:h-12 w-auto object-contain opacity-95"
               />
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 rounded-xl text-white hover:bg-white/10 transition-colors focus:outline-none"
+                aria-label="Fechar menu"
+              >
+                <X size={28} />
+              </button>
+            </div>
+
+            {/* Links de navegação */}
+            <div className="flex flex-col gap-4 py-6">
               <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold">
                 Navegação
               </span>
@@ -115,7 +128,7 @@ export default function Layout() {
                   to={item.path}
                   onClick={() => setMobileMenuOpen(false)}
                   className={({ isActive }) =>
-                    `flex items-baseline gap-4 py-3 border-b border-white/10 text-xl font-extrabold uppercase tracking-normal transition-all ${
+                    `flex items-baseline gap-4 py-2.5 border-b border-white/10 text-lg font-extrabold uppercase tracking-normal transition-all ${
                       isActive ? 'text-brand-gold pl-2' : 'text-white/80 hover:text-white'
                     }`
                   }
@@ -125,7 +138,7 @@ export default function Layout() {
                 </NavLink>
               ))}
 
-              <div className="pt-3">
+              <div className="pt-2">
                 <a
                   href="https://www.buscadordjen.com.br"
                   target="_blank"
@@ -141,8 +154,8 @@ export default function Layout() {
               </div>
             </div>
 
-            {/* Mobile Footer Info */}
-            <div className="pt-6 border-t border-white/10 flex flex-col gap-3 text-xs text-white/60">
+            {/* Rodapé do menu mobile */}
+            <div className="pt-4 border-t border-white/10 flex flex-col gap-3 text-xs text-white/60">
               <div className="flex justify-between items-center">
                 <span className="font-bold">OAB/SP 349457</span>
                 <a 
