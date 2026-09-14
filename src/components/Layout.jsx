@@ -26,15 +26,9 @@ export default function Layout() {
     }
   }
 
+  // Removido o bloqueio de scroll ('hidden') para evitar o bug da barra lateral (layout shift)
   useEffect(() => {
-    if (mobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
+    // Mantido vazio de propósito
   }, [mobileMenuOpen]);
 
   const navLinks = [
@@ -47,85 +41,6 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] font-sans text-[#162235] flex flex-col selection:bg-[#162235] selection:text-white">
-      
-      {/* Menu Mobile - Tela Cheia Absoluta (Fora do Header para não vazar a página) */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-[#0E1726] z-[99999] flex flex-col justify-between p-6 sm:p-8 text-white animate-fadeIn overflow-y-auto">
-          
-          <div className="flex flex-col gap-5 pt-2">
-            {/* Topo do Menu: Logo Original + Botão Fechar */}
-            <div className="flex items-center justify-between">
-              <img 
-                src={`${import.meta.env.BASE_URL}logo-white.png`} 
-                alt="Barreto Moreira Advocacia Estratégica" 
-                className="h-10 sm:h-12 w-auto object-contain opacity-95"
-              />
-              <button
-                onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-xl text-white hover:bg-white/10 transition-colors focus:outline-none"
-              >
-                <X size={32} />
-              </button>
-            </div>
-
-            <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold mt-4">
-              Navegação
-            </span>
-            
-            {/* Seus Links Originais com Fonte Extrabold e tamanho XL */}
-            {navLinks.map((item) => (
-              <NavLink
-                key={item.path}
-                to={item.path}
-                onClick={() => setMobileMenuOpen(false)}
-                className={({ isActive }) =>
-                  `flex items-baseline gap-4 py-3 border-b border-white/10 text-xl font-extrabold uppercase tracking-normal transition-all ${
-                    isActive ? 'text-brand-gold pl-2' : 'text-white/80 hover:text-white'
-                  }`
-                }
-              >
-                <span className="text-xs font-mono text-brand-gold/70">{item.num}.</span>
-                <span>{item.name}</span>
-              </NavLink>
-            ))}
-
-            <div className="pt-3">
-              <a
-                href="https://www.buscadordjen.com.br"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/10 hover:border-brand-gold/50 transition-all text-sm font-semibold"
-              >
-                <div className="flex flex-col">
-                  <span className="text-white font-bold">Buscador DJEN</span>
-                  <span className="text-xs text-white/60">Tecnologia de Pesquisa</span>
-                </div>
-                <ArrowUpRight size={18} className="text-brand-gold" />
-              </a>
-            </div>
-          </div>
-
-          {/* Seu Footer do Menu Mobile Original */}
-          <div className="pt-6 border-t border-white/10 flex flex-col gap-3 text-xs text-white/60">
-            <div className="flex justify-between items-center">
-              <span className="font-bold">OAB/SP 349457</span>
-              <a 
-                href="https://www.instagram.com/amilcarmoreira.juridico/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-brand-gold hover:underline font-medium"
-              >
-                <InstagramIcon size={14} />
-                <span>@amilcarmoreira.juridico</span>
-              </a>
-            </div>
-            <a href="mailto:contato@barretomoreira.com.br" className="hover:text-white">
-              contato@barretomoreira.com.br
-            </a>
-          </div>
-        </div>
-      )}
-
       {/* Header Fixo Minimalista com Glassmorphism */}
       <header className="sticky top-0 z-50 bg-[#F8FAFC]/90 backdrop-blur-md border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[5.5rem] lg:min-h-[6rem] py-3 flex items-center justify-between gap-6">
@@ -174,6 +89,72 @@ export default function Layout() {
             </button>
           </div>
         </div>
+
+        {/* Mobile Menu Drawer (Touch-friendly & Clean) */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden fixed inset-x-0 top-[88px] bottom-0 bg-[#0E1726] z-50 flex flex-col justify-between p-6 sm:p-8 text-white overflow-y-auto border-t border-[#E2E8F0]/20">
+            <div className="flex flex-col gap-5 pt-2">
+              <img 
+                src={`${import.meta.env.BASE_URL}logo-white.png`} 
+                alt="Barreto Moreira Advocacia Estratégica" 
+                className="h-10 sm:h-12 w-auto object-contain self-start opacity-95"
+              />
+              <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold">
+                Navegação
+              </span>
+              
+              {navLinks.map((item) => (
+                <NavLink
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) =>
+                    `flex items-baseline gap-4 py-3 border-b border-white/10 text-xl font-extrabold uppercase tracking-normal transition-all ${
+                      isActive ? 'text-brand-gold pl-2' : 'text-white/80 hover:text-white'
+                    }`
+                  }
+                >
+                  <span className="text-xs font-mono text-brand-gold/70">{item.num}.</span>
+                  <span>{item.name}</span>
+                </NavLink>
+              ))}
+
+              <div className="pt-3">
+                <a
+                  href="https://www.buscadordjen.com.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/10 hover:border-brand-gold/50 transition-all text-sm font-semibold"
+                >
+                  <div className="flex flex-col">
+                    <span className="text-white font-bold">Buscador DJEN</span>
+                    <span className="text-xs text-white/60">Tecnologia de Pesquisa</span>
+                  </div>
+                  <ArrowUpRight size={18} className="text-brand-gold" />
+                </a>
+              </div>
+            </div>
+
+            {/* Mobile Footer Info */}
+            <div className="pt-6 border-t border-white/10 flex flex-col gap-3 text-xs text-white/60">
+              <div className="flex justify-between items-center">
+                <span className="font-bold">OAB/SP 349457</span>
+                <a 
+                  href="https://www.instagram.com/amilcarmoreira.juridico/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-brand-gold hover:underline font-medium"
+                >
+                  <InstagramIcon size={14} />
+                  <span>@amilcarmoreira.juridico</span>
+                </a>
+              </div>
+              <a href="mailto:contato@barretomoreira.com.br" className="hover:text-white">
+                contato@barretomoreira.com.br
+              </a>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Main Content Area */}
