@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { InstagramIcon } from '../components/Icons';
 import Marquee from '../components/Marquee';
+import amilcarImg from "../assets/amilcar.jpg";
 
 export default function Escritorio() {
   useEffect(() => {
@@ -117,9 +118,11 @@ export default function Escritorio() {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-6">
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
-                      <div className="w-full h-full flex flex-col items-center justify-center font-black text-xl text-[#162235] bg-gradient-to-br from-[#F8FAFC] to-[#E2E8F0]">
-                        <span className="text-brand-gold text-lg">BM</span>
-                      </div>
+                      <img
+  src={amilcarImg}
+  alt="Amilcar Barreto de Barros Moreira"
+  className="w-full h-full object-cover"
+/>
                     </div>
 
                     <div>
