@@ -99,16 +99,11 @@ export default function Layout() {
         </div>
       </header>
 
-      {/* Mobile Menu Drawer - MOVIDO PARA FORA DO HEADER PARA CORRIGIR O BUG */}
+      {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden fixed inset-x-0 top-[88px] bottom-0 bg-[#0E1726] z-[999] flex flex-col justify-between p-6 sm:p-8 text-white animate-fadeIn overflow-y-auto">
-          <div className="flex flex-col gap-5 pt-2">
-            <img 
-              src={`${import.meta.env.BASE_URL}logo-white.png`} 
-              alt="Barreto Moreira Advocacia Estratégica" 
-              className="h-10 sm:h-12 w-auto object-contain self-start opacity-95"
-            />
-            <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold">
+          <div className="flex flex-col gap-1 pt-1">
+            <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold mb-4">
               Navegação
             </span>
             
@@ -118,17 +113,17 @@ export default function Layout() {
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
                 className={({ isActive }) =>
-                  `flex items-baseline gap-4 py-3 border-b border-white/10 text-xl font-extrabold uppercase tracking-normal transition-all ${
+                  `flex items-baseline gap-3 py-3.5 border-b border-white/10 text-sm font-bold uppercase tracking-wider transition-all ${
                     isActive ? 'text-brand-gold pl-2' : 'text-white/80 hover:text-white'
                   }`
                 }
               >
-                <span className="text-xs font-mono text-brand-gold/70">{item.num}.</span>
+                <span className="text-[10px] font-mono text-brand-gold/70">{item.num}.</span>
                 <span>{item.name}</span>
               </NavLink>
             ))}
 
-            <div className="pt-3">
+            <div className="pt-5">
               <a
                 href="https://www.buscadordjen.com.br"
                 target="_blank"
@@ -136,8 +131,8 @@ export default function Layout() {
                 className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/10 hover:border-brand-gold/50 transition-all text-sm font-semibold"
               >
                 <div className="flex flex-col">
-                  <span className="text-white font-bold">Buscador DJEN</span>
-                  <span className="text-xs text-white/60">Tecnologia de Pesquisa</span>
+                  <span className="text-white font-bold text-xs uppercase tracking-wider">Buscador DJEN</span>
+                  <span className="text-[11px] text-white/60">Tecnologia de Pesquisa</span>
                 </div>
                 <ArrowUpRight size={18} className="text-brand-gold" />
               </a>
