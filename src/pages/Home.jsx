@@ -266,9 +266,9 @@ export default function Home() {
       <span>02 // Pilares de atuação</span>
     </div>
 
-    {/* Título principal adicionado aqui */}
-    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#162235] tracking-tight">
-      Atenção integral e rigor técnico em cada causa
+ {/* Título principal com duas cores igual à referência */}
+    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#162235] tracking-tight mb-6">
+      Pilares <span className="font-light text-[#64748B]">de atuação</span>
     </h2>
 
  
