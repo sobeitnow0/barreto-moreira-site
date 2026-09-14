@@ -19,6 +19,7 @@ export default function Layout() {
   const location = useLocation();
   const [prevPath, setPrevPath] = useState(location.pathname);
 
+  // Fecha o menu mobile automaticamente ao trocar de página
   if (prevPath !== location.pathname) {
     setPrevPath(location.pathname);
     if (mobileMenuOpen) {
@@ -26,6 +27,7 @@ export default function Layout() {
     }
   }
 
+  // Trava o scroll do body quando o menu está aberto
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -48,12 +50,12 @@ export default function Layout() {
   return (
     <div className="min-h-screen bg-[#F8FAFC] font-sans text-[#162235] flex flex-col selection:bg-[#162235] selection:text-white relative">
       
-      {/* 1. OVERLAY FULLSCREEN DO MENU MOBILE (Fora da Tag Header) */}
+      {/* 1. OVERLAY FULLSCREEN DO MENU MOBILE (Removido do Header para evitar conflitos de CSS) */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 w-screen h-screen z-[99999] bg-[#0E1726] flex flex-col justify-between p-6 sm:p-8 text-white overflow-y-auto lg:hidden">
+        <div className="fixed inset-0 w-full h-full z-[9999] bg-[#0E1726] flex flex-col justify-between p-6 sm:p-8 text-white overflow-y-auto lg:hidden">
           
-          {/* Header Interno do Menu */}
-          <div className="flex items-center justify-between pb-4 border-b border-white/10 shrink-0">
+          {/* Cabeçalho do Menu Mobile */}
+          <div className="flex items-center justify-between pb-6 border-b border-white/10 shrink-0">
             <img 
               src={`${import.meta.env.BASE_URL}logo-white.png`} 
               alt="Barreto Moreira Advocacia Estratégica" 
@@ -61,16 +63,16 @@ export default function Layout() {
             />
             <button
               onClick={() => setMobileMenuOpen(false)}
-              className="p-2.5 rounded-xl text-white bg-white/10 hover:bg-white/20 transition-colors focus:outline-none"
+              className="p-2 rounded-xl text-white hover:bg-white/10 transition-colors focus:outline-none"
               aria-label="Fechar menu"
             >
               <X size={26} />
             </button>
           </div>
 
-          {/* Links de Navegação */}
-          <div className="flex flex-col gap-3 py-6 my-auto">
-            <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-bold mb-2">
+          {/* Navegação Principal */}
+          <div className="flex flex-col gap-2 py-6 my-auto">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-semibold mb-3">
               Navegação
             </span>
             
@@ -80,8 +82,8 @@ export default function Layout() {
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
                 className={({ isActive }) =>
-                  `flex items-baseline gap-4 py-3 border-b border-white/10 text-xl font-extrabold uppercase tracking-normal transition-all ${
-                    isActive ? 'text-brand-gold pl-2' : 'text-white/80 hover:text-white'
+                  `flex items-center gap-3 py-3 border-b border-white/10 text-base font-medium tracking-wide transition-all ${
+                    isActive ? 'text-brand-gold font-bold pl-1' : 'text-white/80 hover:text-white'
                   }`
                 }
               >
@@ -95,21 +97,21 @@ export default function Layout() {
                 href="https://www.buscadordjen.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/10 hover:border-brand-gold/50 transition-all text-sm font-semibold"
+                className="flex items-center justify-between p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-brand-gold/50 transition-all text-xs font-semibold"
               >
                 <div className="flex flex-col">
                   <span className="text-white font-bold">Buscador DJEN</span>
-                  <span className="text-xs text-white/60">Tecnologia de Pesquisa</span>
+                  <span className="text-[11px] text-white/60">Tecnologia de Pesquisa</span>
                 </div>
-                <ArrowUpRight size={18} className="text-brand-gold" />
+                <ArrowUpRight size={16} className="text-brand-gold" />
               </a>
             </div>
           </div>
 
-          {/* Rodapé Interno do Menu */}
-          <div className="pt-4 border-t border-white/10 flex flex-col gap-3 text-xs text-white/60 shrink-0">
+          {/* Rodapé do Menu Mobile */}
+          <div className="pt-4 border-t border-white/10 flex flex-col gap-2.5 text-xs text-white/60 shrink-0">
             <div className="flex justify-between items-center">
-              <span className="font-bold">OAB/SP 349457</span>
+              <span className="font-semibold text-white/80">OAB/SP 349457</span>
               <a 
                 href="https://www.instagram.com/amilcarmoreira.juridico/" 
                 target="_blank" 
@@ -120,14 +122,15 @@ export default function Layout() {
                 <span>@amilcarmoreira.juridico</span>
               </a>
             </div>
-            <a href="mailto:contato@barretomoreira.com.br" className="hover:text-white">
+            <a href="mailto:contato@barretomoreira.com.br" className="hover:text-white transition-colors">
               contato@barretomoreira.com.br
             </a>
           </div>
+
         </div>
       )}
 
-      {/* 2. HEADER DA PÁGINA */}
+      {/* 2. HEADER DA PÁGINA (Desktop e Botão Mobile) */}
       <header className="sticky top-0 z-50 bg-[#F8FAFC]/90 backdrop-blur-md border-b border-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[5.5rem] lg:min-h-[6rem] py-3 flex items-center justify-between gap-6">
           <Logo onClick={() => setMobileMenuOpen(false)} />
