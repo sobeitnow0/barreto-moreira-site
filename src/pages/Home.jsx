@@ -266,6 +266,11 @@ export default function Home() {
       <span>02 // Pilares de atuação</span>
     </div>
 
+    {/* Título principal adicionado aqui */}
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#162235] tracking-tight">
+      Atenção integral e rigor técnico em cada causa
+    </h2>
+
  
     {/* Texto + botão logo abaixo, sem outra border-t */}
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 mt-6 mb-10 items-center">
