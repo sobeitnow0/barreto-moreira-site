@@ -117,13 +117,12 @@ export default function Escritorio() {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-6">
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
-                      <img
-<img
-  src="/amilcar.png"
-  alt="Amilcar Barreto de Barros Moreira"
-  className="w-full h-full object-cover"
-/>
-                    </div>
+  <img
+    src="/amilcar.png"
+    alt="Amilcar Barreto de Barros Moreira"
+    className="w-full h-full object-cover"
+  />
+</div>
 
                     <div>
                       <h3 className="text-2xl sm:text-3xl font-extrabold text-[#162235]">
