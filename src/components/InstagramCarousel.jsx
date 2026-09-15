@@ -37,7 +37,7 @@ export default function InstagramCarousel() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Behold.so Instagram Widget */}
-        <behold-widget feed-id="1fyYQI63uf75FyEvYWUw"></behold-widget>
+        <behold-widget feed-id="Rwj27UdqqaWttd0ITLOB"></behold-widget>
       </div>
     </section>
   );
