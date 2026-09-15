@@ -83,9 +83,9 @@ export default function Escritorio() {
 
             <div className="p-7 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm">
               <span className="text-xl font-black text-brand-gold mb-2 block">03.</span>
-              <h3 className="text-base font-bold text-[#162235] mb-2">Fundamentação doutrinária consistente</h3>
+              <h3 className="text-base font-bold text-[#162235] mb-2">Fundamentação técnica consistente</h3>
               <p className="text-xs sm:text-sm text-[#334155] leading-relaxed font-light">
-                Peças processuais e instrumentos contratuais construídos com base doutrinária sólida e argumentação voltada à segurança jurídica do cliente.
+                Peças processuais e instrumentos contratuais construídos com base jurisprudencial sólida e argumentação voltada à segurança jurídica do cliente.
               </p>
             </div>
 
