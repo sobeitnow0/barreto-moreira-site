@@ -103,7 +103,7 @@ export default function Contato() {
                     Instagram oficial
                   </span>
                   <span className="text-sm text-white font-semibold group-hover:text-brand-gold transition-colors">
-                    @amilcarmoreira.juridico
+                    @barretomoreira_adv
                   </span>
                 </div>
               </a>
