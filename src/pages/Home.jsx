@@ -157,7 +157,7 @@ const testimonials = [
 /* ------------------------------------------------------------------ */
 
 const PAGE_TITLE =
-  'Advocacia em Santos: Direito Digital e Propriedade Intelectual | Barreto Moreira';
+  'Barreto Moreira | Advocacia Estratégica — Amilcar Barreto';
 const PAGE_DESCRIPTION =
   'Escritório de advocacia em Santos/SP: Direito Digital, Propriedade Intelectual, Direito Autoral, Consumidor, Contratos e Planos de Saúde. OAB/SP 349457.';
 
@@ -169,7 +169,7 @@ const schemaMarkup = {
     {
       '@type': 'LegalService',
       '@id': `${SITE_URL}/#organization`,
-      name: 'Barreto Moreira',
+      name: 'Barreto Moreira | Advocacia Estratégica — Amilcar Barreto',
       alternateName: 'Barreto Moreira Advocacia Estratégica',
       url: `${SITE_URL}/`,
       description: PAGE_DESCRIPTION,
