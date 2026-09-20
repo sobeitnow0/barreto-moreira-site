@@ -9,7 +9,7 @@ const Logo = ({ onClick }) => (
     <img 
       src={`${import.meta.env.BASE_URL}logo-transparent.png`} 
       alt="Barreto Moreira Estratégia Jurídica" 
-      className="h-14 sm:h-16 lg:h-[4.5rem] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+      className="h-14 sm:h-16 md:h-18 lg:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
     />
   </NavLink>
 );
@@ -175,7 +175,7 @@ export default function Layout() {
                 <img 
                   src={`${import.meta.env.BASE_URL}logo-white.png`} 
                   alt="Barreto Moreira Estratégia Jurídica" 
-                  className="h-11 sm:h-13 md:h-14 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
+                  className="h-12 sm:h-14 md:h-16 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
                 />
               </NavLink>
               <p className="text-white/70 text-sm leading-relaxed max-w-sm font-light">
