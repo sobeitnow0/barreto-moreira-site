@@ -155,7 +155,7 @@ export default function Escritorio() {
 <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8 font-light">
   Fora das atividades jurídicas, é praticante de <strong>Jiu-Jitsu</strong>, ostentando a faixa marrom (1º Grau) pela <strong>Kings Jiu Jitsu</strong>.
 </p>
-                </p>
+               
 
                 <div className="pt-6 border-t border-[#E2E8F0]">
                   <span className="text-xs font-bold text-[#64748B] block mb-3">
