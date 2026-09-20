@@ -23,7 +23,7 @@ export default function InstagramCarousel() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://www.instagram.com/amilcarmoreira.juridico/"
+              href="https://www.instagram.com/barretomoreira_adv/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-bold uppercase tracking-wider text-[#18293C] hover:border-brand-gold transition-colors ml-2"

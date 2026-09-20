@@ -135,13 +135,13 @@ export default function Escritorio() {
                   </div>
 
                   <a
-                    href="https://www.instagram.com/amilcarmoreira.juridico/"
+                    href="https://www.instagram.com/barretomoreira_adv/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-semibold text-[#18293C] hover:border-brand-gold transition-colors self-start sm:self-auto"
                   >
                     <InstagramIcon size={14} className="text-brand-gold" />
-                    <span>@amilcarmoreira.juridico</span>
+                    <span>@barretomoreira_adv</span>
                   </a>
                 </div>
 

@@ -144,13 +144,13 @@ export default function Layout() {
             <div className="flex justify-between items-center">
               <span className="font-bold">OAB/SP 349457</span>
               <a 
-                href="https://www.instagram.com/amilcarmoreira.juridico/" 
+                href="https://www.instagram.com/barretomoreira_adv/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-brand-gold hover:underline font-medium"
               >
                 <InstagramIcon size={14} />
-                <span>@amilcarmoreira.juridico</span>
+                <span>@barretomoreira_adv</span>
               </a>
             </div>
             <a href="mailto:contato@barretomoreira.com.br" className="hover:text-white">
@@ -230,13 +230,13 @@ export default function Layout() {
                   <span className="break-all">contato@barretomoreira.com.br</span>
                 </a>
                 <a 
-                  href="https://www.instagram.com/amilcarmoreira.juridico/" 
+                  href="https://www.instagram.com/barretomoreira_adv/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-brand-gold transition-colors flex items-center gap-2.5"
                 >
                   <InstagramIcon size={16} className="text-brand-gold shrink-0" />
-                  <span>@amilcarmoreira.juridico</span>
+                  <span>@barretomoreira_adv</span>
                 </a>
               </div>
               <div className="mt-2 p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white/70 leading-relaxed">
