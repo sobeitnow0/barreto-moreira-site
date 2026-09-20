@@ -7,7 +7,7 @@ import LGPDBanner from './LGPDBanner';
 const Logo = ({ onClick }) => (
   <NavLink to="/" onClick={onClick} className="flex items-center group shrink-0">
     <img 
-      src={`${import.meta.env.BASE_URL}logo-transparent.png?v=3`} 
+      src={`${import.meta.env.BASE_URL}logo-transparent.png?v=4`} 
       alt="Barreto Moreira Estratégia Jurídica" 
       className="h-16 sm:h-20 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
     />
@@ -47,7 +47,7 @@ export default function Layout() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] font-sans text-[#162235] flex flex-col selection:bg-[#162235] selection:text-white relative">
+    <div className="min-h-screen bg-[#F8FAFC] font-sans text-[#18293C] flex flex-col selection:bg-[#18293C] selection:text-white relative">
       
       {/* Header Fixo Minimalista com Glassmorphism */}
       <header className="sticky top-0 z-50 bg-[#F8FAFC]/90 backdrop-blur-md border-b border-[#E2E8F0]">
@@ -63,8 +63,8 @@ export default function Layout() {
                 className={({ isActive }) =>
                   `px-2.5 xl:px-3.5 py-2 rounded-lg text-[11px] xl:text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                     isActive
-                      ? 'text-[#162235] bg-white shadow-sm border border-[#E2E8F0]'
-                      : 'text-[#64748B] hover:text-[#162235] hover:bg-black/[0.02]'
+                      ? 'text-[#18293C] bg-white shadow-sm border border-[#E2E8F0]'
+                      : 'text-[#64748B] hover:text-[#18293C] hover:bg-black/[0.02]'
                   }`
                 }
               >
@@ -79,7 +79,7 @@ export default function Layout() {
               href="https://www.buscadordjen.com.br"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 xl:px-4 py-2 rounded-full text-[11px] xl:text-xs font-bold tracking-wider uppercase bg-[#162235] text-white hover:bg-brand-hover transition-all shadow-sm group whitespace-nowrap shrink-0"
+              className="inline-flex items-center gap-1.5 px-3 xl:px-4 py-2 rounded-full text-[11px] xl:text-xs font-bold tracking-wider uppercase bg-[#18293C] text-white hover:bg-brand-hover transition-all shadow-sm group whitespace-nowrap shrink-0"
             >
               <span>Buscador DJEN</span>
               <ArrowUpRight size={13} className="text-brand-gold transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -90,7 +90,7 @@ export default function Layout() {
           <div className="flex lg:hidden items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2.5 rounded-xl text-[#162235] hover:bg-black/5 transition-colors focus:outline-none"
+              className="p-2.5 rounded-xl text-[#18293C] hover:bg-black/5 transition-colors focus:outline-none"
               aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
             >
               {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
@@ -173,7 +173,7 @@ export default function Layout() {
             <div className="md:col-span-5 flex flex-col gap-5">
               <NavLink to="/" className="inline-block">
                 <img 
-                  src={`${import.meta.env.BASE_URL}logo-white.png?v=3`} 
+                  src={`${import.meta.env.BASE_URL}logo-white.png?v=4`} 
                   alt="Barreto Moreira Estratégia Jurídica" 
                   className="h-14 sm:h-16 md:h-20 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
                 />

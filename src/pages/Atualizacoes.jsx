@@ -22,7 +22,7 @@ export default function Atualizacoes() {
           <span>04 // Atualizações &amp; jurisprudência</span>
         </div>
         <div className="border-b border-[#E2E8F0] pb-8 mb-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#162235]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#18293C]">
             Acompanhe nossas <span className="text-[#64748B]">análises</span>
           </h1>
         </div>

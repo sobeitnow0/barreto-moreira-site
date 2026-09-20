@@ -12,14 +12,14 @@ export default function NotFound() {
           404
         </span>
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-20 h-20 rounded-2xl bg-[#162235] flex items-center justify-center shadow-2xl">
+          <div className="w-20 h-20 rounded-2xl bg-[#18293C] flex items-center justify-center shadow-2xl">
             <span className="text-brand-gold text-2xl font-black">BM</span>
           </div>
         </div>
       </div>
 
       {/* Texto */}
-      <h1 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#162235] mb-4">
+      <h1 className="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight text-[#18293C] mb-4">
         Página <span className="text-[#64748B]">Não Encontrada</span>
       </h1>
       <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-md mb-10 font-light">
@@ -30,7 +30,7 @@ export default function NotFound() {
       <div className="flex flex-col sm:flex-row items-center gap-4">
         <Link
           to="/"
-          className="px-8 py-4 rounded-xl bg-[#162235] text-white font-semibold text-sm tracking-widest uppercase hover:bg-brand-hover transition-all flex items-center gap-3 shadow-xl shadow-[#162235]/20 group"
+          className="px-8 py-4 rounded-xl bg-[#18293C] text-white font-semibold text-sm tracking-widest uppercase hover:bg-brand-hover transition-all flex items-center gap-3 shadow-xl shadow-[#18293C]/20 group"
         >
           <Home size={18} className="text-brand-gold" />
           <span>Voltar ao Início</span>
@@ -38,7 +38,7 @@ export default function NotFound() {
         </Link>
         <Link
           to="/contato"
-          className="px-8 py-4 rounded-xl bg-white text-[#162235] border border-[#E2E8F0] font-semibold text-sm tracking-widest uppercase hover:bg-black/[0.02] transition-all flex items-center justify-center"
+          className="px-8 py-4 rounded-xl bg-white text-[#18293C] border border-[#E2E8F0] font-semibold text-sm tracking-widest uppercase hover:bg-black/[0.02] transition-all flex items-center justify-center"
         >
           Solicitar Avaliação
         </Link>

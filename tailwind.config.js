@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         brand: {
-          DEFAULT: '#162235', // Azul escuro nobre da logo
-          hover: '#1d2c44',
+          DEFAULT: '#18293C', // Azul escuro nobre da marca
+          hover: '#223851',
           night: '#0e1726',   // Preto azulado profundo das seções Milano
           black: '#090d14',
           gold: '#c5a880',    // Ouro champagne discreto de destaque
@@ -22,7 +22,7 @@ export default {
         things: {
           mist: '#F8FAFC',
           paper: '#FFFFFF',
-          ink: '#162235',
+          ink: '#18293C',
           smoke: '#334155',
           ash: '#64748B',
           fog: '#94A3B8',
@@ -40,7 +40,7 @@ export default {
         mega: '0.35em',
       },
       boxShadow: {
-        'milano': '0 20px 40px -15px rgba(22, 34, 53, 0.1)',
+        'milano': '0 20px 40px -15px rgba(24, 41, 60, 0.1)',
         'card': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
       },
       animation: {

@@ -26,7 +26,7 @@ const AUTHOR = {
   name: 'Amilcar Barreto de Barros Moreira',
   role: 'Advogado e fundador do Barreto Moreira',
   oab: 'OAB/SP 349457',
-  photo: null, // ex.: import authorPhoto from '../assets/amilcar.webp'
+  photo: '/amlk.png',
   // TODO: acrescente formação, pós-graduações, publicações e tempo de atuação.
   bio: 'Fundador do Barreto Moreira, escritório de advocacia em Santos/SP. Atua de forma seletiva, com número limitado de causas ativas, para que cada caso receba diagnóstico próprio, pesquisa aprofundada e acompanhamento direto.',
 };
@@ -261,18 +261,18 @@ export default function Home() {
             <div className="lg:col-span-7 flex flex-col items-start text-left">
               <div className="inline-flex items-center gap-2.5 px-4 py-1.5 mb-8 rounded-full bg-white border border-[#E2E8F0] shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-brand-gold"></span>
-                <span className="text-xs font-semibold text-[#162235]">
+                <span className="text-xs font-semibold text-[#18293C]">
                   Advocacia consultiva e litigiosa de alto impacto
                 </span>
               </div>
 
-              <h1 className="flex flex-col tracking-tight font-bold text-[#162235] leading-[1.1] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4.2rem] mb-8">
+              <h1 className="flex flex-col tracking-tight font-bold text-[#18293C] leading-[1.1] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4.2rem] mb-8">
                 <span>Rigor técnico e defesa</span>
                 <span className="text-brand-gold">bem fundamentada.</span>
               </h1>
 
               {/* Frase descritiva literal: o que fazemos, onde e em quê */}
-              <p className="text-base sm:text-xl text-[#162235] leading-relaxed max-w-xl mb-5 font-medium">
+              <p className="text-base sm:text-xl text-[#18293C] leading-relaxed max-w-xl mb-5 font-medium">
                 Escritório de advocacia em Santos/SP com atuação em Direito Digital,
                 Propriedade Intelectual, Direito Autoral, Direito do Consumidor,
                 Contratos, Direito Animal e ações contra planos de saúde.
@@ -287,7 +287,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto mb-10">
                 <Link
                   to="/contato"
-                  className="px-8 py-4 rounded-xl bg-[#162235] text-white font-semibold text-sm hover:bg-brand-hover transition-all flex items-center justify-center gap-3 shadow-xl shadow-[#162235]/20 group"
+                  className="px-8 py-4 rounded-xl bg-[#18293C] text-white font-semibold text-sm hover:bg-brand-hover transition-all flex items-center justify-center gap-3 shadow-xl shadow-[#18293C]/20 group"
                 >
                   <span>Solicitar avaliação do caso</span>
                   <ArrowRight size={18} className="text-brand-gold transition-transform group-hover:translate-x-1" />
@@ -319,7 +319,7 @@ export default function Home() {
 
             <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-10 gap-6">
               <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#18293C] leading-tight">
                   Áreas de <span className="text-[#64748B]">especialidade</span>
                 </h2>
                 <p className="mt-4 text-base text-[#475569] font-light max-w-2xl leading-relaxed">
@@ -328,7 +328,7 @@ export default function Home() {
               </div>
               <Link
                 to="/atuacao"
-                className="text-xs font-bold text-[#162235] hover:text-brand-gold flex items-center gap-2 transition-colors shrink-0"
+                className="text-xs font-bold text-[#18293C] hover:text-brand-gold flex items-center gap-2 transition-colors shrink-0"
               >
                 <span>Ver portfólio de atuação</span>
                 <ArrowRight size={14} />
@@ -373,7 +373,7 @@ export default function Home() {
                   <Users size={24} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-[#162235] mb-1">
+                  <h3 className="text-lg font-bold text-[#18293C] mb-1">
                     Demandas Adicionais e Atuação em Parceria
                   </h3>
                   <p className="text-sm text-[#475569] font-light max-w-3xl leading-relaxed">
@@ -393,7 +393,7 @@ export default function Home() {
             <span>02 // Pilares de atuação</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#162235] tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#18293C] tracking-tight mb-6">
             Pilares <span className="font-light text-[#64748B]">de atuação</span>
           </h2>
 
@@ -415,10 +415,10 @@ export default function Home() {
                   <span className="text-3xl font-black text-brand-gold block mb-6 transition-transform group-hover:-translate-y-1">
                     {feat.num}.
                   </span>
-                  <h3 className="text-xl font-bold text-[#162235] mb-4">{feat.title}</h3>
+                  <h3 className="text-xl font-bold text-[#18293C] mb-4">{feat.title}</h3>
                   <p className="text-base text-[#475569] leading-relaxed font-light">{feat.desc}</p>
                 </div>
-                <div className="mt-12 pt-6 border-t border-[#E2E8F0] flex items-center justify-between text-xs font-bold text-[#162235]">
+                <div className="mt-12 pt-6 border-t border-[#E2E8F0] flex items-center justify-between text-xs font-bold text-[#18293C]">
                   <span>{feat.tag}</span>
                   <span className="w-2 h-2 rounded-full bg-brand-gold"></span>
                 </div>
@@ -447,14 +447,14 @@ export default function Home() {
                       loading="lazy"
                     />
                   )}
-                  <p className="text-xl font-bold text-[#162235] leading-tight mb-2">{AUTHOR.name}</p>
+                  <p className="text-xl font-bold text-[#18293C] leading-tight mb-2">{AUTHOR.name}</p>
                   <p className="text-sm text-[#475569] font-light mb-4">{AUTHOR.role}</p>
                   <p className="text-sm font-bold text-brand-gold">{AUTHOR.oab}</p>
                 </div>
               </div>
 
               <div className="lg:col-span-8">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#162235] leading-tight mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#18293C] leading-tight mb-6">
                   Quem conduz <span className="text-[#64748B]">o escritório</span>
                 </h2>
                 <p className="text-base sm:text-lg text-[#334155] leading-relaxed font-light max-w-3xl mb-6">
@@ -476,7 +476,7 @@ export default function Home() {
             <span>04 // Perguntas frequentes</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#18293C] leading-tight mb-4">
             Dúvidas <span className="text-[#64748B]">comuns</span>
           </h2>
           <p className="text-base text-[#475569] font-light max-w-2xl leading-relaxed mb-10">
@@ -490,7 +490,7 @@ export default function Home() {
                 className="group rounded-2xl bg-white border border-[#E2E8F0] shadow-sm open:shadow-lg open:border-brand-gold/40 transition-all"
               >
                 <summary className="cursor-pointer list-none flex items-center justify-between gap-4 p-6 sm:p-7">
-                  <h3 className="text-base sm:text-lg font-bold text-[#162235] leading-snug">{f.q}</h3>
+                  <h3 className="text-base sm:text-lg font-bold text-[#18293C] leading-snug">{f.q}</h3>
                   <ChevronDown
                     size={20}
                     className="shrink-0 text-brand-gold transition-transform duration-300 group-open:rotate-180"
@@ -516,7 +516,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#162235] leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#18293C] leading-tight">
                   O que dizem <span className="text-[#64748B]">nossos clientes</span>
                 </h2>
               </div>
@@ -539,7 +539,7 @@ export default function Home() {
                           <Star key={starIdx} size={14} className="text-brand-gold fill-brand-gold" />
                         ))}
                       </div>
-                      <span className="text-sm font-bold text-[#162235] block">{t.name}</span>
+                      <span className="text-sm font-bold text-[#18293C] block">{t.name}</span>
                       <span className="text-xs text-[#64748B] font-medium">{t.context}</span>
                     </div>
                   </div>
@@ -559,7 +559,7 @@ export default function Home() {
               backgroundImage: `url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=1920&q=80')`,
             }}
           ></div>
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0E1726]/95 to-[#162235]/95"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0E1726]/95 to-[#18293C]/95"></div>
 
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand-gold/10 rounded-full blur-[160px] pointer-events-none z-0"></div>
 

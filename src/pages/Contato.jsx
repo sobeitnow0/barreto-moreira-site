@@ -31,7 +31,7 @@ export default function Contato() {
           <span>05 // Canal oficial</span>
         </div>
         <div className="border-b border-[#E2E8F0] pb-8 mb-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#162235]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#18293C]">
             Solicite sua <span className="text-[#64748B]">avaliação</span>
           </h1>
         </div>
@@ -43,7 +43,7 @@ export default function Contato() {
       {/* Card Central de Contato */}
       <section className="pb-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
         <div className="bg-[#0E1726] text-white rounded-3xl p-8 sm:p-14 border border-white/10 shadow-2xl relative overflow-hidden">
-          
+
           <div className="relative z-10 flex flex-col items-center text-center">
             <div className="w-16 h-16 rounded-2xl bg-white/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold mb-8 shadow-sm">
               <Mail size={28} />
@@ -90,7 +90,7 @@ export default function Contato() {
             {/* Cards de Apoio */}
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 text-left pt-8 border-t border-white/10">
               <a
-                href="https://www.instagram.com/amilcarmoreira.juridico/"
+                href="https://www.instagram.com/barretomoreira_adv/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-brand-gold/40 transition-all flex items-center gap-4 group"
@@ -135,7 +135,7 @@ export default function Contato() {
         <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-6">
           <span>Perguntas frequentes</span>
         </div>
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-[#162235] mb-12">
+        <h2 className="text-2xl sm:text-4xl font-extrabold text-[#18293C] mb-12">
           Como <span className="text-[#64748B]">funciona</span>
         </h2>
 
@@ -167,7 +167,7 @@ export default function Contato() {
               className="group bg-white border border-[#E2E8F0] rounded-2xl shadow-sm hover:shadow-md transition-all overflow-hidden"
             >
               <summary className="flex items-center justify-between gap-4 p-6 cursor-pointer list-none select-none">
-                <span className="text-sm sm:text-base font-bold text-[#162235] leading-snug">
+                <span className="text-sm sm:text-base font-bold text-[#18293C] leading-snug">
                   {faq.q}
                 </span>
                 <span className="w-8 h-8 rounded-full bg-[#F8FAFC] border border-[#E2E8F0] flex items-center justify-center shrink-0 text-brand-gold transition-transform group-open:rotate-45">

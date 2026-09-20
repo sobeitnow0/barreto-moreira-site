@@ -34,7 +34,7 @@ export default function Escritorio() {
           <span>02 // Institucional &amp; fundador</span>
         </div>
         <div className="border-b border-[#E2E8F0] pb-8 mb-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#162235]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#18293C]">
             Advocacia <span className="text-[#64748B]">sob medida</span>
           </h1>
         </div>
@@ -53,7 +53,7 @@ export default function Escritorio() {
             <span className="text-xs font-bold text-brand-gold block mb-3">
               Posicionamento
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#162235] mb-5 leading-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#18293C] mb-5 leading-tight">
               A arquitetura jurídica de alto impacto exige método e profundidade
             </h2>
             <p className="text-[#334155] text-sm sm:text-base leading-relaxed mb-4 font-light">
@@ -67,7 +67,7 @@ export default function Escritorio() {
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="p-7 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm">
               <span className="text-xl font-black text-brand-gold mb-2 block">01.</span>
-              <h3 className="text-base font-bold text-[#162235] mb-2">Condução direta pelos sócios</h3>
+              <h3 className="text-base font-bold text-[#18293C] mb-2">Condução direta pelos sócios</h3>
               <p className="text-xs sm:text-sm text-[#334155] leading-relaxed font-light">
                 Do diagnóstico inicial ao sustentáculo oral, a gestão técnica é assumida diretamente pelos sócios encarregados, garantindo responsabilidade integral e sigilo.
               </p>
@@ -75,7 +75,7 @@ export default function Escritorio() {
 
             <div className="p-7 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm">
               <span className="text-xl font-black text-brand-gold mb-2 block">02.</span>
-              <h3 className="text-base font-bold text-[#162235] mb-2">Abordagem multidisciplinar</h3>
+              <h3 className="text-base font-bold text-[#18293C] mb-2">Abordagem multidisciplinar</h3>
               <p className="text-xs sm:text-sm text-[#334155] leading-relaxed font-light">
                 Conectamos a precisão do Direito Tradicional às dinâmicas do ambiente digital e à visão executiva de operações corporativas de grande porte.
               </p>
@@ -83,7 +83,7 @@ export default function Escritorio() {
 
             <div className="p-7 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm">
               <span className="text-xl font-black text-brand-gold mb-2 block">03.</span>
-              <h3 className="text-base font-bold text-[#162235] mb-2">Fundamentação técnica consistente</h3>
+              <h3 className="text-base font-bold text-[#18293C] mb-2">Fundamentação técnica consistente</h3>
               <p className="text-xs sm:text-sm text-[#334155] leading-relaxed font-light">
                 Peças processuais e instrumentos contratuais construídos com base jurisprudencial sólida e argumentação voltada à segurança jurídica do cliente.
               </p>
@@ -91,7 +91,7 @@ export default function Escritorio() {
 
             <div className="p-7 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm">
               <span className="text-xl font-black text-brand-gold mb-2 block">04.</span>
-              <h3 className="text-base font-bold text-[#162235] mb-2">Inteligência analítica aplicável</h3>
+              <h3 className="text-base font-bold text-[#18293C] mb-2">Inteligência analítica aplicável</h3>
               <p className="text-xs sm:text-sm text-[#334155] leading-relaxed font-light">
                 Uso de algoritmos e mineração de dados jurídicos para mapeamento de entendimentos dos tribunais e aumento da probabilidade de êxito nas demandas.
               </p>
@@ -105,7 +105,7 @@ export default function Escritorio() {
             <span className="text-xs font-bold text-brand-gold block mb-2">
               Liderança
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#162235]">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#18293C]">
               Os fundadores
             </h2>
           </div>
@@ -118,14 +118,14 @@ export default function Escritorio() {
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
   <img
-    src="/amlk.png"
+    src={`${import.meta.env.BASE_URL}amlk.png`}
     alt="Amilcar Barreto de Barros Moreira"
     className="w-full h-full object-cover"
   />
 </div>
 
                     <div>
-                      <h3 className="text-2xl sm:text-3xl font-extrabold text-[#162235]">
+                      <h3 className="text-2xl sm:text-3xl font-extrabold text-[#18293C]">
                         Amilcar Barreto de Barros Moreira
                       </h3>
                       <span className="text-xs font-bold text-brand-gold block mt-1">
@@ -138,7 +138,7 @@ export default function Escritorio() {
                     href="https://www.instagram.com/amilcarmoreira.juridico/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-semibold text-[#162235] hover:border-brand-gold transition-colors self-start sm:self-auto"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-semibold text-[#18293C] hover:border-brand-gold transition-colors self-start sm:self-auto"
                   >
                     <InstagramIcon size={14} className="text-brand-gold" />
                     <span>@amilcarmoreira.juridico</span>
@@ -163,7 +163,7 @@ export default function Escritorio() {
                     {credentials.map((cred, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-medium text-[#162235]"
+                        className="px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-medium text-[#18293C]"
                       >
                         {cred}
                       </span>
@@ -178,13 +178,13 @@ export default function Escritorio() {
               <div>
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-brand-gold/40 bg-[#F8FAFC] flex items-center justify-center shrink-0 shadow-sm relative group">
-                    <div className="w-full h-full flex flex-col items-center justify-center font-black text-xl text-[#162235] bg-gradient-to-br from-[#F8FAFC] to-[#E2E8F0]">
+                    <div className="w-full h-full flex flex-col items-center justify-center font-black text-xl text-[#18293C] bg-gradient-to-br from-[#F8FAFC] to-[#E2E8F0]">
                       <span className="text-brand-gold text-lg">AM</span>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold text-[#162235]">
+                    <h3 className="text-2xl sm:text-3xl font-extrabold text-[#18293C]">
                       Alan Miranda
                     </h3>
                     <span className="text-xs font-bold text-brand-gold block mt-1">
@@ -201,7 +201,7 @@ export default function Escritorio() {
                 </p>
 
                 <div className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-[#334155] leading-relaxed font-light">
-                  <span className="font-bold text-[#162235] block mb-1">Pesquisa jurisprudencial aplicada:</span>
+                  <span className="font-bold text-[#18293C] block mb-1">Pesquisa jurisprudencial aplicada:</span>
                   Acompanhamento contínuo de decisões recentes e organização de precedentes por tema, tribunal e relator, para fundamentar as teses com o entendimento mais atual da jurisprudência.
                 </div>
               </div>

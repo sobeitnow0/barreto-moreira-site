@@ -12,7 +12,7 @@ export default function Marquee() {
   ];
 
   return (
-    <div className="w-full bg-[#0E1726] border-y border-[#162235]/40 py-4 overflow-hidden select-none">
+    <div className="w-full bg-[#0E1726] border-y border-[#18293C]/40 py-4 overflow-hidden select-none">
       <div className="animate-marquee flex items-center gap-10 text-xs sm:text-sm tracking-[0.25em] font-semibold uppercase text-white/90">
         {[...items, ...items].map((text, idx) => (
           <React.Fragment key={idx}>

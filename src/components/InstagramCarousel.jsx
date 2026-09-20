@@ -17,7 +17,7 @@ export default function InstagramCarousel() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-normal text-[#162235]">
+            <h2 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-normal text-[#18293C]">
               Novidades do <span className="text-[#64748B]">Escritório</span>
             </h2>
           </div>
@@ -26,7 +26,7 @@ export default function InstagramCarousel() {
               href="https://www.instagram.com/amilcarmoreira.juridico/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-bold uppercase tracking-wider text-[#162235] hover:border-brand-gold transition-colors ml-2"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-bold uppercase tracking-wider text-[#18293C] hover:border-brand-gold transition-colors ml-2"
             >
               <InstagramIcon size={16} className="text-brand-gold" />
               <span>Siga no Instagram</span>

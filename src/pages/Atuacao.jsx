@@ -82,7 +82,7 @@ export default function Atuacao() {
           <span>01 // Portfólio de atuação</span>
         </div>
         <div className="border-b border-[#E2E8F0] pb-8 mb-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#162235]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#18293C]">
             Áreas de <span className="text-[#64748B]">especialidade</span>
           </h1>
         </div>
@@ -111,11 +111,11 @@ export default function Atuacao() {
                       <span className="text-2xl sm:text-3xl font-black text-brand-gold">
                         {area.num}.
                       </span>
-                      <div className="w-12 h-12 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-center justify-center text-[#162235] group-hover:bg-[#162235] group-hover:text-white transition-colors">
+                      <div className="w-12 h-12 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-center justify-center text-[#18293C] group-hover:bg-[#18293C] group-hover:text-white transition-colors">
                         <IconComponent size={22} />
                       </div>
                     </div>
-                    <h2 className="text-2xl sm:text-3xl font-extrabold text-[#162235] mb-2 leading-tight">
+                    <h2 className="text-2xl sm:text-3xl font-extrabold text-[#18293C] mb-2 leading-tight">
                       {area.title}
                     </h2>
                     <p className="text-xs font-semibold text-brand-gold">
@@ -135,7 +135,7 @@ export default function Atuacao() {
                       {area.tags.map((tag, tIdx) => (
                         <span
                           key={tIdx}
-                          className="px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-medium text-[#162235]"
+                          className="px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-medium text-[#18293C]"
                         >
                           {tag}
                         </span>
@@ -144,7 +144,7 @@ export default function Atuacao() {
 
                     <Link
                       to="/contato"
-                      className="inline-flex items-center gap-2 text-xs font-bold text-[#162235] hover:text-brand-gold transition-colors shrink-0"
+                      className="inline-flex items-center gap-2 text-xs font-bold text-[#18293C] hover:text-brand-gold transition-colors shrink-0"
                     >
                       <span>Consultar viabilidade</span>
                       <ArrowRight size={16} />
