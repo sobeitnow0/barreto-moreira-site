@@ -8,7 +8,7 @@ const Logo = ({ onClick }) => (
   <NavLink to="/" onClick={onClick} className="flex items-center group py-1.5 shrink-0">
     <img 
       src={`${import.meta.env.BASE_URL}logo-transparent.png`} 
-      alt="Barreto Moreira Advocacia Estratégica" 
+      alt="Barreto Moreira Estratégia Jurídica" 
       className="h-14 sm:h-16 lg:h-[4.5rem] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
     />
   </NavLink>
@@ -174,7 +174,7 @@ export default function Layout() {
               <NavLink to="/" className="inline-block">
                 <img 
                   src={`${import.meta.env.BASE_URL}logo-white.png`} 
-                  alt="Barreto Moreira Advocacia Estratégica" 
+                  alt="Barreto Moreira Estratégia Jurídica" 
                   className="h-11 sm:h-13 md:h-14 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
                 />
               </NavLink>
@@ -248,7 +248,7 @@ export default function Layout() {
 
           {/* Linha Inferior Legal */}
           <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50 text-center sm:text-left">
-            <span>© {new Date().getFullYear()} Barreto Moreira Advocacia Estratégica. Todos os direitos reservados.</span>
+            <span>© {new Date().getFullYear()} Barreto Moreira Estratégia Jurídica. Todos os direitos reservados.</span>
             <p className="text-[11px] italic max-w-xl">
               Conteúdo informativo em conformidade com o Provimento nº 205/2021 da OAB.
             </p>

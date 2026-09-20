@@ -46,7 +46,7 @@ export default function NotFound() {
 
       {/* Rodapé sutil */}
       <p className="mt-16 text-xs text-[#94A3B8] uppercase tracking-[0.2em]">
-        OAB/SP 349457 • Barreto Moreira Advocacia Estratégica
+        OAB/SP 349457 • Barreto Moreira Estratégia Jurídica
       </p>
     </div>
   );

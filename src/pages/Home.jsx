@@ -157,7 +157,7 @@ const testimonials = [
 /* ------------------------------------------------------------------ */
 
 const PAGE_TITLE =
-  'Barreto Moreira | Advocacia Estratégica — Amilcar Barreto';
+  'Barreto Moreira | Estratégia Jurídica — Amilcar Barreto';
 const PAGE_DESCRIPTION =
   'Escritório de advocacia em Santos/SP: Direito Digital, Propriedade Intelectual, Direito Autoral, Consumidor, Contratos e Planos de Saúde. OAB/SP 349457.';
 
@@ -169,8 +169,8 @@ const schemaMarkup = {
     {
       '@type': 'LegalService',
       '@id': `${SITE_URL}/#organization`,
-      name: 'Barreto Moreira | Advocacia Estratégica — Amilcar Barreto',
-      alternateName: 'Barreto Moreira Advocacia Estratégica',
+      name: 'Barreto Moreira | Estratégia Jurídica — Amilcar Barreto',
+      alternateName: 'Barreto Moreira Estratégia Jurídica',
       url: `${SITE_URL}/`,
       description: PAGE_DESCRIPTION,
       logo: `${SITE_URL}/logo-cropped.png`,
