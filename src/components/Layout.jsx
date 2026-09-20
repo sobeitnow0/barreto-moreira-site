@@ -241,7 +241,7 @@ export default function Layout() {
               </div>
               <div className="mt-2 p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white/70 leading-relaxed">
                 <span className="text-brand-gold font-bold block mb-1">Atendimento Especializado:</span>
-                Avaliação jurídica estratégica com atendimento digital por videoconferência.
+                Análise jurídica criteriosa com atendimento digital por videoconferência.
               </div>
             </div>
           </div>

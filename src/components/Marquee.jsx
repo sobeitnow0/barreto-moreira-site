@@ -3,9 +3,9 @@ import React from 'react';
 export default function Marquee() {
   const items = [
     "BARRETO MOREIRA",
-    "ADVOCACIA ESTRATÉGICA",
+    "DIREITO SOB MEDIDA",
     "OAB/SP 349457",
-    "AVALIAÇÃO ESTRATÉGICA DE CASOS",
+    "ANÁLISE DETALHADA DE CASOS",
     "DIREITO DIGITAL & PLATAFORMAS",
     "DIREITO AUTORAL & PROPRIEDADE INTELECTUAL",
     "CONSUMIDOR & CONTRATOS SOB MEDIDA",

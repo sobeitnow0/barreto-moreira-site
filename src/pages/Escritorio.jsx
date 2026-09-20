@@ -35,7 +35,7 @@ export default function Escritorio() {
         </div>
         <div className="border-b border-[#E2E8F0] pb-8 mb-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#162235]">
-            O escritório <span className="text-[#64748B]">estratégico</span>
+            Advocacia <span className="text-[#64748B]">sob medida</span>
           </h1>
         </div>
         <p className="text-base sm:text-lg text-[#334155] max-w-3xl leading-relaxed font-light">
@@ -60,7 +60,7 @@ export default function Escritorio() {
               Desafios regulatórios, digitais e patrimoniais exigem investigação fática rigorosa, acompanhamento jurisprudencial contínuo e construção de teses sólidas perante as instâncias julgadoras.
             </p>
             <p className="text-[#334155] text-sm sm:text-base leading-relaxed font-light">
-              Mantemos controle intencional do fluxo de causas aceitas para assegurar dedicação exclusiva e imersão total dos fundadores nos objetivos estratégicos de cada cliente.
+              Mantemos controle intencional do fluxo de causas aceitas para assegurar dedicação exclusiva e imersão total dos fundadores nos objetivos de cada cliente.
             </p>
           </div>
 
@@ -197,7 +197,7 @@ export default function Escritorio() {
                   Co-fundador à frente da pesquisa jurisprudencial da banca. Mapeia decisões de tribunais e entendimentos de magistrados relevantes para cada tese em construção, organizando esse levantamento em bases de consulta rápida para os sócios.
                 </p>
                 <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8 font-light">
-                  Esse trabalho permite identificar, antes do protocolo de uma ação, quais teses têm maior probabilidade de êxito em cada vara ou tribunal, orientando a estratégia processual desde o primeiro contato com o caso.
+                  Esse trabalho permite identificar, antes do protocolo de uma ação, quais teses têm maior probabilidade de êxito em cada vara ou tribunal, orientando a condução processual desde o primeiro contato com o caso.
                 </p>
 
                 <div className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-[#334155] leading-relaxed font-light">

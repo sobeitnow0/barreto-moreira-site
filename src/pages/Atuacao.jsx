@@ -10,7 +10,7 @@ export default function Atuacao() {
     if (meta) {
       meta.setAttribute(
         'content',
-        'Direito Digital, Propriedade Intelectual, Direito Autoral, Direito do Consumidor, Ação Contra Plano de Saúde, Contratos Estratégicos e Direito Animal. Conheça as áreas de atuação do Barreto Moreira. OAB/SP 349457.'
+        'Direito Digital, Propriedade Intelectual, Direito Autoral, Direito do Consumidor, Ação Contra Plano de Saúde, Contratos Sob Medida e Direito Animal. Conheça as áreas de atuação do Barreto Moreira. OAB/SP 349457.'
       );
     }
   }, []);
@@ -28,9 +28,9 @@ export default function Atuacao() {
       num: "02",
       icon: Award,
       title: "Propriedade Intelectual & Marcas",
-      subtitle: "Blindagem e gestão estratégica de ativos imateriais perante o INPI",
+      subtitle: "Blindagem e gestão preventiva de ativos imateriais perante o INPI",
       desc: "Gestão completa da identidade imaterial de marcas, patentes e desenhos industriais. Atuamos em oposições, nulidades administrativas, recursos e ações de contrafação para proteger o valor comercial de cada ativo.",
-      tags: ["Registro & atuação no INPI", "Oposições estratégicas", "Combate à contrafação"]
+      tags: ["Registro & atuação no INPI", "Oposições e recursos", "Combate à contrafação"]
     },
     {
       num: "03",
@@ -45,7 +45,7 @@ export default function Atuacao() {
       icon: Scale,
       title: "Direito do Consumidor",
       subtitle: "Atuação bivalente: representamos consumidores e também empresas e fornecedores",
-      desc: "Atuamos tanto na defesa de consumidores quanto na representação de empresas e fornecedores em litígios de consumo, elaboração de termos de uso e conformidade com o CDC. Conhecer a estratégia dos dois lados da relação de consumo é o que torna essa atuação mais precisa.",
+      desc: "Atuamos tanto na defesa de consumidores quanto na representação de empresas e fornecedores em litígios de consumo, elaboração de termos de uso e conformidade com o CDC. Conhecer a dinâmica dos dois lados da relação de consumo é o que torna essa atuação mais precisa.",
       tags: ["Defesa de consumidores", "Defesa de fornecedores", "Conformidade com o CDC"]
     },
     {
@@ -69,7 +69,7 @@ export default function Atuacao() {
       icon: HeartPulse,
       title: "Ação Contra Plano de Saúde",
       subtitle: "Atuação bivalente: representamos beneficiários e também operadoras de saúde",
-      desc: "Atuamos em ações por negativa de cobertura, reajuste abusivo, descredenciamento de rede e demais litígios envolvendo planos de saúde — tanto na defesa de beneficiários quanto na representação de operadoras. Essa atuação nos dois lados da relação permite antecipar a estratégia processual da parte contrária.",
+      desc: "Atuamos em ações por negativa de cobertura, reajuste abusivo, descredenciamento de rede e demais litígios envolvendo planos de saúde — tanto na defesa de beneficiários quanto na representação de operadoras. Essa atuação nos dois lados da relação permite antecipar argumentos e teses da parte contrária.",
       tags: ["Negativa de cobertura", "Reajuste abusivo", "Defesa de operadoras"]
     }
   ];

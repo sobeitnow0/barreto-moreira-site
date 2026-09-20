@@ -47,7 +47,7 @@ const categories = [
     num: '02',
     slug: 'propriedade-intelectual',
     name: 'Propriedade Intelectual',
-    sub: 'Proteção de ativos imateriais, oposições e recursos estratégicos no INPI',
+    sub: 'Proteção de ativos imateriais, oposições e recursos no INPI',
     img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
   },
   {
@@ -91,7 +91,7 @@ const features = [
   {
     num: '01',
     title: 'Diagnóstico Individual de Cada Caso',
-    desc: 'Nenhuma causa entra em um fluxo padronizado. Cada processo passa por um diagnóstico próprio, no qual a estratégia nasce das particularidades dos fatos e da jurisprudência mais recente aplicável.',
+    desc: 'Nenhuma causa entra em um fluxo padronizado. Cada processo passa por um diagnóstico próprio, no qual o plano de ação nasce das particularidades dos fatos e da jurisprudência mais recente aplicável.',
     tag: 'Investigação Detalhada',
   },
   {
@@ -268,7 +268,7 @@ export default function Home() {
 
               <h1 className="flex flex-col tracking-tight font-bold text-[#162235] leading-[1.1] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4.2rem] mb-8">
                 <span>Rigor técnico e defesa</span>
-                <span className="text-brand-gold">estratégica.</span>
+                <span className="text-brand-gold">bem fundamentada.</span>
               </h1>
 
               {/* Frase descritiva literal: o que fazemos, onde e em quê */}
@@ -323,7 +323,7 @@ export default function Home() {
                   Áreas de <span className="text-[#64748B]">especialidade</span>
                 </h2>
                 <p className="mt-4 text-base text-[#475569] font-light max-w-2xl leading-relaxed">
-                  Atuamos em sete frentes do direito, com foco em causas que exigem pesquisa e estratégia próprias.
+                  Atuamos em sete frentes do direito, com foco em causas que exigem pesquisa aprofundada e soluções sob medida.
                 </p>
               </div>
               <Link
@@ -377,7 +377,7 @@ export default function Home() {
                     Demandas Adicionais e Atuação em Parceria
                   </h3>
                   <p className="text-sm text-[#475569] font-light max-w-3xl leading-relaxed">
-                    Além das especialidades centrais, aceitamos e conduzimos demandas em outras áreas do direito (como criminal, trabalhista e previdenciário) por meio de parcerias estratégicas qualificadas, assegurando o mesmo padrão rigoroso de acompanhamento e supervisão técnica do escritório.
+                    Além das especialidades centrais, aceitamos e conduzimos demandas em outras áreas do direito (como criminal, trabalhista e previdenciário) por meio de parcerias técnicas e qualificadas, assegurando o mesmo padrão rigoroso de acompanhamento e supervisão do escritório.
                   </p>
                 </div>
               </div>
@@ -568,7 +568,7 @@ export default function Home() {
               <div className="w-48 h-48 rounded-full border border-dashed border-brand-gold/50 flex flex-col items-center justify-center text-center p-6">
                 <span className="text-[11px] font-bold text-brand-gold">OAB/SP</span>
                 <span className="text-3xl font-black tracking-widest text-white my-1">349457</span>
-                <span className="text-[10px] font-bold text-white/70">Estratégica</span>
+                <span className="text-[10px] font-bold text-white/70">Sob Medida</span>
               </div>
             </div>
 
@@ -580,7 +580,7 @@ export default function Home() {
                 Submeta seu caso a uma análise jurídica preliminar
               </h2>
               <p className="text-white/75 text-base sm:text-lg leading-loose max-w-3xl mb-10 font-light">
-                Antes de assumirmos qualquer demanda, realizamos um estudo de viabilidade técnica para mapear riscos, probabilidades e caminhos estratégicos. Envie os elementos do seu caso e receba um retorno criterioso em até 2 dias úteis.
+                Antes de assumirmos qualquer demanda, realizamos um estudo de viabilidade técnica para mapear riscos, probabilidades e os melhores caminhos para o seu caso. Envie os elementos do seu caso e receba um retorno criterioso em até 2 dias úteis.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-5 w-full sm:w-auto">
