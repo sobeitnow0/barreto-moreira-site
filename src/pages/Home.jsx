@@ -473,15 +473,11 @@ export default function Home() {
 
                   <div className="space-y-4 text-base sm:text-lg text-[#334155] leading-relaxed font-light mb-8">
                     <p>
-                      Graduado em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>, é especialista pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Animal</strong>, <strong>Direito do Consumidor</strong> e <strong>Cinema e Vídeo</strong>. Conta com extensões em <strong>Litígio Internacional e Direito Energético</strong> (Universität Heidelberg / UniSantos / ESDC), qualificações pela <strong>Fundação Getulio Vargas (FGV)</strong>, certificação da Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>) e o curso <strong>CopyrightX</strong> pela <strong>Harvard Law School</strong>.
+                      Advogado fundador do Barreto Moreira, graduado em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>. Especialista pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Animal</strong> e <strong>Direito do Consumidor</strong>, conta com qualificações pela <strong>Harvard Law School (CopyrightX)</strong>, <strong>WIPO</strong>, <strong>FGV</strong> e <strong>Universität Heidelberg</strong>.
                     </p>
 
                     <p>
-                      Sua trajetória profissional inclui atuação no contencioso e consultivo cível/trabalhista na <strong>Clara E. T. Monforte Advogados</strong> e a Direção Jurídica do grupo LGF Comércio Eletrônico (Grão de Gente), onde liderou a governança de contratos e operações digitais de grande escala, mantendo também rotina ativa de acompanhamento em buscadores jurídicos como o <strong>DJEN</strong>.
-                    </p>
-
-                    <p>
-                      Fora das atividades jurídicas, é praticante de <strong>Jiu-Jitsu</strong>, ostentando a faixa marrom (1º Grau) pela <strong>Kings Jiu Jitsu</strong>.
+                      Sua trajetória une a prática em contencioso cível à vivência executiva como diretor jurídico em comércio eletrônico de grande escala e à inovação tecnológica (idealizador do buscador DJEN). No tatame, é faixa marrom (1º Grau) pela <strong>Kings Jiu Jitsu</strong>.
                     </p>
                   </div>
 
