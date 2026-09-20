@@ -30,11 +30,11 @@ export default function Escritorio() {
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
-      <section className="pt-16 sm:pt-16 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-2 text-xs font-bold text-brand-gold mb-4">
+      <section className="pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="flex items-center gap-2 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
           <span>02 // Institucional &amp; fundador</span>
         </div>
-        <div className="border-b border-[#E2E8F0] pb-8 mb-8">
+        <div className="border-b border-[#E2E8F0] pb-6 mb-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#18293C]">
             Advocacia <span className="text-[#64748B]">sob medida</span>
           </h1>
@@ -48,7 +48,7 @@ export default function Escritorio() {
       <Marquee />
 
       {/* Seção Pilares */}
-      <section className="py-16 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-14 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-14">
           <div className="lg:col-span-5">
             <span className="text-xs font-bold text-brand-gold block mb-3">
@@ -147,7 +147,7 @@ export default function Escritorio() {
                 </div>
 
                 <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4 font-light">
-  Graduado em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>, é especialista pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Anima, Direito do Consumidor</strong> e <strong>Cinema e Vídeo</strong>. Conta com extensões em <strong>Litígio Internacional e Direito Energético</strong> (Universität Heidelberg / UniSantos / ESDC), qualificações pela <strong>Fundação Getulio Vargas (FGV)</strong>, certificação da Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>) e o curso <strong>CopyrightX</strong> pela <strong>Harvard Law School</strong>.
+  Graduado em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>, é especialista pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Animal</strong>, <strong>Direito do Consumidor</strong> e <strong>Cinema e Vídeo</strong>. Conta com extensões em <strong>Litígio Internacional e Direito Energético</strong> (Universität Heidelberg / UniSantos / ESDC), qualificações pela <strong>Fundação Getulio Vargas (FGV)</strong>, certificação da Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>) e o curso <strong>CopyrightX</strong> pela <strong>Harvard Law School</strong>.
 </p>
 <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4 font-light">
   Sua trajetória profissional inclui atuação no contencioso e consultivo cível/trabalhista na <strong>Clara E. T. Monforte Advogados</strong> e a Direção Jurídica do grupo LGF Comércio Eletrônico (Grão de Gente), onde liderou a governança de contratos e operações digitais de grande escala, mantendo também rotina ativa de acompanhamento em buscadores jurídicos como o <strong>DJEN</strong>.

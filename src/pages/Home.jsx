@@ -27,8 +27,7 @@ const AUTHOR = {
   role: 'Advogado e fundador do Barreto Moreira',
   oab: 'OAB/SP 349457',
   photo: '/amlk.png',
-  // TODO: acrescente formação, pós-graduações, publicações e tempo de atuação.
-  bio: 'Fundador do Barreto Moreira, escritório de advocacia em Santos/SP. Atua de forma seletiva, com número limitado de causas ativas, para que cada caso receba diagnóstico próprio, pesquisa aprofundada e acompanhamento direto.',
+  bio: 'Graduado em Direito (UniSantos) e Comunicação Social (UniSanta), é especialista pós-graduado em Direito Digital, Direito Animal, Direito do Consumidor e Cinema e Vídeo. Conta com extensões em Litígio Internacional e Direito Energético (Univ. Heidelberg / UniSantos / ESDC), qualificações pela FGV, WIPO e curso CopyrightX pela Harvard Law School.',
 };
 
 /* ------------------------------------------------------------------ */
@@ -102,32 +101,44 @@ const features = [
   },
 ];
 
-// Respostas curtas, informativas e sem promessa de resultado (OAB).
-// O mesmo array alimenta o FAQ visível e o schema FAQPage.
+// Respostas informativas, fundamentadas na legislação e jurisprudência, sem promessa de resultado (OAB).
+// O mesmo array alimenta o FAQ visual e o schema FAQPage (JSON-LD).
 const faqs = [
   {
+    q: 'Como funciona a guarda e o custeio de despesas (alimentos) de animais de estimação após o divórcio ou dissolução de união estável?',
+    a: 'Embora o art. 82 do Código Civil classifique os animais como semoventes, o Superior Tribunal de Justiça (STJ, REsp 1.718.274/SP, Rel. Min. Ricardo Villas Bôas Cueva) consolidou o entendimento de que os pets possuem natureza jurídica especial decorrente do vínculo afetivo (família multiespécie). É plenamente viável fixar em juízo a guarda (unilateral ou compartilhada), regime de convivência/visitas e a partilha proporcional das despesas de alimentação, saúde e cuidados veterinários, aplicando-se por analogia os princípios do Direito das Famílias (arts. 1.583 e 1.694 do Código Civil c/c art. 300 do CPC para tutela de urgência).',
+  },
+  {
+    q: 'Houve suspeita de erro médico-veterinário ou falha em clínica/hospital pet. Cabe indenização?',
+    a: 'Sim. A prestação de serviços médico-veterinários submete-se ao Código de Defesa do Consumidor (arts. 6º, VI, e 14 do CDC) e às regras gerais de responsabilidade civil (arts. 186 e 927 do Código Civil). Diante de erro no diagnóstico, em cirurgias ou negligência em internamento, é essencial reunir prontuário clínico integral, laudos e receituários. Demonstrado o nexo causal, cabe reparação por danos materiais (ressarcimento de valores e despesas com novos tratamentos) e compensação por danos morais pela dor suportada pelos tutores.',
+  },
+  {
+    q: 'O plano de saúde negou atendimento médico de emergência ou internação alegando carência. Isso é legal?',
+    a: 'Não. Os arts. 12, inciso V, alínea "c", e 35-C da Lei dos Planos de Saúde (Lei nº 9.656/1998) determinam que, em casos de urgência ou emergência médica (risco iminente de morte ou lesão irreparável), o prazo máximo de carência é de 24 horas a partir da contratação. Além disso, a Súmula 597 do STJ pacificou que é abusiva qualquer cláusula contratual que estipule carência superior a 24 horas para esses atendimentos. Havendo recusa indevida, cabe pedido de tutela de urgência (liminar, arts. 300 e 303 do CPC) para compelir a operadora a autorizar e cobrir imediatamente o procedimento.',
+  },
+  {
+    q: 'O plano de saúde pode recusar cirurgia, prótese ou medicamento prescrito alegando que não está no Rol da ANS?',
+    a: 'A escolha da melhor terapêutica cabe exclusivamente ao médico assistente, e não à operadora de saúde. O art. 10, §§ 12 e 13 da Lei nº 9.656/1998 (com redação dada pela Lei nº 14.454/2022) expressamente superou o caráter taxativo absoluto do Rol da ANS, garantindo a cobertura de tratamentos com eficácia científica comprovada. Ademais, a Súmula 102 do Tribunal de Justiça de São Paulo (TJSP) dispõe expressamente que, havendo indicação médica, é abusiva a negativa de cobertura sob alegação de procedimento não previsto no rol ou experimental.',
+  },
+  {
+    q: 'Como identificar e questionar um reajuste abusivo no plano de saúde?',
+    a: 'Nos planos individuais e familiares, o reajuste anual é regulado e limitado pelo índice fixado pela ANS. Nos planos coletivos (empresariais ou por adesão), o reajuste exige demonstração transparente de cálculos atuariais e sinistralidade, sendo passível de anulação caso imponha desvantagem exagerada ao consumidor (art. 51, IV e X, do CDC). Já nos reajustes por mudança de faixa etária (especialmente aos 59 anos), deve ser respeitada a proibição de discriminação do idoso (art. 15, § 3º da Lei nº 10.741/2003) e as teses firmadas pelo STJ no Tema Repetitivo 952.',
+  },
+  {
     q: 'Como remover um perfil falso ou um conteúdo ofensivo da internet?',
-    a: 'O primeiro passo costuma ser denunciar pelos canais da própria plataforma e preservar provas: capturas de tela, links, data e hora, de preferência com ata notarial. Se a plataforma não resolver, é possível ir à Justiça para pedir a remoção e, conforme o caso, indenização. A responsabilidade das plataformas é tratada pelo Marco Civil da Internet e tem sido revista pela jurisprudência, por isso cada caso exige análise atualizada.',
+    a: 'O primeiro passo envolve a preservação técnica das provas (prints com URLs completas, data e hora, de preferência com ata notarial, conforme art. 384 do CPC) e a notificação pelos canais da plataforma. Se não houver resolução célere, ingressa-se com ação judicial com pedido de liminar (arts. 294 e 300 do CPC) para ordem de indisponibilização do conteúdo ou fornecimento de registros de IP e conexão, com amparo no Marco Civil da Internet (Lei nº 12.965/2014, arts. 10, 19 e 22), cumulada com reparação civil por danos morais e à imagem (art. 5º, V e X da CF/88 c/c art. 186 do Código Civil).',
   },
   {
-    q: 'Como registrar uma marca no INPI?',
-    a: 'Em linhas gerais: pesquisa de anterioridade para verificar se já existe marca igual ou parecida, depósito do pedido no INPI na classe correta, pagamento das taxas e acompanhamento na Revista da Propriedade Industrial, onde terceiros podem apresentar oposição. No Brasil, a propriedade da marca decorre do registro, e não do simples uso, por isso proteger o nome cedo evita disputas.',
+    q: 'Como funciona o registro de uma marca no INPI e qual a sua importância?',
+    a: 'No Brasil, a propriedade da marca e o direito de uso exclusivo em território nacional decorrem do registro regularmente concedido pelo Instituto Nacional da Propriedade Industrial (INPI), nos termos do art. 129 da Lei de Propriedade Industrial (Lei nº 9.279/1996). O procedimento compreende busca prévia de anterioridade, protocolo na classificação adequada, exame substantivo e acompanhamento de publicações na Revista da Propriedade Industrial (RPI) para responder a oposições de terceiros e evitar contrafação.',
   },
   {
-    q: 'Preciso registrar minha obra para ter direitos autorais?',
-    a: 'Não. Pela Lei de Direitos Autorais (Lei 9.610/98), os direitos nascem com a criação da obra e o registro é facultativo. Ainda assim, ele ajuda a comprovar autoria e data, o que pode ser decisivo em uma disputa. Para que terceiros usem a obra, o caminho é um contrato de licença ou de cessão, e as duas coisas têm efeitos diferentes.',
+    q: 'Preciso registrar minha obra intelectual para ter proteção de direitos autorais?',
+    a: 'Não. Pelo art. 18 da Lei de Direitos Autorais (Lei nº 9.610/1998), a proteção dos direitos autorais independe de registro, nascendo com a própria criação da obra. Contudo, o registro na Biblioteca Nacional ou entidade competente é recomendado como prova pré-constituída de anterioridade e autoria. Para exploração comercial por terceiros, é imprescindível formalizar contrato de cessão ou licenciamento de direitos autorais (arts. 49 e 50 da LDA).',
   },
   {
-    q: 'Por que não usar um modelo de contrato pronto?',
-    a: 'Modelos genéricos ignoram as particularidades da operação. Prazo, multa, rescisão, responsabilidade, confidencialidade e propriedade intelectual costumam ser os pontos que geram litígio quando mal ajustados. Um contrato sob medida distribui os riscos conforme a realidade de cada negócio.',
-  },
-  {
-    q: 'O plano de saúde negou cobertura. O que fazer?',
-    a: 'Peça a negativa por escrito, com o motivo, e reúna o relatório do médico assistente com a indicação do procedimento ou medicamento. É possível registrar reclamação na ANS e, quando há urgência, avaliar medidas judiciais, inclusive pedido de liminar. Cada caso depende do contrato, da lei e da jurisprudência aplicáveis.',
-  },
-  {
-    q: 'Como identificar um reajuste abusivo no plano de saúde?',
-    a: 'Nos planos individuais e familiares, o reajuste anual é limitado por índice definido pela ANS. Nos planos coletivos, o reajuste é negociado e pode ser questionado quando falta transparência sobre os cálculos ou quando o aumento não se justifica. Guardar contrato, boletos e comunicados de reajuste é o ponto de partida para qualquer análise.',
+    q: 'Por que não se deve utilizar modelos genéricos de contrato?',
+    a: 'A liberdade contratual deve ser exercida em harmonia com a função social e os preceitos de boa-fé objetiva (arts. 421 e 422 do Código Civil). Modelos genéricos ignoram as particularidades da operação e frequentemente contêm cláusulas nulas ou desequilibradas quanto a responsabilidade, confidencialidade, propriedade intelectual, rescisão e penalidades. Um contrato sob medida mitiga litígios ao estruturar de forma precisa os riscos e obrigações de cada parte.',
   },
 ];
 
@@ -255,36 +266,36 @@ export default function Home() {
 
       {/* 1. HERO */}
       <ScrollReveal>
-        <section className="pt-10 sm:pt-14 pb-10 sm:pb-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <section className="pt-12 sm:pt-16 lg:pt-20 pb-12 sm:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Lado esquerdo */}
             <div className="lg:col-span-7 flex flex-col items-start text-left">
-              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 mb-8 rounded-full bg-white border border-[#E2E8F0] shadow-sm">
+              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 mb-6 rounded-full bg-white border border-[#E2E8F0] shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-brand-gold"></span>
                 <span className="text-xs font-semibold text-[#18293C]">
                   Advocacia consultiva e litigiosa de alto impacto
                 </span>
               </div>
 
-              <h1 className="flex flex-col tracking-tight font-bold text-[#18293C] leading-[1.1] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4.2rem] mb-8">
+              <h1 className="flex flex-col tracking-tight font-bold text-[#18293C] leading-[1.12] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] mb-6">
                 <span>Rigor técnico e defesa</span>
                 <span className="text-brand-gold">bem fundamentada.</span>
               </h1>
 
-              {/* Frase descritiva literal: o que fazemos, onde e em quê */}
-              <p className="text-base sm:text-xl text-[#18293C] leading-relaxed max-w-xl mb-5 font-medium">
+              {/* Frase descritiva literal */}
+              <p className="text-base sm:text-xl text-[#18293C] leading-relaxed max-w-xl mb-4 font-medium">
                 Escritório de advocacia em Santos/SP com atuação em Direito Digital,
                 Propriedade Intelectual, Direito Autoral, Direito do Consumidor,
                 Contratos, Direito Animal e ações contra planos de saúde.
               </p>
 
-              <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-xl mb-10 font-light">
+              <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-xl mb-8 font-light">
                 Cada caso passa por investigação aprofundada e por uma tese construída
-                sob medida — sem modelos prontos, sem escala em massa. Mantemos um número
-                limitado de causas ativas para garantir dedicação real aos nossos clientes.
+                sob medida — sem modelos prontos, sem escala em massa. Mantemos um volume
+                controlado de causas ativas para garantir dedicação real aos nossos clientes.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto mb-10">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
                 <Link
                   to="/contato"
                   className="px-8 py-4 rounded-xl bg-[#18293C] text-white font-semibold text-sm hover:bg-brand-hover transition-all flex items-center justify-center gap-3 shadow-xl shadow-[#18293C]/20 group"
@@ -297,7 +308,7 @@ export default function Home() {
 
             {/* Lado direito: imagem */}
             <div className="lg:col-span-5 relative mt-8 lg:mt-0">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E2E8F0] max-h-[600px] w-full bg-white">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E2E8F0] max-h-[580px] w-full bg-white">
                 <img
                   src={heroImage}
                   alt="Análise de petição e documentos jurídicos no escritório Barreto Moreira"
@@ -311,18 +322,18 @@ export default function Home() {
 
       {/* 2. ÁREAS DE ATUAÇÃO */}
       <ScrollReveal>
-        <section id="areas" className="py-10 sm:py-14 bg-white border-y border-[#E2E8F0]">
-          <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-6">
+        <section id="areas" className="py-14 sm:py-20 lg:py-24 bg-white border-y border-[#E2E8F0]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
               <span>01 // Especialidades</span>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-8 mb-10 gap-6">
+            <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-6 mb-8 gap-6">
               <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#18293C] leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#18293C] leading-tight mb-3">
                   Áreas de <span className="text-[#64748B]">especialidade</span>
                 </h2>
-                <p className="mt-4 text-base text-[#475569] font-light max-w-2xl leading-relaxed">
+                <p className="text-base text-[#475569] font-light max-w-2xl leading-relaxed">
                   Atuamos em sete frentes do direito, com foco em causas que exigem pesquisa aprofundada e soluções sob medida.
                 </p>
               </div>
@@ -367,7 +378,7 @@ export default function Home() {
             </div>
 
             {/* Parcerias / outras demandas */}
-            <div className="mt-12 p-8 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center shrink-0 mt-1">
                   <Users size={24} />
@@ -388,37 +399,33 @@ export default function Home() {
 
       {/* 3. PILARES DE ATUAÇÃO */}
       <ScrollReveal>
-        <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-          <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-4">
+        <section className="py-14 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+          <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
             <span>02 // Pilares de atuação</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#18293C] tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#18293C] tracking-tight mb-4">
             Pilares <span className="font-light text-[#64748B]">de atuação</span>
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 mt-6 mb-10 items-center">
-            <div className="lg:col-span-8">
-              <p className="text-base sm:text-lg text-[#334155] leading-relaxed font-light max-w-3xl">
-                O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
-              </p>
-            </div>
-          </div>
+          <p className="text-base sm:text-lg text-[#334155] leading-relaxed font-light max-w-3xl mb-10 sm:mb-12">
+            O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {features.map((feat) => (
               <div
                 key={feat.num}
-                className="p-10 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between group"
+                className="p-6 sm:p-8 lg:p-10 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
-                  <span className="text-3xl font-black text-brand-gold block mb-6 transition-transform group-hover:-translate-y-1">
+                  <span className="text-3xl font-black text-brand-gold block mb-5 transition-transform group-hover:-translate-y-1">
                     {feat.num}.
                   </span>
-                  <h3 className="text-xl font-bold text-[#18293C] mb-4">{feat.title}</h3>
+                  <h3 className="text-xl font-bold text-[#18293C] mb-3">{feat.title}</h3>
                   <p className="text-base text-[#475569] leading-relaxed font-light">{feat.desc}</p>
                 </div>
-                <div className="mt-12 pt-6 border-t border-[#E2E8F0] flex items-center justify-between text-xs font-bold text-[#18293C]">
+                <div className="mt-8 pt-6 border-t border-[#E2E8F0] flex items-center justify-between text-xs font-bold text-[#18293C]">
                   <span>{feat.tag}</span>
                   <span className="w-2 h-2 rounded-full bg-brand-gold"></span>
                 </div>
@@ -430,39 +437,85 @@ export default function Home() {
 
       {/* 4. QUEM ASSINA (autoria e credenciais) */}
       <ScrollReveal>
-        <section className="py-10 sm:py-14 bg-white border-y border-[#E2E8F0]">
+        <section className="py-14 sm:py-20 lg:py-24 bg-white border-y border-[#E2E8F0]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-6">
+            <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-4">
               <span>03 // Responsável técnico</span>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
               <div className="lg:col-span-4">
-                <div className="p-8 rounded-3xl bg-[#F8FAFC] border border-[#E2E8F0]">
+                <div className="p-6 sm:p-8 rounded-3xl bg-[#F8FAFC] border border-[#E2E8F0] shadow-sm">
                   {AUTHOR.photo && (
                     <img
                       src={AUTHOR.photo}
                       alt={`Retrato de ${AUTHOR.name}, advogado`}
-                      className="w-full h-64 object-cover rounded-2xl mb-6"
+                      className="w-full aspect-[4/5] object-cover object-top rounded-2xl mb-6 shadow-sm"
                       loading="lazy"
                     />
                   )}
-                  <p className="text-xl font-bold text-[#18293C] leading-tight mb-2">{AUTHOR.name}</p>
-                  <p className="text-sm text-[#475569] font-light mb-4">{AUTHOR.role}</p>
-                  <p className="text-sm font-bold text-brand-gold">{AUTHOR.oab}</p>
+                  <p className="text-xl font-bold text-[#18293C] leading-tight mb-1.5">{AUTHOR.name}</p>
+                  <p className="text-sm text-[#475569] font-light mb-3">{AUTHOR.role}</p>
+                  <div className="pt-3 border-t border-[#E2E8F0] flex items-center justify-between">
+                    <span className="text-xs font-bold text-brand-gold tracking-wide">{AUTHOR.oab}</span>
+                    <span className="text-[11px] font-semibold text-[#64748B] bg-white px-2.5 py-1 rounded-md border border-[#E2E8F0]">
+                      Santos/SP
+                    </span>
+                  </div>
                 </div>
               </div>
 
-              <div className="lg:col-span-8">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#18293C] leading-tight mb-6">
-                  Quem conduz <span className="text-[#64748B]">o escritório</span>
-                </h2>
-                <p className="text-base sm:text-lg text-[#334155] leading-relaxed font-light max-w-3xl mb-6">
-                  {AUTHOR.bio}
-                </p>
-                <p className="text-sm text-[#475569] font-light max-w-3xl leading-relaxed">
-                  Os conteúdos deste site têm caráter informativo e não substituem a análise de um caso concreto por um advogado.
-                </p>
+              <div className="lg:col-span-8 flex flex-col justify-between">
+                <div>
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#18293C] leading-tight mb-6">
+                    Quem conduz <span className="text-[#64748B]">o escritório</span>
+                  </h2>
+
+                  <div className="space-y-4 text-base sm:text-lg text-[#334155] leading-relaxed font-light mb-8">
+                    <p>
+                      Graduado em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>, é especialista pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Animal</strong>, <strong>Direito do Consumidor</strong> e <strong>Cinema e Vídeo</strong>. Conta com extensões em <strong>Litígio Internacional e Direito Energético</strong> (Universität Heidelberg / UniSantos / ESDC), qualificações pela <strong>Fundação Getulio Vargas (FGV)</strong>, certificação da Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>) e o curso <strong>CopyrightX</strong> pela <strong>Harvard Law School</strong>.
+                    </p>
+
+                    <p>
+                      Sua trajetória profissional inclui atuação no contencioso e consultivo cível/trabalhista na <strong>Clara E. T. Monforte Advogados</strong> e a Direção Jurídica do grupo LGF Comércio Eletrônico (Grão de Gente), onde liderou a governança de contratos e operações digitais de grande escala, mantendo também rotina ativa de acompanhamento em buscadores jurídicos como o <strong>DJEN</strong>.
+                    </p>
+
+                    <p>
+                      Fora das atividades jurídicas, é praticante de <strong>Jiu-Jitsu</strong>, ostentando a faixa marrom (1º Grau) pela <strong>Kings Jiu Jitsu</strong>.
+                    </p>
+                  </div>
+
+                  <div className="mb-6 flex flex-wrap gap-2">
+                    <span className="px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-medium text-[#18293C]">
+                      Direito Digital
+                    </span>
+                    <span className="px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-medium text-[#18293C]">
+                      Direito Animal
+                    </span>
+                    <span className="px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-medium text-[#18293C]">
+                      Propriedade Intelectual (WIPO)
+                    </span>
+                    <span className="px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-medium text-[#18293C]">
+                      CopyrightX (Harvard Law)
+                    </span>
+                    <span className="px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-xs font-medium text-[#18293C]">
+                      Direito do Consumidor
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-[#E2E8F0] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <p className="text-xs text-[#64748B] font-light leading-relaxed max-w-xl">
+                    Os conteúdos deste site têm caráter estritamente informativo e não substituem a análise técnica individualizada de um caso concreto por um advogado.
+                  </p>
+                  <Link
+                    to="/escritorio"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#18293C] hover:text-brand-gold transition-colors shrink-0"
+                  >
+                    <span>Conhecer a banca completa</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -471,16 +524,16 @@ export default function Home() {
 
       {/* 5. PERGUNTAS FREQUENTES */}
       <ScrollReveal>
-        <section id="faq" className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">
-          <div className="flex items-center gap-3 text-xs font-bold text-brand-gold mb-4">
+        <section id="faq" className="py-14 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">
+          <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
             <span>04 // Perguntas frequentes</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#18293C] leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#18293C] leading-tight mb-4">
             Dúvidas <span className="text-[#64748B]">comuns</span>
           </h2>
-          <p className="text-base text-[#475569] font-light max-w-2xl leading-relaxed mb-10">
-            Respostas gerais para as perguntas que mais recebemos. Seu caso pode ter particularidades: por isso, a análise individual continua sendo o caminho.
+          <p className="text-base sm:text-lg text-[#475569] font-light max-w-3xl leading-relaxed mb-10 sm:mb-12">
+            Respostas gerais com fundamentação jurídica e legal para as principais questões que recebemos. Cada caso possui especificidades que demandam análise individual prévia.
           </p>
 
           <div className="flex flex-col gap-4">
@@ -489,14 +542,14 @@ export default function Home() {
                 key={f.q}
                 className="group rounded-2xl bg-white border border-[#E2E8F0] shadow-sm open:shadow-lg open:border-brand-gold/40 transition-all"
               >
-                <summary className="cursor-pointer list-none flex items-center justify-between gap-4 p-6 sm:p-7">
+                <summary className="cursor-pointer list-none flex items-center justify-between gap-4 p-5 sm:p-6">
                   <h3 className="text-base sm:text-lg font-bold text-[#18293C] leading-snug">{f.q}</h3>
                   <ChevronDown
                     size={20}
                     className="shrink-0 text-brand-gold transition-transform duration-300 group-open:rotate-180"
                   />
                 </summary>
-                <div className="px-6 sm:px-7 pb-7">
+                <div className="px-5 sm:px-6 pb-6 pt-1">
                   <p className="text-sm sm:text-base text-[#475569] leading-relaxed font-light">{f.a}</p>
                 </div>
               </details>
@@ -508,24 +561,24 @@ export default function Home() {
       {/* 6. DEPOIMENTOS (desligado por padrão) */}
       {SHOW_TESTIMONIALS && (
         <ScrollReveal>
-          <section className="py-10 sm:py-14 bg-white border-y border-[#E2E8F0]">
+          <section className="py-14 sm:py-20 lg:py-24 bg-white border-y border-[#E2E8F0]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex items-center gap-4 mb-12">
-                <span className="text-xs font-bold text-brand-gold">05 // Depoimentos</span>
+              <div className="flex items-center gap-4 mb-10">
+                <span className="text-xs font-bold text-brand-gold uppercase tracking-wider">05 // Depoimentos</span>
                 <span className="w-12 h-[1px] bg-[#E2E8F0]"></span>
               </div>
 
-              <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#18293C] leading-tight">
+              <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#18293C] leading-tight">
                   O que dizem <span className="text-[#64748B]">nossos clientes</span>
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                 {testimonials.map((t, idx) => (
                   <div
                     key={idx}
-                    className="p-8 sm:p-10 rounded-3xl bg-[#F8FAFC] border border-[#E2E8F0] shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between"
+                    className="p-6 sm:p-8 rounded-3xl bg-[#F8FAFC] border border-[#E2E8F0] shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300 flex flex-col justify-between"
                   >
                     <div>
                       <Quote size={28} className="text-brand-gold mb-6" />
@@ -552,7 +605,7 @@ export default function Home() {
 
       {/* 7. CTA FINAL */}
       <ScrollReveal>
-        <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden bg-[#0E1726]">
+        <section className="py-14 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden bg-[#0E1726]">
           <div
             className="absolute inset-0 w-full h-full bg-cover bg-center opacity-[0.12]"
             style={{
@@ -563,37 +616,37 @@ export default function Home() {
 
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand-gold/10 rounded-full blur-[160px] pointer-events-none z-0"></div>
 
-          <div className="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-4 flex justify-center lg:justify-start">
               <div className="w-48 h-48 rounded-full border border-dashed border-brand-gold/50 flex flex-col items-center justify-center text-center p-6">
-                <span className="text-[11px] font-bold text-brand-gold">OAB/SP</span>
+                <span className="text-[11px] font-bold text-brand-gold tracking-wider">OAB/SP</span>
                 <span className="text-3xl font-black tracking-widest text-white my-1">349457</span>
-                <span className="text-[10px] font-bold text-white/70">Sob Medida</span>
+                <span className="text-[10px] font-bold text-white/70 uppercase tracking-widest">Sob Medida</span>
               </div>
             </div>
 
             <div className="lg:col-span-8 flex flex-col items-start">
-              <span className="text-xs font-bold text-brand-gold mb-4">
+              <span className="text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
                 Atendimento criterioso &amp; reservado
               </span>
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
                 Submeta seu caso a uma análise jurídica preliminar
               </h2>
-              <p className="text-white/75 text-base sm:text-lg leading-loose max-w-3xl mb-10 font-light">
+              <p className="text-white/75 text-base sm:text-lg leading-relaxed max-w-3xl mb-8 font-light">
                 Antes de assumirmos qualquer demanda, realizamos um estudo de viabilidade técnica para mapear riscos, probabilidades e os melhores caminhos para o seu caso. Envie os elementos do seu caso e receba um retorno criterioso em até 2 dias úteis.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-5 w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
                 <Link
                   to="/contato"
-                  className="px-10 py-5 rounded-xl bg-white text-[#0E1726] font-bold text-xs hover:bg-brand-goldLight transition-all flex items-center justify-center gap-3 shadow-2xl"
+                  className="px-8 sm:px-10 py-4 sm:py-5 rounded-xl bg-white text-[#0E1726] font-bold text-xs hover:bg-brand-goldLight transition-all flex items-center justify-center gap-3 shadow-2xl"
                 >
                   <span>Solicitar avaliação</span>
                   <ArrowRight size={18} />
                 </Link>
                 <a
                   href="mailto:contato@barretomoreira.com.br"
-                  className="px-10 py-5 rounded-xl bg-white/5 backdrop-blur-md text-white border border-white/20 font-medium text-xs hover:bg-white/10 transition-all flex items-center justify-center shadow-lg"
+                  className="px-8 sm:px-10 py-4 sm:py-5 rounded-xl bg-white/5 backdrop-blur-md text-white border border-white/20 font-medium text-xs hover:bg-white/10 transition-all flex items-center justify-center shadow-lg"
                 >
                   contato@barretomoreira.com.br
                 </a>

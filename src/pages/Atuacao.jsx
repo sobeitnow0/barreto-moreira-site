@@ -77,11 +77,11 @@ export default function Atuacao() {
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
-      <section className="pt-12 sm:pt-16 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-2 text-xs font-bold text-brand-gold mb-4">
+      <section className="pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="flex items-center gap-2 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
           <span>01 // Portfólio de atuação</span>
         </div>
-        <div className="border-b border-[#E2E8F0] pb-8 mb-8">
+        <div className="border-b border-[#E2E8F0] pb-6 mb-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#18293C]">
             Áreas de <span className="text-[#64748B]">especialidade</span>
           </h1>
@@ -95,7 +95,7 @@ export default function Atuacao() {
       <Marquee />
 
       {/* Lista de Áreas de Atuação */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-14 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="space-y-8">
           {practiceAreas.map((area, idx) => {
             const IconComponent = area.icon;
@@ -158,7 +158,7 @@ export default function Atuacao() {
       </section>
 
       {/* CTA de Encerramento */}
-      <section className="py-12 sm:py-16 bg-[#0E1726] text-white">
+      <section className="py-14 sm:py-20 lg:py-24 bg-[#0E1726] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
           <span className="text-xs font-bold text-brand-gold mb-3">
             Análise criteriosa
