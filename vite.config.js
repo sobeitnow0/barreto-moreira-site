@@ -5,4 +5,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   base: '/',
+  ssgOptions: {
+    dirStyle: 'nested', // gera dist/atuacao/index.html, dist/contato/index.html, etc.
+  },
 })
