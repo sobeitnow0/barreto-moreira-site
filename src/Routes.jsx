@@ -18,6 +18,9 @@ export const routes = [
       { path: 'atuacao', Component: Atuacao },
       { path: 'atualizacoes', Component: Atualizacoes },
       { path: 'contato', Component: Contato },
+      // Rota estática só para o build gerar dist/404/index.html,
+      // que o script de build copia para dist/404.html (GitHub Pages).
+      { path: '404', Component: NotFound },
       { path: '*', Component: NotFound },
     ],
   },
