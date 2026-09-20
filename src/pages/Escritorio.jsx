@@ -17,6 +17,7 @@ export default function Escritorio() {
   const credentials = [
     "Pós-Graduação em Direito Digital",
     "Especialista em Propriedade Intelectual (WIPO)",
+    "CopyrightX – U.S. Copyright Law and EU Copyright Framework (Harvard Law School)",
     "Pós-Graduação em Direito Animal",
     "Pós-Graduaçao em Direito do Consumidor",
     "Litígio Internacional & Direito Energético (Univ. Heidelberg / ESDC)",
@@ -146,13 +147,14 @@ export default function Escritorio() {
                 </div>
 
                 <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4 font-light">
-                  Graduado em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>. Especialista pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Animal / Defesa do Consumidor</strong> e <strong>Cinema e Vídeo (Belas Artes)</strong>.
-                </p>
-                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4 font-light">
-                  Possui extensão em <strong>Litígio Internacional e Direito Energético</strong> (Universität Heidelberg / UniSantos / ESDC) e qualificações pela <strong>Fundação Getulio Vargas (FGV)</strong> em Direitos Autorais, Patentes e Bases Legais, além de certificação pela Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>).
-                </p>
-                <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8 font-light">
-                  Sua trajetória inclui atuação no contencioso e consultivo cível/trabalhista em bancas advocatícias (Clara E. T. Monforte Advogados), além da Direção Jurídica do grupo LGF Comércio Eletrônico (Grão de Gente), onde liderou a governança de contratos e operações digitais de grande escala. Faixa Marrom de Jiu-Jitsu (1 Grau) pela Kings Jiu Jitsu.
+  Graduado em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>, é especialista pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Anima, Direito do Consumidor</strong> e <strong>Cinema e Vídeo</strong>. Conta com extensões em <strong>Litígio Internacional e Direito Energético</strong> (Universität Heidelberg / UniSantos / ESDC), qualificações pela <strong>Fundação Getulio Vargas (FGV)</strong>, certificação da Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>) e o curso <strong>CopyrightX</strong> pela <strong>Harvard Law School</strong>.
+</p>
+<p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-4 font-light">
+  Sua trajetória profissional inclui atuação no contencioso e consultivo cível/trabalhista na <strong>Clara E. T. Monforte Advogados</strong> e a Direção Jurídica do grupo LGF Comércio Eletrônico (Grão de Gente), onde liderou a governança de contratos e operações digitais de grande escala, mantendo também rotina ativa de acompanhamento em buscadores jurídicos como o <strong>DJEN</strong>.
+</p>
+<p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8 font-light">
+  Fora das atividades jurídicas, é praticante de <strong>Jiu-Jitsu</strong>, ostentando a faixa marrom (1º Grau) pela <strong>Kings Jiu Jitsu</strong>.
+</p>
                 </p>
 
                 <div className="pt-6 border-t border-[#E2E8F0]">
