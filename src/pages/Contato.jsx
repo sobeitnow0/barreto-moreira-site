@@ -1,21 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { Head } from 'vite-react-ssg';
 import { Mail, ArrowRight, Shield, Check, Copy } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
 import Marquee from '../components/Marquee';
 
 export default function Contato() {
   const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    document.title = 'Contato | Barreto Moreira Advocacia';
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        'content',
-        'Solicite uma avaliação preliminar do seu caso. Atendimento por videoconferência com participação direta dos sócios. Retorno em até 2 dias úteis.'
-      );
-    }
-  }, []);
 
   const copyEmail = () => {
     navigator.clipboard.writeText('contato@barretomoreira.com.br');
@@ -25,6 +15,17 @@ export default function Contato() {
 
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
+      <Head>
+        <title>Contato & Avaliação | Barreto Moreira Estratégia Jurídica</title>
+        <meta
+          name="description"
+          content="Solicite uma avaliação preliminar do seu caso. Atendimento por videoconferência com participação direta dos sócios. Retorno em até 2 dias úteis. OAB/SP 349457."
+        />
+        <link rel="canonical" href="https://barretomoreira.com.br/contato" />
+        <meta property="og:title" content="Contato & Avaliação | Barreto Moreira Estratégia Jurídica" />
+        <meta property="og:description" content="Solicite uma avaliação preliminar do seu caso. Atendimento por videoconferência com participação direta dos sócios. Retorno em até 2 dias úteis." />
+        <meta property="og:url" content="https://barretomoreira.com.br/contato" />
+      </Head>
       {/* Header Editorial */}
       <section className="pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">

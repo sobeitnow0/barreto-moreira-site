@@ -1,19 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Head } from 'vite-react-ssg';
 import { InstagramIcon } from '../components/Icons';
 import Marquee from '../components/Marquee';
 
 export default function Escritorio() {
-  useEffect(() => {
-    document.title = 'O Escritório | Barreto Moreira Advocacia';
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        'content',
-        'Conheça o Barreto Moreira: banca fundada por Amilcar Barreto de Barros Moreira, com atuação direta dos sócios em cada causa. OAB/SP 349457.'
-      );
-    }
-  }, []);
-
   const credentials = [
     "Pós-Graduação em Direito Digital",
     "Especialista em Propriedade Intelectual (WIPO)",
@@ -29,6 +19,17 @@ export default function Escritorio() {
 
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
+      <Head>
+        <title>O Escritório | Barreto Moreira Estratégia Jurídica</title>
+        <meta
+          name="description"
+          content="Conheça o Barreto Moreira: banca fundada por Amilcar Barreto de Barros Moreira, com atuação direta dos sócios em cada causa. OAB/SP 349457."
+        />
+        <link rel="canonical" href="https://barretomoreira.com.br/escritorio" />
+        <meta property="og:title" content="O Escritório | Barreto Moreira Estratégia Jurídica" />
+        <meta property="og:description" content="Conheça o Barreto Moreira: banca fundada por Amilcar Barreto de Barros Moreira, com atuação direta dos sócios em cada causa. OAB/SP 349457." />
+        <meta property="og:url" content="https://barretomoreira.com.br/escritorio" />
+      </Head>
       {/* Header Editorial */}
       <section className="pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2 text-xs font-bold text-brand-gold uppercase tracking-wider mb-2.5">

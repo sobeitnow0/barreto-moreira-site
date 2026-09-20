@@ -1,23 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Head } from 'vite-react-ssg';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, Scale, FileText, Cpu, Award, PawPrint, HeartPulse } from 'lucide-react';
 import Marquee from '../components/Marquee';
 
 export default function Atuacao() {
-  useEffect(() => {
-    document.title = 'Áreas de Atuação | Barreto Moreira Advocacia';
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        'content',
-        'Direito Digital, Propriedade Intelectual, Direito Autoral, Direito do Consumidor, Ação Contra Plano de Saúde, Contratos Sob Medida e Direito Animal. Conheça as áreas de atuação do Barreto Moreira. OAB/SP 349457.'
-      );
-    }
-  }, []);
-
   const practiceAreas = [
     {
       num: "01",
+      slug: "direito-digital",
       icon: Cpu,
       title: "Direito Digital & Ilícitos Cibernéticos",
       subtitle: "Proteção contra abusos no ambiente virtual e responsabilidade civil de provedores",
@@ -26,6 +17,7 @@ export default function Atuacao() {
     },
     {
       num: "02",
+      slug: "propriedade-intelectual",
       icon: Award,
       title: "Propriedade Intelectual & Marcas",
       subtitle: "Blindagem e gestão preventiva de ativos imateriais perante o INPI",
@@ -34,6 +26,7 @@ export default function Atuacao() {
     },
     {
       num: "03",
+      slug: "direito-autoral",
       icon: FileText,
       title: "Direito Autoral & Licenciamento",
       subtitle: "Tutela jurídica de criações intelectuais, obras artísticas e softwares",
@@ -42,6 +35,7 @@ export default function Atuacao() {
     },
     {
       num: "04",
+      slug: "direito-do-consumidor",
       icon: Scale,
       title: "Direito do Consumidor",
       subtitle: "Atuação bivalente: representamos consumidores e também empresas e fornecedores",
@@ -50,6 +44,7 @@ export default function Atuacao() {
     },
     {
       num: "05",
+      slug: "contratos",
       icon: ShieldCheck,
       title: "Contratos Sob Medida & Engenharia Jurídica",
       subtitle: "Mitigação preventiva de riscos operacionais e blindagem contratual",
@@ -58,6 +53,7 @@ export default function Atuacao() {
     },
     {
       num: "06",
+      slug: "direito-animal",
       icon: PawPrint,
       title: "Direito Animal & Responsabilidade Civil",
       subtitle: "Tutela jurídica especializada em litígios envolvendo animais de estimação",
@@ -66,6 +62,7 @@ export default function Atuacao() {
     },
     {
       num: "07",
+      slug: "plano-de-saude",
       icon: HeartPulse,
       title: "Ação Contra Plano de Saúde",
       subtitle: "Atuação bivalente: representamos beneficiários e também operadoras de saúde",
@@ -76,6 +73,18 @@ export default function Atuacao() {
 
   return (
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
+      <Head>
+        <title>Áreas de Atuação | Barreto Moreira Estratégia Jurídica</title>
+        <meta
+          name="description"
+          content="Direito Digital, Propriedade Intelectual, Direito Autoral, Direito do Consumidor, Ação Contra Plano de Saúde, Contratos Sob Medida e Direito Animal. Barreto Moreira OAB/SP 349457."
+        />
+        <link rel="canonical" href="https://barretomoreira.com.br/atuacao" />
+        <meta property="og:title" content="Áreas de Atuação | Barreto Moreira Estratégia Jurídica" />
+        <meta property="og:description" content="Direito Digital, Propriedade Intelectual, Direito Autoral, Consumidor, Planos de Saúde e Direito Animal. Conheça as áreas de especialidade do Barreto Moreira." />
+        <meta property="og:url" content="https://barretomoreira.com.br/atuacao" />
+      </Head>
+
       {/* Header Editorial */}
       <section className="pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
@@ -102,7 +111,8 @@ export default function Atuacao() {
             return (
               <div
                 key={idx}
-                className="p-8 sm:p-12 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start group"
+                id={area.slug}
+                className="scroll-mt-28 p-8 sm:p-12 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start group"
               >
                 {/* Lado Esquerdo: Número e Ícone */}
                 <div className="lg:col-span-4 flex flex-col justify-between h-full border-b lg:border-b-0 lg:border-r border-[#E2E8F0] pb-6 lg:pb-0 lg:pr-8">

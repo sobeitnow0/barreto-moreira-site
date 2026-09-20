@@ -244,7 +244,7 @@ const schemaMarkup = {
 /* ------------------------------------------------------------------ */
 
 export default function Home() {
-  const areaLink = (slug) => (AREA_PAGES_READY ? `/atuacao/${slug}` : '/atuacao');
+  const areaLink = (slug) => `/atuacao#${slug}`;
 
   return (
     <div className="flex-1 flex flex-col w-full overflow-hidden bg-[#F8FAFC]">
