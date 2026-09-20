@@ -23,7 +23,7 @@ export default function Escritorio() {
     "Direitos Autorais, Patentes & Bases Legais (FGV)",
     "Ex-Diretor Jurídico de E-commerce (Grão de Gente)",
     "Desenvolvedor do Buscador DJEn (Plataforma & Extensão)",
-    "Faixa Marrom de Jiu-Jitsu (1º Grau)"
+    "Faixa Marrom de Jiu-Jitsu (1º Grau) pela Kings BJJ"
   ];
 
   return (
