@@ -5,11 +5,11 @@ import { InstagramIcon } from './Icons';
 import LGPDBanner from './LGPDBanner';
 
 const Logo = ({ onClick }) => (
-  <NavLink to="/" onClick={onClick} className="flex items-center group py-1.5 shrink-0">
+  <NavLink to="/" onClick={onClick} className="flex items-center group shrink-0">
     <img 
-      src={`${import.meta.env.BASE_URL}logo-transparent.png`} 
+      src={`${import.meta.env.BASE_URL}logo-transparent.png?v=3`} 
       alt="Barreto Moreira Estratégia Jurídica" 
-      className="h-14 sm:h-16 md:h-18 lg:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+      className="h-16 sm:h-20 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
     />
   </NavLink>
 );
@@ -51,11 +51,11 @@ export default function Layout() {
       
       {/* Header Fixo Minimalista com Glassmorphism */}
       <header className="sticky top-0 z-50 bg-[#F8FAFC]/90 backdrop-blur-md border-b border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[5.5rem] lg:min-h-[6rem] py-3 flex items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[5.5rem] sm:min-h-[6rem] lg:min-h-[7rem] py-2 sm:py-2.5 flex items-center justify-between gap-4 lg:gap-6">
           <Logo onClick={() => setMobileMenuOpen(false)} />
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 shrink-0">
             {navLinks.map((item) => (
               <NavLink
                 key={item.path}
@@ -173,9 +173,9 @@ export default function Layout() {
             <div className="md:col-span-5 flex flex-col gap-5">
               <NavLink to="/" className="inline-block">
                 <img 
-                  src={`${import.meta.env.BASE_URL}logo-white.png`} 
+                  src={`${import.meta.env.BASE_URL}logo-white.png?v=3`} 
                   alt="Barreto Moreira Estratégia Jurídica" 
-                  className="h-12 sm:h-14 md:h-16 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
+                  className="h-14 sm:h-16 md:h-20 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
                 />
               </NavLink>
               <p className="text-white/70 text-sm leading-relaxed max-w-sm font-light">
