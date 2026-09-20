@@ -31,10 +31,10 @@ export default function Escritorio() {
     <div className="flex-1 flex flex-col w-full bg-[#F8FAFC]">
       {/* Header Editorial */}
       <section className="pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-2 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
+        <div className="flex items-center gap-2 text-xs font-bold text-brand-gold uppercase tracking-wider mb-2.5">
           <span>02 // Institucional &amp; fundador</span>
         </div>
-        <div className="border-b border-[#E2E8F0] pb-6 mb-8">
+        <div className="border-b border-[#E2E8F0] pb-4 mb-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#18293C]">
             Advocacia <span className="text-[#64748B]">sob medida</span>
           </h1>
@@ -51,13 +51,13 @@ export default function Escritorio() {
       <section className="py-14 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-14">
           <div className="lg:col-span-5">
-            <span className="text-xs font-bold text-brand-gold block mb-3">
+            <span className="text-xs font-bold text-brand-gold uppercase tracking-wider block mb-2.5">
               Posicionamento
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#18293C] mb-5 leading-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#18293C] mb-4 leading-tight">
               A arquitetura jurídica de alto impacto exige método e profundidade
             </h2>
-            <p className="text-[#334155] text-sm sm:text-base leading-relaxed mb-4 font-light">
+            <p className="text-[#334155] text-sm sm:text-base leading-relaxed mb-3 font-light">
               Desafios regulatórios, digitais e patrimoniais exigem investigação fática rigorosa, acompanhamento jurisprudencial contínuo e construção de teses sólidas perante as instâncias julgadoras.
             </p>
             <p className="text-[#334155] text-sm sm:text-base leading-relaxed font-light">
@@ -101,9 +101,9 @@ export default function Escritorio() {
         </div>
 
         {/* Perfis dos Fundadores */}
-        <div className="pt-14 border-t border-[#E2E8F0]">
-          <div className="mb-12">
-            <span className="text-xs font-bold text-brand-gold block mb-2">
+        <div className="pt-12 sm:pt-16 border-t border-[#E2E8F0]">
+          <div className="mb-10 sm:mb-12">
+            <span className="text-xs font-bold text-brand-gold uppercase tracking-wider block mb-2.5">
               Liderança
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-[#18293C]">

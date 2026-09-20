@@ -270,20 +270,20 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Lado esquerdo */}
             <div className="lg:col-span-7 flex flex-col items-start text-left">
-              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 mb-6 rounded-full bg-white border border-[#E2E8F0] shadow-sm">
+              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 mb-4 sm:mb-5 rounded-full bg-white border border-[#E2E8F0] shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-brand-gold"></span>
                 <span className="text-xs font-semibold text-[#18293C]">
                   Advocacia consultiva e litigiosa de alto impacto
                 </span>
               </div>
 
-              <h1 className="flex flex-col tracking-tight font-bold text-[#18293C] leading-[1.12] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] mb-6">
+              <h1 className="flex flex-col tracking-tight font-bold text-[#18293C] leading-[1.12] text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] mb-4 sm:mb-5">
                 <span>Rigor técnico e defesa</span>
                 <span className="text-brand-gold">bem fundamentada.</span>
               </h1>
 
               {/* Frase descritiva literal */}
-              <p className="text-base sm:text-xl text-[#18293C] leading-relaxed max-w-xl mb-4 font-medium">
+              <p className="text-base sm:text-xl text-[#18293C] leading-relaxed max-w-xl mb-3 font-medium">
                 Escritório de advocacia em Santos/SP com atuação em Direito Digital,
                 Propriedade Intelectual, Direito Autoral, Direito do Consumidor,
                 Contratos, Direito Animal e ações contra planos de saúde.
@@ -324,12 +324,11 @@ export default function Home() {
       <ScrollReveal>
         <section id="areas" className="py-14 sm:py-20 lg:py-24 bg-white border-y border-[#E2E8F0]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
-              <span>01 // Especialidades</span>
-            </div>
-
             <div className="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#E2E8F0] pb-6 mb-8 gap-6">
               <div>
+                <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-2.5">
+                  <span>01 // Especialidades</span>
+                </div>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#18293C] leading-tight mb-3">
                   Áreas de <span className="text-[#64748B]">especialidade</span>
                 </h2>
@@ -400,17 +399,17 @@ export default function Home() {
       {/* 3. PILARES DE ATUAÇÃO */}
       <ScrollReveal>
         <section className="py-14 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-          <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
-            <span>02 // Pilares de atuação</span>
+          <div className="mb-10 sm:mb-12">
+            <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-2.5">
+              <span>02 // Pilares de atuação</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#18293C] tracking-tight mb-4">
+              Pilares <span className="font-light text-[#64748B]">de atuação</span>
+            </h2>
+            <p className="text-base sm:text-lg text-[#334155] leading-relaxed font-light max-w-3xl">
+              O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
+            </p>
           </div>
-
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#18293C] tracking-tight mb-4">
-            Pilares <span className="font-light text-[#64748B]">de atuação</span>
-          </h2>
-
-          <p className="text-base sm:text-lg text-[#334155] leading-relaxed font-light max-w-3xl mb-10 sm:mb-12">
-            O <strong>Barreto Moreira</strong> atua de forma seletiva por opção, não por porte. Mantemos um volume controlado de causas para assegurar atenção integral e pesquisa aprofundada.
-          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {features.map((feat) => (
@@ -439,8 +438,13 @@ export default function Home() {
       <ScrollReveal>
         <section className="py-14 sm:py-20 lg:py-24 bg-white border-y border-[#E2E8F0]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-4">
-              <span>03 // Responsável técnico</span>
+            <div className="mb-10 sm:mb-12">
+              <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-2.5">
+                <span>03 // Responsável técnico</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#18293C] leading-tight">
+                Quem conduz <span className="text-[#64748B]">o escritório</span>
+              </h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
@@ -467,10 +471,6 @@ export default function Home() {
 
               <div className="lg:col-span-8 flex flex-col justify-between">
                 <div>
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#18293C] leading-tight mb-6">
-                    Quem conduz <span className="text-[#64748B]">o escritório</span>
-                  </h2>
-
                   <div className="space-y-4 text-base sm:text-lg text-[#334155] leading-relaxed font-light mb-8">
                     <p>
                       Advogado fundador do Barreto Moreira, graduado em <strong>Direito (UniSantos)</strong> e <strong>Comunicação Social (UniSanta)</strong>. Especialista pós-graduado em <strong>Direito Digital</strong>, <strong>Direito Animal</strong> e <strong>Direito do Consumidor</strong>, conta com qualificações pela <strong>Harvard Law School (CopyrightX)</strong>, <strong>WIPO</strong>, <strong>FGV</strong> e <strong>Universität Heidelberg</strong>.
@@ -521,16 +521,17 @@ export default function Home() {
       {/* 5. PERGUNTAS FREQUENTES */}
       <ScrollReveal>
         <section id="faq" className="py-14 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">
-          <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
-            <span>04 // Perguntas frequentes</span>
+          <div className="mb-10 sm:mb-12">
+            <div className="flex items-center gap-3 text-xs font-bold text-brand-gold uppercase tracking-wider mb-2.5">
+              <span>04 // Perguntas frequentes</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#18293C] leading-tight mb-4">
+              Dúvidas <span className="text-[#64748B]">comuns</span>
+            </h2>
+            <p className="text-base sm:text-lg text-[#475569] font-light max-w-3xl leading-relaxed">
+              Respostas gerais com fundamentação jurídica e legal para as principais questões que recebemos. Cada caso possui especificidades que demandam análise individual prévia.
+            </p>
           </div>
-
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#18293C] leading-tight mb-4">
-            Dúvidas <span className="text-[#64748B]">comuns</span>
-          </h2>
-          <p className="text-base sm:text-lg text-[#475569] font-light max-w-3xl leading-relaxed mb-10 sm:mb-12">
-            Respostas gerais com fundamentação jurídica e legal para as principais questões que recebemos. Cada caso possui especificidades que demandam análise individual prévia.
-          </p>
 
           <div className="flex flex-col gap-4">
             {faqs.map((f) => (
@@ -622,10 +623,10 @@ export default function Home() {
             </div>
 
             <div className="lg:col-span-8 flex flex-col items-start">
-              <span className="text-xs font-bold text-brand-gold uppercase tracking-wider mb-3">
+              <span className="text-xs font-bold text-brand-gold uppercase tracking-wider mb-2.5">
                 Atendimento criterioso &amp; reservado
               </span>
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
                 Submeta seu caso a uma análise jurídica preliminar
               </h2>
               <p className="text-white/75 text-base sm:text-lg leading-relaxed max-w-3xl mb-8 font-light">
