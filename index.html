@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="%BASE_URL%favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <link rel="apple-touch-icon" href="%BASE_URL%favicon.png" />
+    
+    <!-- Open Graph / Social Media Preview (campos fixos; título/descrição/url são injetados por página) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://barretomoreira.com.br/logo-cropped.png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Barreto Moreira Advocacia Estratégica" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://barretomoreira.com.br/logo-cropped.png" />
+
+    <!-- Schema.org / JSON-LD para Escritório de Advocacia -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Barreto Moreira Advocacia Estratégica",
+      "alternateName": "Barreto Moreira",
+      "url": "https://barretomoreira.com.br",
+      "logo": "https://barretomoreira.com.br/logo-cropped.png",
+      "image": "https://barretomoreira.com.br/logo-cropped.png",
+      "description": "Atuação jurídica artesanal para demandas de alta complexidade. Direito Digital, Propriedade Intelectual, Direito Autoral, Direito do Consumidor e Contratos Estratégicos.",
+      "email": "contato@barretomoreira.com.br",
+      "priceRange": "$$$$",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "knowsAbout": [
+        "Direito Digital",
+        "Propriedade Intelectual",
+        "Direito Autoral",
+        "Direito do Consumidor",
+        "Ação Contra Plano de Saúde",
+        "Contratos Estratégicos",
+        "Direito Animal & Responsabilidade Civil"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Amilcar Barreto de Barros Moreira",
+        "jobTitle": "Advogado Fundador",
+        "knowsAbout": ["Direito Digital", "Propriedade Intelectual", "Direito Autoral"]
+      },
+      "sameAs": [
+        "https://www.instagram.com/barretomoreira_adv/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Áreas de Atuação",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Direito Digital & Plataformas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Propriedade Intelectual & Marcas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Direito Autoral & Criações" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Direito do Consumidor" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ação Contra Plano de Saúde" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Contratos Estratégicos & Pareceres" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Direito Animal & Responsabilidade Civil" } }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Redireciona links antigos com hash: /#/contato → /contato -->
+    <script>
+      if (location.hash.indexOf('#/') === 0) location.replace(location.hash.slice(1));
+    </script>
+    
+    <!-- Google Fonts: Google Sans Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..72,100..1000&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..72,100..1000&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..72,100..1000&display=swap" rel="stylesheet"></noscript>
+  </head>
+  <body class="bg-[#F8FAFC] text-[#162235] font-sans antialiased selection:bg-[#162235] selection:text-white overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
