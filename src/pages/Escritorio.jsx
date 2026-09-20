@@ -152,7 +152,7 @@ export default function Escritorio() {
                   Possui extensão em <strong>Litígio Internacional e Direito Energético</strong> (Universität Heidelberg / UniSantos / ESDC) e qualificações pela <strong>Fundação Getulio Vargas (FGV)</strong> em Direitos Autorais, Patentes e Bases Legais, além de certificação pela Organização Mundial da Propriedade Intelectual (<strong>WIPO</strong>).
                 </p>
                 <p className="text-sm sm:text-base text-[#334155] leading-relaxed mb-8 font-light">
-                  Sua trajetória inclui atuação no contencioso e consultivo cível/trabalhista em bancas advocatícias (Clara E. T. Monforte Advogados), além da Direção Jurídica do grupo LGF Comércio Eletrônico (Grão de Gente), onde liderou a governança de contratos e operações digitais de grande escala. Faixa marrom (1º grau) de jiu-jitsu.
+                  Sua trajetória inclui atuação no contencioso e consultivo cível/trabalhista em bancas advocatícias (Clara E. T. Monforte Advogados), além da Direção Jurídica do grupo LGF Comércio Eletrônico (Grão de Gente), onde liderou a governança de contratos e operações digitais de grande escala. Faixa Marrom de Jiu-Jitsu (1 Grau) pela Kings Jiu Jitsu.
                 </p>
 
                 <div className="pt-6 border-t border-[#E2E8F0]">
